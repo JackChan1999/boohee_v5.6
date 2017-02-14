@@ -6,6 +6,7 @@ ml
 .DS_Store
 /build
 /captures
+/src/main/java/android
 
 # Built application files
 *.apk
