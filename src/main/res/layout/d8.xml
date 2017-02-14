@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:id="@id/sv_search"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fastScrollEnabled="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_history"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/e4"
+                android:gravity="bottom|left|center"
+                android:paddingLeft="@dimen/el"
+                android:paddingTop="@dimen/el"
+                android:paddingBottom="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a3k"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_history_content"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@id/rl_history_clear"
+                android:background="@drawable/d2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/he"
+                    android:gravity="center"
+                    android:padding="@dimen/gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a3d"
+                    android:drawableLeft="@drawable/fa"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_result"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@id/lv_result"
+            android:background="@color/d5"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:listSelector="@drawable/fq"
+            android:divider="@color/cx"
+            android:dividerHeight="1.0px"
+            android:layout_weight="1.0"/>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/he"
+            android:gravity="center"
+            android:id="@id/tv_search_null"
+            android:background="@color/ju"
+            android:padding="12.0dip"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索不到？添加自定义运动"/>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/e4"
+        android:id="@id/tv_null"
+        android:padding="@dimen/el"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/a3j"/>
+</LinearLayout>

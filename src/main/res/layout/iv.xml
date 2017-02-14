@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/dm"
+          android:gravity="center"
+          android:id="@id/tv_hot_key"
+          android:padding="@dimen/dh"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android"/>

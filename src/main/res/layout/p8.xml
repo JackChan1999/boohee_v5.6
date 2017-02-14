@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@id/mask"
+        android:background="#99000000"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:id="@id/ll_content"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@id/iv_avatar"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_margin="@dimen/el"
+                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                style="@style/style_round_image"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gt"
+                android:layout_toLeftOf="@id/txt_calory"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:layout_alignTop="@id/iv_avatar">
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textStyle="bold"
+                    android:textColor="@color/he"
+                    android:ellipsize="end"
+                    android:id="@id/txt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/hm"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:textSize="@dimen/fo"
+                    android:textColor="@color/e4"
+                    android:id="@id/txt_tips"
+                    android:paddingLeft="@dimen/hm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/iv_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nc"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <ScrollView
+            android:id="@id/sv_format"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/ll_format"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@id/ll_edit"
+                    android:padding="@dimen/el"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/dl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:text="购买数量"
+                        android:layout_weight="1.0"/>
+
+                    <Button
+                        android:enabled="false"
+                        android:id="@id/btn_decrease"
+                        android:background="@drawable/ij"
+                        android:layout_width="38.0dip"
+                        android:layout_height="30.0dip"/>
+
+                    <TextView
+                        android:textSize="@dimen/ee"
+                        android:textColor="@color/e4"
+                        android:gravity="center"
+                        android:id="@id/tv_goods_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/el"
+                        android:layout_marginRight="@dimen/el"
+                        android:text="1"/>
+
+                    <Button
+                        android:id="@id/btn_increase"
+                        android:background="@drawable/ik"
+                        android:layout_width="38.0dip"
+                        android:layout_height="30.0dip"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@id/view_divide"
+                    android:background="@color/j8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="@dimen/gt"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:enabled="false"
+            android:textSize="@dimen/ee"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/btn_cart_add"
+            android:background="@drawable/d_"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"/>
+    </LinearLayout>
+</FrameLayout>

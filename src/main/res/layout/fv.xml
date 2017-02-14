@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        layout="@layout/global_list_view"/>
+
+    <LinearLayout
+        android:id="@id/clear_gps_bar"
+        android:background="@color/ju"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_margin="8.0dip"
+            style="@style/RippleCorner5dp">
+
+            <Button
+                android:textColor="@color/ju"
+                android:id="@id/clear_gps"
+                android:background="@drawable/ej"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/gd"
+                android:text="@string/fl"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+</LinearLayout>

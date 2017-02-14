@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/listview"
+        android:background="@color/i7"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="true"
+        android:smoothScrollbar="true"
+        app:ptrHeaderBackground="@color/d5"
+        app:ptrHeaderTextColor="@android:color/darker_gray"
+        app:ptrAnimationStyle="flip"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_gravity="center"
+                android:id="@id/fab_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dh"
+                android:src="@drawable/a4i"
+                app:elevation="4.0dip"
+                app:backgroundTint="@color/ju"
+                app:rippleColor="@color/i7"
+                app:pressedTranslationZ="12.0dip"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@id/tv_indicator"
+            android:layout_width="@dimen/di"
+            android:layout_height="@dimen/di"
+            android:layout_margin="20.0dip"
+            android:src="@drawable/a10"
+            android:scaleType="centerInside"/>
+    </FrameLayout>
+</RelativeLayout>

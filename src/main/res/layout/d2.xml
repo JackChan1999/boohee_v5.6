@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/img_start_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@id/tv_time"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/el"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/img_start_logo">
+
+        <ImageView
+            android:id="@id/ivAdContent"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/x1"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:id="@id/tv_ad_title"
+            android:paddingLeft="@dimen/el"
+            android:paddingRight="@dimen/el"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:drawableRight="@drawable/a1x"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@id/iv_third_logo"
+        android:paddingTop="@dimen/h6"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

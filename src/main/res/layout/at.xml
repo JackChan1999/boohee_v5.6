@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.myview.CustomInsetWithBottomPanelLayout android:orientation="vertical"
+                                                    android:fitsSystemWindows="true"
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarStyle="outsideOverlay"
+                                                              android:id="@id/listview"
+                                                              android:background="@color/d5"
+                                                              android:layout_width="fill_parent"
+                                                              android:layout_height="0.0dip"
+                                                              android:layout_marginTop="-2.0dip"
+                                                              android:drawSelectorOnTop="false"
+                                                              android:scrollingCache="true"
+                                                              android:layout_weight="1.0"
+                                                              android:headerDividersEnabled="false"
+                                                              android:footerDividersEnabled="true"
+                                                              ptr:ptrHeaderBackground="@color/d5"
+                                                              ptr:ptrHeaderTextColor="@android:color/darker_gray"
+                                                              ptr:ptrShowIndicator="false"
+                                                              ptr:ptrOverScroll="false"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrScrollingWhileRefreshingEnabled="true"
+                                                              style="@style/PullToRefreshListViewStyle"
+                                                              xmlns:ptr="http://schemas.android.com/apk/res-auto"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.chaowen.commentlibrary.emoji.EmojiconEditText
+            android:textSize="@dimen/gy"
+            android:textColor="@color/c4"
+            android:gravity="center_vertical"
+            android:id="@id/et_comment"
+            android:background="@drawable/ho"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:minHeight="40.0dip"
+            android:text=""
+            android:hint="@string/gb"
+            android:layout_weight="1.0"/>
+
+        <ImageButton
+            android:id="@id/status_post_text_emojiBtn"
+            android:background="@color/in"
+            android:paddingRight="@dimen/gt"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/h9"
+            android:scaleType="center"/>
+
+        <Button
+            android:textSize="@dimen/em"
+            android:textColor="@color/ij"
+            android:id="@id/btn_comment"
+            android:background="@null"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/a43"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@id/ly_emoji"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/view_pager_emoji"
+            android:layout_width="fill_parent"
+            android:layout_height="160.0dip"/>
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip">
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@id/indicator_emoji"
+                android:padding="4.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout>
+</com.boohee.myview.CustomInsetWithBottomPanelLayout>

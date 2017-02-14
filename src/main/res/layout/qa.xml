@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView android:id="@id/gv_emoji"
+          android:descendantFocusability="blocksDescendants"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:listSelector="@android:color/transparent"
+          android:cacheColorHint="@color/in"
+          android:stretchMode="columnWidth"
+          android:numColumns="7"
+          xmlns:android="http://schemas.android.com/apk/res/android"/>

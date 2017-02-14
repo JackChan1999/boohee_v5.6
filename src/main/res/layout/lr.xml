@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0dip"
+        android:text="@string/zp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:gravity="center"
+            android:id="@id/password1"
+            android:focusable="true"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:layout_weight="1.0"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:gravity="center"
+            android:id="@id/password2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:layout_weight="1.0"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:gravity="center"
+            android:id="@id/password3"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:layout_weight="1.0"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:gravity="center"
+            android:id="@id/password4"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:layout_weight="1.0"
+            android:inputType="numberPassword"/>
+    </LinearLayout>
+</LinearLayout>

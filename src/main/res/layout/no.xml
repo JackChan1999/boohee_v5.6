@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/into_goods_detail"
+        android:padding="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/default_photo"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/dl"
+            android:id="@id/title"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:text=""
+            android:layout_toRightOf="@id/default_photo"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/c4"
+            android:id="@id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:text="@string/a04"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/c4"
+            android:id="@id/price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_toRightOf="@id/price"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@id/increase_btn"
+            android:background="@drawable/ik"
+            android:layout_width="30.0dip"
+            android:layout_height="24.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@id/quantity_value"
+            android:background="@null"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:text="1"
+            android:layout_toLeftOf="@id/increase_btn"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@id/decrease_btn"
+            android:background="@drawable/ij"
+            android:layout_width="30.0dip"
+            android:layout_height="24.0dip"
+            android:layout_toLeftOf="@id/quantity_value"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量:"
+            android:layout_toLeftOf="@id/quantity_value"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

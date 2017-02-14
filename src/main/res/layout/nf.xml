@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/iq"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:id="@id/rl_cart_hint"
+        android:paddingBottom="40.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/da"
+            android:gravity="center_horizontal"
+            android:id="@id/tv_cart_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/y4"
+            android:drawableTop="@drawable/a5l"
+            android:drawablePadding="15.0dip"
+            android:layout_centerHorizontal="true"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="40.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_below="@id/tv_cart_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/RippleCorner5dp">
+
+            <Button
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:id="@id/btn_cart_go"
+                android:background="@drawable/ej"
+                android:layout_width="166.0dip"
+                android:layout_height="40.0dip"
+                android:text="@string/n7"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/lv_cart"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:cacheColorHint="#00000000"
+        android:childDivider="@color/da"
+        android:divider="@color/j8"
+        android:dividerHeight="1.0px"
+        android:layout_weight="1.0"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_bottom_bar"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip">
+
+        <include layout="@layout/view_divide_line"/>
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/di"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/btn_pay"
+                android:layout_alignParentLeft="true">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/c4"
+                        android:id="@id/tv_price_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a05"/>
+
+                    <TextView
+                        android:textSize="@dimen/ee"
+                        android:textStyle="bold"
+                        android:textColor="@color/gn"
+                        android:id="@id/tv_price_all_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/di"/>
+                </LinearLayout>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@id/tv_bonus_info"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <com.boohee.widgets.BooheeRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@style/RippleCorner5dp">
+
+                <Button
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/ju"
+                    android:gravity="center"
+                    android:id="@id/btn_account"
+                    android:background="@drawable/ek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:text="@string/al"/>
+            </com.boohee.widgets.BooheeRippleLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/ll_delete"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip">
+
+        <include layout="@layout/view_divide_line"/>
+
+        <Button
+            android:textSize="@dimen/gy"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/btn_delete"
+            android:background="@drawable/dk"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_margin="5.0dip"
+            android:text="@string/i5"/>
+    </LinearLayout>
+</LinearLayout>

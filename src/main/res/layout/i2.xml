@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/e4"
+          android:id="@id/tv_title"
+          android:background="@drawable/hk"
+          android:paddingLeft="@dimen/el"
+          android:paddingTop="@dimen/gt"
+          android:paddingRight="@dimen/el"
+          android:paddingBottom="@dimen/gt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/gt"
+          android:layout_marginRight="@dimen/gt"
+          android:layout_marginBottom="@dimen/gt"
+          android:layout_weight="1.0"
+          xmlns:android="http://schemas.android.com/apk/res/android"/>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:id="@id/view_item"
+                                       style="@style/RippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.boohee.one.pedometer.v2.view.NumberView
+            android:id="@id/tv_year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dh"
+            android:layout_marginTop="@dimen/dh"
+            android:layout_marginRight="@dimen/dh"
+            android:layout_marginBottom="@dimen/di"/>
+
+        <LinearLayout
+            android:id="@id/view_content"
+            android:padding="@dimen/dh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.boohee.one.pedometer.v2.view.NumberView
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:id="@id/tv_month"
+                android:background="@drawable/hh"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"/>
+
+            <LinearLayout
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dh"
+                android:layout_weight="1.0">
+
+                <com.boohee.one.pedometer.v2.view.NumberView
+                    android:id="@id/tv_step"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.boohee.one.pedometer.v2.view.NumberView
+                    android:textColor="@color/i8"
+                    android:ellipsize="end"
+                    android:id="@id/tv_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/di"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@id/view_indicator"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.boohee.widgets.BooheeRippleLayout>

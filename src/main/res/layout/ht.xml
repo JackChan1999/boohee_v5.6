@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_material_item"
+                android:background="@color/ju"
+                android:paddingTop="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/dm"
+        android:ellipsize="end"
+        android:id="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:textSize="@dimen/dm"
+        android:textColor="@color/du"
+        android:gravity="center"
+        android:id="@id/tv_amount"
+        android:paddingRight="@dimen/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1个"
+        android:singleLine="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:layout_marginTop="@dimen/el"
+        android:layout_below="@id/tv_name"
+        style="@style/HorizontalWholeDivider"/>
+</RelativeLayout>

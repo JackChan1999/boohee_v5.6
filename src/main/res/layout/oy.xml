@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80.0dip"
+        android:src="@drawable/a31"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:text="暂无离线缓存视频"/>
+
+    <TextView
+        android:textSize="@dimen/fo"
+        android:textColor="@color/du"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"
+        android:text="缓存到本地，无网时也能跟着练"/>
+</LinearLayout>

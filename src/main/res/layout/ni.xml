@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:id="@id/order_detail_list"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/iq"
+        android:layout_weight="1.0"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:id="@id/rl_bottom"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip">
+
+        <TextView
+            android:textSize="@dimen/ee"
+            android:textColor="@color/hv"
+            android:id="@id/tv_unpaid"
+            android:paddingLeft="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需付款：¥88.0"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:textSize="@dimen/em"
+            android:textColor="@color/ju"
+            android:id="@id/btn_pay"
+            android:background="@drawable/di"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="付款"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/btn_refund"
+            android:background="@drawable/c7"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="申请退款"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:textSize="@dimen/em"
+            android:textColor="@color/hb"
+            android:id="@id/btn_receive"
+            android:background="@drawable/ca"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="确认收货"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

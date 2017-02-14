@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/ju"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/d5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_raw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:gravity="bottom|left|center"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/el"
+                android:paddingBottom="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:text="@string/a1n"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_raw_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/view_divide_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_major"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:gravity="bottom|left|center"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/el"
+                android:paddingBottom="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:text="@string/a1q"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_major_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/view_divide_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:gravity="bottom|left|center"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/el"
+                android:paddingBottom="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:text="@string/a1r"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_minor_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/view_divide_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_seasoning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:gravity="bottom|left|center"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/el"
+                android:paddingBottom="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:text="@string/a1s"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_seasoning_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/view_divide_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_steps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:gravity="bottom|left|center"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/el"
+                android:paddingBottom="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:text="@string/a1u"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/ju"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/dm"
+                    android:textColor="@color/e4"
+                    android:id="@id/tv_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

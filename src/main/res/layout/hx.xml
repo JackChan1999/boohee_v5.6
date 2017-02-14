@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.prolificinteractive.materialcalendarview.DayView
+        android:id="@id/day_view"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginTop="10.0dip"/>
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <ImageView
+        android:id="@id/image_tag"
+        android:layout_width="10.0dip"
+        android:layout_height="10.0dip"
+        android:layout_marginBottom="3.0dip"/>
+
+    <View
+        android:id="@id/v_line"
+        android:background="#ff9d4af5"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:id="@id/rl_cart_hint"
+        android:paddingBottom="40.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/da"
+            android:gravity="center_horizontal"
+            android:id="@id/cart_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xv"
+            android:drawableTop="@drawable/a5q"
+            android:drawablePadding="15.0dip"
+            android:layout_centerHorizontal="true"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="40.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_below="@id/cart_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/RippleCorner5dp">
+
+            <Button
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:id="@id/btn_cart_go"
+                android:background="@drawable/ej"
+                android:layout_width="166.0dip"
+                android:layout_height="40.0dip"
+                android:text="@string/n7"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/lv_orders"
+        android:clipToPadding="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-2.0dip"
+        android:cacheColorHint="@color/in"
+        android:divider="@color/in"
+        android:dividerHeight="16.0dip"
+        app:ptrHeaderBackground="@color/d5"
+        app:ptrHeaderTextColor="@android:color/darker_gray"
+        app:ptrShowIndicator="false"
+        app:ptrOverScroll="false"
+        app:ptrAnimationStyle="flip"
+        app:ptrScrollingWhileRefreshingEnabled="true"/>
+</FrameLayout>

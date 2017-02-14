@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_pop_punch_top"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="180.0dip"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@id/civ_title"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_marginTop="@dimen/gt"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/e4"
+                    android:gravity="center"
+                    android:id="@id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/el"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/he"
+                        android:gravity="center"
+                        android:id="@id/txt_calory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hm"/>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/e4"
+                        android:gravity="center"
+                        android:id="@id/txt_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hm"
+                        android:text="千卡/60分钟"/>
+                </LinearLayout>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/he"
+                    android:gravity="center"
+                    android:id="@id/txt_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/el"
+                    android:layout_marginBottom="@dimen/gt"
+                    android:text="删除这条记录"
+                    android:drawableLeft="@drawable/fa"
+                    android:drawablePadding="@dimen/hm"
+                    android:drawableStart="@drawable/fa"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200.0dip">
+
+            <include layout="@layout/view_divide_line"/>
+
+            <com.booheee.view.keyboard.CustomSportKeyboard
+                android:id="@id/custom_sport_keyboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_content"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:padding="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <include layout="@layout/view_weight_tab_date"/>
+    </RelativeLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@id/linechart"
+        android:paddingLeft="@dimen/gt"
+        android:paddingBottom="20.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_centerInParent="true"/>
+</LinearLayout>

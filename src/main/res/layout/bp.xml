@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"/>
+
+    <View
+        android:background="@color/cx"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_gravity="bottom"
+            android:id="@id/v_line"
+            android:background="@color/gn"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0dip"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@id/tv_tab_encourage"
+                android:background="@color/in"
+                android:padding="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="励志"
+                android:layout_weight="1.0"/>
+
+            <View
+                android:background="@color/cx"
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@id/tv_tab_eat"
+                android:background="@color/ju"
+                android:padding="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饮食"
+                android:layout_weight="1.0"/>
+
+            <View
+                android:background="@color/cx"
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@id/tv_tab_qute"
+                android:background="@color/ju"
+                android:padding="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="薄荷马"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

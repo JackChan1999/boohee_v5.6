@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.myview.CustomInsetLayout android:orientation="vertical"
+                                     android:fitsSystemWindows="true"
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="fill_parent"
+                                     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:gravity="center"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="照片说明"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:paddingLeft="@dimen/el"
+                android:paddingRight="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/abg"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/el"
+                android:text="举个例子:"/>
+
+            <ImageView
+                android:id="@id/iv_example"
+                android:background="@drawable/rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/gt"/>
+
+            <View
+                android:background="@color/cw"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/el"
+                android:layout_marginRight="@dimen/el"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hn"
+                android:layout_margin="@dimen/el">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/e4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/el"
+                    android:text="体重:"/>
+
+                <EditText
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/e4"
+                    android:gravity="start|center"
+                    android:id="@id/et_current_weight"
+                    android:background="@drawable/hi"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:hint="填写你目前的体重"
+                    android:minEms="5"
+                    android:singleLine="true"
+                    android:maxLength="5"
+                    android:layout_weight="1.0"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textStyle="bold"
+                    android:textColor="@color/du"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公斤"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3.0">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/e4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/gt"
+                    android:text="照片:"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/gt">
+
+                        <ImageView
+                            android:id="@id/iv_whole"
+                            android:layout_width="fill_parent"
+                            android:layout_height="80.0dip"
+                            android:src="@drawable/qv"/>
+
+                        <ImageView
+                            android:layout_gravity="top|right|center"
+                            android:id="@id/iv_whole_delete"
+                            android:paddingLeft="@dimen/el"
+                            android:paddingBottom="@dimen/el"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pp"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/e4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正面全身照"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/gt">
+
+                        <ImageView
+                            android:id="@id/iv_weight"
+                            android:layout_width="fill_parent"
+                            android:layout_height="80.0dip"
+                            android:src="@drawable/qv"/>
+
+                        <ImageView
+                            android:layout_gravity="top|right|center"
+                            android:id="@id/iv_weight_delete"
+                            android:paddingLeft="@dimen/el"
+                            android:paddingBottom="@dimen/el"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pp"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/e4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="称重照"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <CheckBox
+                android:textColor="@color/e4"
+                android:id="@id/cb_sync_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/el"
+                android:checked="true"
+                android:text="@string/a7q"/>
+
+            <Button
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:id="@id/btn_commit"
+                android:background="@drawable/i9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/el"
+                android:layout_marginRight="@dimen/el"
+                android:text="@string/a7f"/>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/du"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/el"
+                android:text="@string/jx"/>
+        </LinearLayout>
+    </ScrollView>
+</com.boohee.myview.CustomInsetLayout>

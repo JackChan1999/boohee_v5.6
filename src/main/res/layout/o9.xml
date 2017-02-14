@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_analysis_score"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="260.0dip"
+        android:layout_marginTop="@dimen/el">
+
+        <com.boohee.widgets.CircularProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="210.0dip"
+            android:layout_height="210.0dip"
+            android:layout_centerInParent="true"
+            app:cpbIsCapRound="true"
+            app:cpbStrokeWidth="18.0dip"/>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="210.0dip"
+            android:layout_height="210.0dip"
+            android:layout_centerInParent="true">
+
+            <com.boohee.myview.risenumber.RiseNumberTextView
+                android:textSize="72.0sp"
+                android:textColor="@color/he"
+                android:id="@id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="得分"
+                android:layout_below="@id/tv_score"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@id/iv_calory_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/hm"
+                android:layout_toLeftOf="@id/tv_calory_status"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:id="@id/tv_calory_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热量摄入合适"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@id/iv_diet_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/hm"
+                    android:layout_toLeftOf="@id/tv_diet_status"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/du"
+                    android:id="@id/tv_diet_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三餐比例合理"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@id/iv_nuturition_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/hm"
+                    android:layout_toLeftOf="@id/tv_nuturition_status"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/du"
+                    android:id="@id/tv_nuturition_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三大营养比例合理"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+    </LinearLayout>
+</LinearLayout>

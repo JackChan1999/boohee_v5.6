@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/n3"
+        android:textColor="@color/e4"
+        android:textSize="@dimen/dn"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@id/ll_male"
+            android:layout_width="150.0dip"
+            android:layout_height="70.0dip"
+            android:background="@drawable/eg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@id/iv_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/a6p"/>
+
+            <TextView
+                android:id="@id/tv_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/rl"
+                android:textSize="@dimen/dn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_female"
+            android:layout_width="150.0dip"
+            android:layout_height="70.0dip"
+            android:background="@drawable/ei"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@id/iv_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/a6n"/>
+
+            <TextView
+                android:id="@id/tv_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/lm"
+                android:textSize="@dimen/dn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/o6"
+        android:textColor="@color/e4"
+        android:textSize="@dimen/dn"/>
+
+    <TextView
+        android:id="@id/tv_height"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gt"
+        android:gravity="center"
+        android:textColor="@color/hb"
+        android:textSize="@dimen/dm"/>
+
+    <com.boohee.myview.BooheeRulerView
+        android:id="@id/rv_height"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"/>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.5"/>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        style="@style/RippleLayout"
+        android:layout_margin="@dimen/el">
+
+        <TextView
+            android:id="@id/btn_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cx"
+            android:gravity="center"
+            android:padding="@dimen/el"
+            android:text="@string/x4"
+            android:textColor="@color/ju"
+            android:textSize="@dimen/em"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

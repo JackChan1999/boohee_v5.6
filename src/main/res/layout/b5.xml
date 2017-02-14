@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@id/view_content"
+        android:background="@color/ju"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@id/tv_date"
+                    android:paddingTop="@dimen/dg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dg"
+                    android:layout_alignParentTop="true"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_date">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@id/view_metabolism"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dg">
+
+                        <RelativeLayout
+                            android:background="@drawable/c5"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/dh"
+                            android:layout_weight="1.0">
+
+                            <TextView
+                                android:textSize="24.0sp"
+                                android:textStyle="bold"
+                                android:id="@id/tv_plan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"/>
+
+                            <TextView
+                                android:textSize="12.0sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/di"
+                                android:text="预算"
+                                android:layout_below="@id/tv_plan"
+                                android:layout_centerHorizontal="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@drawable/c5"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/dh"
+                            android:layout_marginRight="@dimen/dh"
+                            android:layout_weight="1.0">
+
+                            <TextView
+                                android:textSize="24.0sp"
+                                android:textStyle="bold"
+                                android:id="@id/tv_eating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"/>
+
+                            <TextView
+                                android:textSize="12.0sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/di"
+                                android:text="摄入"
+                                android:layout_below="@id/tv_eating"
+                                android:layout_centerHorizontal="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@drawable/c5"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="@dimen/dh"
+                            android:layout_weight="1.0">
+
+                            <TextView
+                                android:textSize="24.0sp"
+                                android:textStyle="bold"
+                                android:id="@id/tv_activity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"/>
+
+                            <TextView
+                                android:textSize="12.0sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/di"
+                                android:text="消耗"
+                                android:layout_below="@id/tv_activity"
+                                android:layout_centerHorizontal="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@id/avatar"
+                        android:layout_width="@dimen/ek"
+                        android:layout_height="@dimen/ej"
+                        android:src="@drawable/icon"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@id/view_slogan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dg"
+                    android:src="@drawable/icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View
+                android:background="@color/cw"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_margin="@dimen/dh"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/view_diet_eat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/cw"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_margin="@dimen/dh"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/view_diet_nuturitions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#cc000000"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textSize="12.0sp"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/bt_share_boohee"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="薄荷伙伴"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:background="@color/ju"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/dh"
+            android:layout_marginBottom="@dimen/dh"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textSize="12.0sp"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/bt_share_sns"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="朋友圈／微信／微博"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+</LinearLayout>

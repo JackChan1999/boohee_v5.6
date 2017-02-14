@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/iv_nice_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:src="@drawable/a5c"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/bt"
+            android:id="@id/tv_nice_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d4"
+            android:text="你是否年满18周岁？"
+            android:layout_toRightOf="@id/iv_nice_gender"/>
+
+        <com.boohee.myview.NiceCheckBox
+            android:id="@id/gender_check_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_below="@id/tv_nice_gender"/>
+    </RelativeLayout>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/iv_nice_pregnant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:src="@drawable/a5g"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/bt"
+            android:id="@id/tv_nice_pregnant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d4"
+            android:text="您是否处于计划怀孕3个月内/孕期/产后8周内？"
+            android:layout_toRightOf="@id/iv_nice_pregnant"/>
+
+        <com.boohee.myview.NiceCheckBox
+            android:id="@id/pregnant_check_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_below="@id/tv_nice_pregnant"/>
+    </RelativeLayout>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/iv_nice_disease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:src="@drawable/a5b"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/bt"
+            android:id="@id/tv_nice_disease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d4"
+            android:text="您是否有心脏病史/精神病史/严重胃肠道疾病/肝脏病史/其他影响正常饮食、运动的慢病？"
+            android:layout_toRightOf="@id/iv_nice_disease"/>
+
+        <com.boohee.myview.NiceCheckBox
+            android:id="@id/disease_check_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_below="@id/tv_nice_disease"/>
+    </RelativeLayout>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/iv_nice_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:src="@drawable/a5a"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/bt"
+            android:id="@id/tv_nice_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d4"
+            android:text="您是否有明显的饮食紊乱？(如：严重暴食催吐，厌食，贪食症)"
+            android:layout_toRightOf="@id/iv_nice_diet"/>
+
+        <com.boohee.myview.NiceCheckBox
+            android:id="@id/diet_check_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_below="@id/tv_nice_diet"/>
+    </RelativeLayout>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+</LinearLayout>

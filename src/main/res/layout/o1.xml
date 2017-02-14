@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/main_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/el">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:background="@color/ju"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_divide_line"/>
+
+                <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/rl_avatar_image"
+                        style="@style/UserProfileStyleNoBg">
+
+                        <TextView
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/ce"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@id/avatar_image"
+                                android:layout_width="40.0dip"
+                                android:layout_height="40.0dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/gt"
+                                android:src="@drawable/aa0"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/rl_nickname"
+                        style="@style/UserProfileStyleNoBg">
+
+                        <TextView
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/xl"/>
+
+                        <TextView
+                            android:id="@id/txt_nickname"
+                            style="@style/UserProfileTextValueStyle"/>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/rl_persional_statement"
+                        style="@style/UserProfileStyleNoBg">
+
+                        <TextView
+                            android:id="@id/txt_title_persional_statement"
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/za"/>
+
+                        <TextView
+                            android:id="@id/txt_persional_statement"
+                            style="@style/UserProfileTextValueStyle"
+                            android:layout_marginLeft="20.0dip"
+                            android:layout_toRightOf="@id/txt_title_persional_statement"/>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/cellphone_layout"
+                        style="@style/UserProfileStyleNoBg">
+
+                        <TextView
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/f6"/>
+
+                        <TextView
+                            android:id="@id/cellphone_text"
+                            style="@style/UserProfileTextValueStyle"/>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <include layout="@layout/view_divide_line"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:background="@color/ju"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_divide_line"/>
+
+                <RelativeLayout
+                    android:id="@id/gender_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/el">
+
+                    <TextView
+                        style="@style/UserProfileTextNameStyle"
+                        android:text="@string/n3"/>
+
+                    <TextView
+                        android:id="@id/gender_text"
+                        style="@style/UserProfileTextValueStyle"/>
+                </RelativeLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <RelativeLayout
+                    android:id="@id/birthday_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/el">
+
+                    <TextView
+                        style="@style/UserProfileTextNameStyle"
+                        android:text="@string/d3"/>
+
+                    <TextView
+                        android:id="@id/birthday_text"
+                        style="@style/UserProfileTextValueStyle"/>
+                </RelativeLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <RelativeLayout
+                    android:id="@id/height_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/el">
+
+                    <TextView
+                        style="@style/UserProfileTextNameStyle"
+                        android:text="@string/o6"/>
+
+                    <TextView
+                        android:id="@id/height_text"
+                        style="@style/UserProfileTextValueStyle"/>
+                </RelativeLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <RelativeLayout
+                    android:id="@id/weight_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/el">
+
+                    <TextView
+                        style="@style/UserProfileTextNameStyle"
+                        android:text="@string/cv"/>
+
+                    <TextView
+                        android:id="@id/weight_text"
+                        style="@style/UserProfileTextValueStyle"/>
+                </RelativeLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <RelativeLayout
+                    android:id="@id/weight_mode_switch_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/el">
+
+                    <TextView
+                        style="@style/UserProfileTextNameStyle"
+                        android:text="@string/adj"/>
+
+                    <TextView
+                        android:id="@id/weight_mode_switch"
+                        style="@style/UserProfileTextValueStyle"/>
+                </RelativeLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <LinearLayout
+                    android:id="@id/ll_target"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@id/target_weight_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/el">
+
+                        <TextView
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/a81"/>
+
+                        <TextView
+                            android:id="@id/target_weight_text"
+                            style="@style/UserProfileTextValueStyle"/>
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_divide_line"/>
+
+                    <RelativeLayout
+                        android:id="@id/target_date_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/el">
+
+                        <TextView
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/a7y"/>
+
+                        <TextView
+                            android:id="@id/target_date_text"
+                            style="@style/UserProfileTextValueStyle"/>
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_divide_line"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.boohee.widgets.BooheeRippleLayout
+                style="@style/RippleLayout"
+                android:background="@color/ju">
+
+                <TextView
+                    android:id="@id/btn_init"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:padding="@dimen/el"
+                    android:text="重新评测 > "
+                    android:textColor="@color/he"
+                    android:textSize="@dimen/dm"/>
+            </com.boohee.widgets.BooheeRippleLayout>
+
+            <include
+                layout="@layout/view_divide_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginBottom="@dimen/el"/>
+
+            <LinearLayout
+                android:id="@id/ll_mc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ju"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_divide_line"/>
+
+                <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/mc_day_layout"
+                        style="@style/UserProfileStyleNoBg">
+
+                        <TextView
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/mc_days"/>
+
+                        <TextView
+                            android:id="@id/mc_day_text"
+                            style="@style/UserProfileTextValueStyle"/>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <include layout="@layout/view_divide_line"/>
+
+                <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/mc_circle_layout"
+                        style="@style/UserProfileStyleNoBg">
+
+                        <TextView
+                            style="@style/UserProfileTextNameStyle"
+                            android:text="@string/mc_circle"/>
+
+                        <TextView
+                            android:id="@id/mc_circle_text"
+                            style="@style/UserProfileTextValueStyle"/>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <include layout="@layout/view_divide_line"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

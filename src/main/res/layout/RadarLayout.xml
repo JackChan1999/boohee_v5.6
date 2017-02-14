@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="320.0dip">
+
+    <com.boohee.one.radar.RadarView
+        android:id="@id/razor"
+        android:layout_width="260.0dip"
+        android:layout_height="260.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <include
+        android:id="@id/empty_radar"
+        layout="@layout/view_razor_empty"
+        android:layout_width="200.0dip"
+        android:layout_height="36.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170.0dip"/>
+
+    <TextView
+        android:id="@id/tag_nutrition"
+        style="@style/RazorTag"
+        android:layout_above="@id/razor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12.0dip"
+        android:text="营养"/>
+
+    <TextView
+        android:id="@id/tag_social"
+        style="@style/RazorTag"
+        android:layout_alignTop="@id/razor"
+        android:layout_marginRight="-8.0dip"
+        android:layout_marginTop="48.0dip"
+        android:layout_toLeftOf="@id/razor"
+        android:text="社交"/>
+
+    <TextView
+        android:id="@id/tag_mind"
+        style="@style/RazorTag"
+        android:layout_alignTop="@id/tag_social"
+        android:layout_marginLeft="-12.0dip"
+        android:layout_toRightOf="@id/razor"
+        android:text="执行力"/>
+
+    <TextView
+        android:id="@id/tag_sport"
+        style="@style/RazorTag"
+        android:layout_alignBottom="@id/razor"
+        android:layout_alignLeft="@id/razor"
+        android:text="运动"/>
+
+    <TextView
+        android:id="@id/tag_balance"
+        style="@style/RazorTag"
+        android:layout_alignBottom="@id/razor"
+        android:layout_alignRight="@id/razor"
+        android:layout_marginRight="-8.0dip"
+        android:text="热平衡"/>
+
+    <TextView
+        android:id="@id/add_nutrition"
+        style="@style/RazorAdd"
+        android:layout_above="@id/tag_nutrition"
+        android:layout_alignLeft="@id/tag_nutrition"/>
+
+    <TextView
+        android:id="@id/add_social"
+        style="@style/RazorAdd"
+        android:layout_above="@id/tag_social"
+        android:layout_alignLeft="@id/tag_social"
+        android:layout_marginBottom="-48.0dip"/>
+
+    <TextView
+        android:id="@id/add_mind"
+        style="@style/RazorAdd"
+        android:layout_alignBottom="@id/add_social"
+        android:layout_alignLeft="@id/tag_mind"/>
+
+    <TextView
+        android:id="@id/add_sport"
+        style="@style/RazorAdd"
+        android:layout_above="@id/tag_sport"
+        android:layout_alignLeft="@id/tag_sport"/>
+
+    <TextView
+        android:id="@id/add_balance"
+        style="@style/RazorAdd"
+        android:layout_above="@id/tag_balance"
+        android:layout_alignLeft="@id/tag_balance"
+        android:layout_marginLeft="18.0dip"/>
+</RelativeLayout>

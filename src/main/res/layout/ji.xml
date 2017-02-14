@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bm"
+                android:padding="@dimen/dw"
+                android:paddingTop="@dimen/dv"
+                android:paddingBottom="@dimen/dv"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ds"
+                android:minHeight="@dimen/ds"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/civ_icon"
+        android:layout_width="@dimen/dp"
+        android:layout_height="@dimen/do"
+        android:layout_marginRight="@dimen/dt"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_content"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/iv_success"
+        android:layout_toRightOf="@id/civ_icon"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/du"
+            android:ellipsize="middle"
+            android:gravity="center_vertical"
+            android:id="@id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="12"
+            android:singleLine="true"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/du"
+            android:ellipsize="end"
+            android:id="@id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/iv_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

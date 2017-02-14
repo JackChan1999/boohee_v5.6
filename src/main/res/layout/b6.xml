@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@id/main"
+                android:background="@color/d5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_curve"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/week_view"/>
+
+        <ViewFlipper
+            android:id="@id/flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <GridView
+                android:gravity="center"
+                android:id="@id/calendar"
+                android:background="@color/cw"
+                android:visibility="visible"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="-0.00999999dip"
+                android:listSelector="@color/in"
+                android:cacheColorHint="@color/in"
+                android:verticalSpacing="1.0px"
+                android:numColumns="7"/>
+        </ViewFlipper>
+
+        <include layout="@layout/view_divide_line"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@id/rbtn_record_waist"
+                android:text="@string/ho"
+                style="@style/style_curve"/>
+
+            <RadioButton
+                android:id="@id/rbtn_record_brass"
+                android:text="@string/hj"
+                style="@style/style_curve"/>
+
+            <RadioButton
+                android:id="@id/rbtn_record_hip"
+                android:text="@string/hl"
+                style="@style/style_curve"/>
+
+            <RadioButton
+                android:id="@id/rbtn_record_arm"
+                android:text="@string/hi"
+                style="@style/style_curve"/>
+
+            <RadioButton
+                android:id="@id/rbtn_record_thigh"
+                android:text="@string/hn"
+                style="@style/style_curve"/>
+
+            <RadioButton
+                android:id="@id/rbtn_record_shank"
+                android:text="@string/hm"
+                style="@style/style_curve"/>
+        </RadioGroup>
+    </HorizontalScrollView>
+</RelativeLayout>

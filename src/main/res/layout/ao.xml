@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机型信息 : "/>
+
+            <TextView
+                android:id="@id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络状态 : "/>
+
+            <TextView
+                android:id="@id/tv_net_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP信息 : "/>
+
+            <TextView
+                android:id="@id/tv_ip_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地DNS解析 : "/>
+
+            <TextView
+                android:id="@id/tv_dns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络环境"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/rg_environment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dh">
+
+                <RadioButton
+                    android:id="@id/rb_qa"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="QA"
+                    android:layout_weight="1.0"/>
+
+                <RadioButton
+                    android:id="@id/rb_rc"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="RC"
+                    android:layout_weight="1.0"/>
+
+                <RadioButton
+                    android:id="@id/rb_pro"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Production"
+                    android:layout_weight="1.0"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:padding="@dimen/dh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP直连"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@id/cb_ip_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/tv_connect_ips"
+            android:padding="@dimen/dh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/view_divide_line"/>
+    </LinearLayout>
+</ScrollView>

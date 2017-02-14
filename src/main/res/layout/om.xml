@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/il"
+        android:gravity="center"
+        android:id="@id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="120.0dip"
+        android:text=""
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@id/rl_left"
+        android:layout_width="@dimen/hn"
+        android:layout_height="@dimen/hn"
+        android:layout_toLeftOf="@id/txt_date"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:background="@drawable/a1t"
+            android:layout_width="8.0dip"
+            android:layout_height="15.0dip"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/rl_right"
+        android:layout_width="@dimen/hn"
+        android:layout_height="@dimen/hn"
+        android:layout_toRightOf="@id/txt_date"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@id/txt_right"
+            android:background="@drawable/a1w"
+            android:padding="@dimen/hn"
+            android:layout_width="8.0dip"
+            android:layout_height="15.0dip"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

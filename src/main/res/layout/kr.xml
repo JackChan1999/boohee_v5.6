@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/fh"
+                android:clickable="true"
+                style="@style/MQMatchMatch"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/title_rl"
+        android:background="@drawable/tr"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/g9"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@id/back_rl"
+            android:paddingLeft="@dimen/g0"
+            android:paddingRight="@dimen/g0"
+            style="@style/MQWrapMatch">
+
+            <ImageView
+                android:id="@id/back_iv"
+                android:layout_marginRight="@dimen/fx"
+                android:src="@drawable/us"
+                android:layout_centerVertical="true"
+                style="@style/MQWrapMatch"/>
+
+            <TextView
+                android:textSize="@dimen/g_"
+                android:textColor="@color/fj"
+                android:id="@id/back_tv"
+                android:text="@string/uo"
+                android:layout_toRightOf="@id/back_iv"
+                android:layout_centerVertical="true"
+                style="@style/MQWrapWrap"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="@dimen/ga"
+            android:textColor="@color/fj"
+            android:gravity="center"
+            android:id="@id/title_tv"
+            android:maxWidth="175.0dip"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/fx"
+            android:layout_centerHorizontal="true"
+            style="@style/MQWrapMatch"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/chat_body_rl"
+        android:background="@color/fh"
+        android:layout_above="@id/chat_foot_ll"
+        android:layout_below="@id/title_rl"
+        style="@style/MQMatchMatch">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@id/swipe_refresh_layout"
+            style="@style/MQMatchMatch">
+
+            <ListView
+                android:id="@id/messages_lv"
+                android:background="@color/fh"
+                android:listSelector="@android:color/transparent"
+                android:transcriptMode="normal"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:layout_below="@id/title_tip_tv"
+                style="@style/MQMatchMatch"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/chat_foot_ll"
+        android:background="@drawable/abj"
+        android:minHeight="92.0dip"
+        android:layout_alignParentBottom="true"
+        style="@style/MQMatchWrap.Vertical">
+
+        <EditText
+            android:textSize="@dimen/g8"
+            android:textColor="@color/fn"
+            android:id="@id/input_et"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:layout_marginLeft="@dimen/g1"
+            android:layout_marginTop="@dimen/fz"
+            android:layout_marginRight="@dimen/g1"
+            android:minHeight="40.0dip"
+            android:hint="@string/vz"
+            android:maxLines="5"
+            android:layout_centerVertical="true"
+            android:textCursorDrawable="@drawable/gi"
+            style="@style/MQMatchWrap"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <ImageButton
+                android:id="@id/send_text_btn"
+                android:background="@drawable/gp"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="22.0dip"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/acc"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/send_text_btn">
+
+                <RelativeLayout
+                    android:id="@id/emoji_select_btn"
+                    android:layout_width="48.0dip"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@id/emoji_select_img"
+                        android:layout_width="@dimen/g3"
+                        android:layout_height="@dimen/g3"
+                        android:src="@drawable/aby"
+                        android:layout_centerInParent="true"/>
+
+                    <View
+                        android:id="@id/emoji_select_indicator"
+                        android:background="@color/g_"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="4.0dip"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/photo_select_btn"
+                    android:layout_width="48.0dip"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@id/photo_select_iv"
+                        android:layout_width="@dimen/g3"
+                        android:layout_height="@dimen/g3"
+                        android:src="@drawable/g8"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/camera_select_btn"
+                    android:layout_width="48.0dip"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@id/camera_select_iv"
+                        android:layout_width="@dimen/g3"
+                        android:layout_height="@dimen/g3"
+                        android:src="@drawable/g6"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/mic_select_btn"
+                    android:layout_width="48.0dip"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@id/conversation_voice_img"
+                        android:layout_width="@dimen/g3"
+                        android:layout_height="@dimen/g3"
+                        android:src="@drawable/aca"
+                        android:layout_centerInParent="true"/>
+
+                    <View
+                        android:id="@id/conversation_voice_indicator"
+                        android:background="@color/g_"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="4.0dip"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/evaluate_select_btn"
+                    android:layout_width="48.0dip"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@id/evaluate_select_iv"
+                        android:layout_width="@dimen/g3"
+                        android:layout_height="@dimen/g3"
+                        android:src="@drawable/g7"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.meiqia.meiqiasdk.widget.MQCustomKeyboardLayout
+            android:id="@id/customKeyboardLayout"
+            style="@style/MQMatchWrap"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/g1"
+        android:layout_centerInParent="true"
+        style="?android:progressBarStyle"/>
+</RelativeLayout>

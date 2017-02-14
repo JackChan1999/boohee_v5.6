@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50.0dip">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_curve"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/week_view"/>
+
+            <ViewFlipper
+                android:id="@id/flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.boohee.widgets.NoScrollGridView
+                    android:gravity="center"
+                    android:id="@id/calendar"
+                    android:background="@color/cw"
+                    android:visibility="visible"
+                    android:scrollbars="none"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@color/in"
+                    android:cacheColorHint="@color/in"
+                    android:verticalSpacing="1.0px"
+                    android:numColumns="7"/>
+            </ViewFlipper>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/el"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <RelativeLayout
+                android:id="@id/rl_scale"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/e4"
+                    android:id="@id/tv_scale_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/el"
+                    android:layout_marginTop="@dimen/el"/>
+
+                <TextView
+                    android:textColor="@color/du"
+                    android:id="@id/tv_scale_hint"
+                    android:paddingBottom="@dimen/el"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:layout_below="@id/tv_scale_name"
+                    android:layout_alignLeft="@id/tv_scale_name"/>
+
+                <TextView
+                    android:textColor="@color/hb"
+                    android:id="@id/tv_scale_go"
+                    android:background="@drawable/ca"
+                    android:paddingLeft="@dimen/gt"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="@dimen/gt"
+                    android:paddingBottom="4.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/el"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/view_divide_line"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/GlobalRippleLayout">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/ll_weight_curve"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/gn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体重曲线"/>
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/du"
+                    android:id="@id/tv_weight_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:background="@color/cw"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/gt"
+            android:layout_marginBottom="@dimen/gt"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/GlobalRippleLayout">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/ll_status"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/gn"
+                    android:id="@id/tv_status_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的状态"/>
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/du"
+                    android:id="@id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:background="@color/cw"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/gt"
+            android:layout_marginBottom="@dimen/gt"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/GlobalRippleLayout">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/ll_weight_photos"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/gn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体重相册"/>
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/du"
+                    android:id="@id/tv_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+</FrameLayout>

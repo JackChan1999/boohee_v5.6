@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/a_x"
+             android:layout_width="80.0dip"
+             android:layout_height="80.0dip"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/js"
+            android:gravity="center"
+            android:id="@id/txt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/eg"
+            android:textColor="@color/du"
+            android:gravity="center"
+            android:id="@id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

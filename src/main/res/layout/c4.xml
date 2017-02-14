@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+             android:background="@color/c5"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <me.nereo.multi_image_selector.view.ViewPagerFixed
+        android:id="@id/vp_multi_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/c5"
+        android:padding="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/en"
+            android:textColor="@color/j"
+            android:id="@id/tv_photo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/ll_select"
+            android:padding="@dimen/hm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/checkmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gt"
+                android:src="@drawable/ad2"/>
+
+            <TextView
+                android:textSize="@dimen/en"
+                android:textColor="@color/j"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a3v"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_gravity="top"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:actionBarSize"
+        layout="@layout/cmp_customer_actionbar"/>
+</FrameLayout>

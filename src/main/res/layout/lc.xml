@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+              android:id="@id/ll_diet_sport_nav"
+              android:background="#ff554743"
+              android:layout_width="fill_parent"
+              android:layout_height="55.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/ll_nav_breakfast"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wt"
+            android:drawableTop="@drawable/a6_"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/ll_nav_lunch"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wv"
+            android:drawableTop="@drawable/a6c"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/ll_nav_dinner"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wu"
+            android:drawableTop="@drawable/a6a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/ll_nav_snacks"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ww"
+            android:drawableTop="@drawable/a6b"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/ll_nav_sport"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wx"
+            android:drawableTop="@drawable/a6d"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#fffefefe"
+            android:padding="@dimen/gk"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/gk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:text="@string/e3"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/iv_icon"
+            android:layout_width="@dimen/bh"
+            android:layout_height="@dimen/bh"
+            android:layout_marginTop="@dimen/bj"
+            android:src="@drawable/qu"/>
+
+        <TextView
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:text="@string/ee"/>
+
+        <EditText
+            android:textSize="@dimen/bf"
+            android:gravity="center"
+            android:id="@id/et_name"
+            android:background="@drawable/hn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/be"
+            android:layout_marginTop="@dimen/bj"
+            android:hint="@string/ef"
+            android:maxLines="1"
+            android:maxLength="8"/>
+
+        <TextView
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:text="@string/e1"/>
+
+        <EditText
+            android:textSize="@dimen/bf"
+            android:gravity="center_horizontal"
+            android:id="@id/et_experience"
+            android:background="@drawable/hn"
+            android:padding="@dimen/dw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bj"
+            android:hint="@string/e2"
+            android:maxLines="6"
+            android:minLines="6"
+            android:maxLength="200"/>
+
+        <TextView
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:text="@string/e_"/>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@id/rg_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bj">
+
+            <RadioButton
+                android:textSize="@dimen/bk"
+                android:textColor="@color/i"
+                android:gravity="center"
+                android:id="@id/rb_20"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/eb"
+                android:layout_weight="1.0"/>
+
+            <RadioButton
+                android:textSize="@dimen/bk"
+                android:gravity="center"
+                android:id="@id/rb_50"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gk"
+                android:checked="true"
+                android:button="@null"
+                android:text="@string/ec"
+                android:layout_weight="1.0"/>
+
+            <RadioButton
+                android:textSize="@dimen/bk"
+                android:gravity="center"
+                android:id="@id/rb_70"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gk"
+                android:button="@null"
+                android:text="@string/ed"
+                android:layout_weight="1.0"/>
+
+            <RadioButton
+                android:textSize="@dimen/bk"
+                android:gravity="center"
+                android:id="@id/rb_100"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gk"
+                android:button="@null"
+                android:text="@string/ea"
+                android:layout_weight="1.0"/>
+        </RadioGroup>
+
+        <TextView
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:text="@string/e7"/>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@id/rg_model"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bj">
+
+            <RadioButton
+                android:gravity="center"
+                android:id="@id/rb_basic"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:button="@null"
+                android:text="@string/e9"
+                android:layout_weight="1.0"/>
+
+            <RadioButton
+                android:gravity="center"
+                android:id="@id/rb_advanced"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gk"
+                android:button="@null"
+                android:text="@string/e8"
+                android:layout_weight="1.0"/>
+        </RadioGroup>
+
+        <TextView
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:text="@string/e4"/>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@id/rg_isjoin"
+            android:padding="@dimen/dw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bj">
+
+            <RadioButton
+                android:gravity="center"
+                android:id="@id/rb_join_no"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gk"
+                android:checked="true"
+                android:button="@null"
+                android:text="@string/e6"
+                android:layout_weight="1.0"/>
+
+            <RadioButton
+                android:gravity="center"
+                android:id="@id/rb_join_yes"
+                android:background="@drawable/bj"
+                android:padding="@dimen/dv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/e5"
+                android:layout_weight="1.0"/>
+        </RadioGroup>
+
+        <TextView
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:text="@string/dz"/>
+
+        <EditText
+            android:textSize="@dimen/bf"
+            android:gravity="center"
+            android:id="@id/et_contact"
+            android:background="@drawable/hn"
+            android:padding="@dimen/dw"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/be"
+            android:layout_marginTop="@dimen/bj"
+            android:hint="@string/e0"
+            android:lines="1"/>
+
+        <Button
+            android:textSize="@dimen/bg"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/bt_submit"
+            android:background="@drawable/da"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bi"
+            android:layout_marginBottom="@dimen/bi"
+            android:text="@string/eg"/>
+    </LinearLayout>
+</ScrollView>

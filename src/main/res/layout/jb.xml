@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:paddingLeft="@dimen/gl"
+              android:paddingRight="@dimen/gl"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/cy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gl"
+        android:layout_marginBottom="@dimen/gl">
+
+        <com.huewu.pla.lib.ScaleImageView
+            android:id="@id/iv_story"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/ee"
+            android:textColor="@color/e4"
+            android:gravity="left"
+            android:id="@id/tv_title"
+            android:padding="@dimen/gl"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

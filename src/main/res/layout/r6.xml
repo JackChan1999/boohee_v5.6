@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ax"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.one.player.PureVideoView
+        android:layout_gravity="center"
+        android:id="@id/video_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:keepScreenOn="true"/>
+
+    <com.boohee.one.player.MediaControllerView
+        android:layout_gravity="bottom"
+        android:id="@id/controller"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@id/cover"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@color/io"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:id="@id/mask"
+        android:background="@color/io"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/to_play"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:src="@drawable/a61"/>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@id/loading"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:paddingLeft="@dimen/b4"
+              android:paddingTop="@dimen/b5"
+              android:paddingRight="@dimen/b4"
+              android:paddingBottom="@dimen/b5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:background="@drawable/abg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d7"/>
+
+    <EditText
+        android:textSize="16.0dip"
+        android:textColor="@color/c4"
+        android:textColorHint="@color/dv"
+        android:gravity="center_vertical"
+        android:id="@id/edit_cling"
+        android:background="@color/in"
+        android:padding="@dimen/el"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"
+        android:hint="输入你的Cling账号"
+        android:singleLine="true"/>
+
+    <View
+        android:id="@id/divider"
+        android:visibility="gone"
+        style="@style/SixteenHorizontalDivider"/>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:layout_marginTop="@dimen/el"
+        style="@style/RippleLayout">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/btn_bind"
+            android:background="@drawable/da"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

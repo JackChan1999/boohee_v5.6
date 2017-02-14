@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/ju"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/view_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/vp_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/view_line_indicator"/>
+    </FrameLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <include layout="@layout/nav_shop_main"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:id="@id/ll_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginTop="@dimen/h1"
+        android:background="@color/ju"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:background="@color/ju"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:background="@color/ju"/>
+
+        <TextView
+            android:id="@id/tv_shop_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/h1"
+            android:layout_marginRight="@dimen/h1"
+            android:textColor="@color/e4"
+            android:textSize="16.0sp"/>
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:background="@color/ju"/>
+    </LinearLayout>
+</LinearLayout>

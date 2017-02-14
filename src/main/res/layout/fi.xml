@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/timeline_view"/>
+
+    <android.support.design.widget.FloatingActionButton android:id="@id/fab_button"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginRight="@dimen/el"
+                                                        android:layout_marginBottom="@dimen/el"
+                                                        android:src="@drawable/a1h"
+                                                        android:layout_above="@id/rl_msg"
+                                                        android:layout_alignParentRight="true"
+                                                        app:elevation="2.0dip"
+                                                        app:backgroundTint="@color/he"
+                                                        app:fabSize="normal"
+                                                        app:pressedTranslationZ="8.0dip"
+                                                        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_above="@id/rl_msg"
+        layout="@layout/view_divide_line"/>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:id="@id/rl_msg"
+        android:layout_alignParentBottom="true"
+        style="@style/RippleLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_msg"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:id="@id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/el"
+                android:maxLines="1"
+                android:layout_weight="1.0"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/cx"
+                android:paddingTop="5.0dip"
+                android:paddingBottom="5.0dip"
+                android:layout_width="56.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/el"
+                android:text="go"/>
+        </LinearLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+</RelativeLayout>

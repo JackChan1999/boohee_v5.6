@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/a1e"
+        android:id="@id/action_more"
+        android:title="@string/at"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@id/action_directory"
+                android:visible="false"
+                android:title="@string/je"
+                app:showAsAction="always"/>
+            <item
+                android:id="@id/action_share"
+                android:visible="false"
+                android:title="@string/a4l"
+                app:showAsAction="always"/>
+            <item
+                android:id="@id/add_favorite"
+                android:visible="true"
+                android:title="@string/b3"
+                app:showAsAction="always"/>
+            <item
+                android:id="@id/delete_favorite"
+                android:visible="false"
+                android:title="@string/i7"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="u">440.0dip</dimen>
+    <item type="dimen" name="y">60.000004%</item>
+    <item type="dimen" name="z">90.0%</item>
+    <item type="dimen" name="a0">60.000004%</item>
+    <item type="dimen" name="a1">90.0%</item>
+    <item type="dimen" name="a3">55.000008%</item>
+    <item type="dimen" name="a4">79.99999%</item>
+    <dimen name="ai">192.0dip</dimen>
+</resources>

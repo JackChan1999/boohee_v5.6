@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/view_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:src="@drawable/q2"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:textSize="@dimen/dm"
+        android:textColor="@color/ju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dw"
+        android:src="@drawable/r4"
+        android:text="搜索食物、文章、话题"
+        android:layout_below="@id/view_top"/>
+</RelativeLayout>

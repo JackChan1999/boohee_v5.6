@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/eo"
+        android:textColor="@color/ax"
+        android:gravity="center"
+        android:id="@id/user_property_text"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <RadioGroup
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/switch_bottom"
+        android:background="@color/ju"
+        android:paddingLeft="50.0dip"
+        android:paddingRight="50.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gd">
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@id/yes"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:button="@drawable/fn"
+            android:text="@string/ae5"
+            android:layout_weight="1.0"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@id/no"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:button="@drawable/fn"
+            android:text="@string/xm"
+            android:layout_weight="1.0"/>
+    </RadioGroup>
+
+    <TextView
+        android:gravity="center"
+        android:id="@id/hint"
+        android:background="@color/ju"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gd"
+        android:text="@string/mc_last_go"
+        style="@style/MainText"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@id/picker_layout"
+        android:background="@color/ju"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="209.0dip"/>
+</LinearLayout>

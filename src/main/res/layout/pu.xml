@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                       android:layout_height="wrap_content"
+                                       style="@style/GlobalRippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/ll_calory"
+        android:background="@color/hb"
+        android:paddingTop="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/jv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/el"
+                    android:text="摄入"/>
+
+                <TextView
+                    android:textSize="@dimen/dm"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="bottom"
+                android:background="@color/jv"
+                android:layout_width="1.0px"
+                android:layout_height="30.0dip"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_eat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gt"
+                    android:text="还可以吃/千卡"/>
+
+                <com.boohee.myview.risenumber.RiseNumberTextView
+                    android:textSize="30.0sp"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_can_eat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="bottom"
+                android:background="@color/jv"
+                android:layout_width="1.0px"
+                android:layout_height="30.0dip"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/jv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/el"
+                    android:text="运动"/>
+
+                <TextView
+                    android:textSize="@dimen/dm"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/jv"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/tv_status"
+            android:padding="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摄入未达标"
+            android:drawableRight="@drawable/a51"
+            android:drawablePadding="5.0dip"/>
+    </LinearLayout>
+</com.boohee.widgets.BooheeRippleLayout>

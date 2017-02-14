@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@id/calendarView"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:mcv_selectionColor="@color/hx"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ed"
+            android:layout_marginTop="@dimen/el"
+            android:layout_marginRight="@dimen/ed"
+            android:layout_marginBottom="@dimen/el">
+
+            <TextView
+                android:id="@id/tv_peroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生理期"
+                android:drawableLeft="@drawable/qq"
+                android:drawablePadding="@dimen/gt"
+                android:layout_weight="1.0"/>
+
+            <TextView
+                android:id="@id/tv_predict_peroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预测生理期"
+                android:drawableLeft="@drawable/qr"
+                android:drawablePadding="@dimen/gt"
+                android:layout_weight="1.0"/>
+
+            <TextView
+                android:id="@id/tv_egg_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排卵期"
+                android:drawableLeft="@drawable/qs"
+                android:drawablePadding="@dimen/gt"
+                android:layout_weight="1.0"/>
+
+            <TextView
+                android:id="@id/tv_egg_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排卵日"
+                android:drawableLeft="@drawable/qt"
+                android:drawablePadding="@dimen/gt"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

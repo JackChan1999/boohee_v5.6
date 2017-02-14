@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/iv_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="20.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingBottom="20.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:id="@id/ll_lesson_time"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/eg"
+                android:textColor="@color/ju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动作组数"
+                android:singleLine="true"/>
+
+            <TextView
+                android:textSize="@dimen/fo"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_lesson_number"
+                android:background="@drawable/d0"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:id="@id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程消耗/千卡"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@id/iv_question"
+                android:padding="3.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/re"
+                android:scaleType="center"
+                android:layout_toRightOf="@id/tv_title"/>
+
+            <TextView
+                android:textSize="55.0dip"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_lesson_calory"
+                android:background="@drawable/d0"
+                android:layout_width="107.0dip"
+                android:layout_height="107.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:text="999"
+                android:singleLine="true"
+                android:maxLength="3"
+                android:layout_below="@id/tv_title"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:id="@id/ll_lesson_number"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/eg"
+                android:textColor="@color/ju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a6e"
+                android:singleLine="true"/>
+
+            <TextView
+                android:textSize="@dimen/fo"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_lesson_time"
+                android:background="@drawable/d0"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

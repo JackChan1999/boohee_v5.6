@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root"
+                android:layout_width="225.0dip"
+                android:layout_height="56.0dip"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/mq_file_iv"
+        android:background="@drawable/ac1"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40.0dip"
+        android:layout_toRightOf="@id/mq_file_iv"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="@color/fj"
+            android:id="@id/mq_file_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:text="Title"
+            android:singleLine="true"/>
+
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="@color/g8"
+            android:id="@id/mq_file_sub_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SubTitle"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/mq_right_iv"
+        android:background="@drawable/abw"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <com.meiqia.meiqiasdk.widget.CircularProgressBar
+        android:id="@id/progressbar"
+        android:visibility="gone"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>

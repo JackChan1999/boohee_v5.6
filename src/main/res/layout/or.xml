@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/em"
+          android:textColor="@color/e4"
+          android:gravity="center"
+          android:id="@id/tv_total_calory"
+          android:layout_width="fill_parent"
+          android:layout_height="48.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android"/>

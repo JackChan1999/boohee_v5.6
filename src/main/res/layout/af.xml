@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/root_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ImageView
+        android:id="@id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/aag"/>
+</LinearLayout>

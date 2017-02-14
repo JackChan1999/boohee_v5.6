@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:paddingBottom="8.0dip"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:paddingTop="12.0dip"
+        android:paddingBottom="12.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/thumb_photo"
+            android:layout_width="75.0dip"
+            android:layout_height="75.0dip"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:minHeight="56.0dip"
+            android:maxLines="3"
+            android:layout_toRightOf="@id/thumb_photo"
+            android:layout_alignTop="@id/thumb_photo"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignLeft="@id/title"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/du"
+            android:id="@id/quantity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@id/price_value"
+            android:layout_alignBottom="@id/price_value"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/rl_ship"
+        android:paddingBottom="12.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/du"
+            android:id="@id/tv_unshipped"
+            android:paddingBottom="4.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/el"
+            android:text="@string/aas"
+            android:singleLine="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@id/tv_goods_return"
+            android:background="@drawable/c7"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_marginRight="@dimen/el"
+            android:text="退货"
+            android:minEms="4"
+            android:layout_toLeftOf="@id/tv_shipment_details"
+            android:layout_alignWithParentIfMissing="true"/>
+
+        <Button
+            android:textSize="@dimen/gy"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/tv_shipment_details"
+            android:background="@drawable/di"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_marginRight="@dimen/el"
+            android:text="@string/a4z"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

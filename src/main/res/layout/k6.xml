@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/userguide_recommand_userPhoto"
+        android:layout_width="45.0dip"
+        android:layout_height="45.0dip"
+        android:src="@drawable/aa0"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/b5"
+        android:id="@id/userguide_recommand_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:text="用户名称"
+        android:layout_toRightOf="@id/userguide_recommand_userPhoto"/>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/dv"
+        android:id="@id/userguide_recommand_userBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:text="BMI 23"
+        android:layout_toRightOf="@id/userguide_recommand_userPhoto"
+        android:layout_below="@id/userguide_recommand_userName"/>
+
+    <RadioButton
+        android:gravity="center_vertical"
+        android:id="@id/userguide_recommand_radioBtn"
+        android:background="@drawable/dv"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="40.0dip"
+        android:layout_height="48.0dip"
+        android:checked="true"
+        android:button="@null"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

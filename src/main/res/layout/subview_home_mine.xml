@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/dv">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/RippleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/view_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:paddingTop="@dimen/dw">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@id/iv_avatar"
+                android:layout_width="@dimen/ho"
+                android:layout_height="@dimen/ho"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dw"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/q3"
+                    android:text="编辑资料"
+                    android:textColor="@color/du"
+                    android:textSize="@dimen/fo"/>
+
+                <View
+                    android:layout_width="19.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/gt"
+                    android:background="@color/hb"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ju"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_post"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/el">
+
+                <TextView
+                    android:id="@id/tv_post_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/gy"/>
+
+                <TextView
+                    android:id="@id/tv_post_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="动态"
+                    android:textColor="@color/du"
+                    android:textSize="@dimen/gy"/>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_following"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/el"
+                android:paddingLeft="@dimen/el"
+                android:paddingRight="@dimen/el"
+                android:paddingTop="@dimen/el">
+
+                <TextView
+                    android:id="@id/tv_following_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/gy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="关注"
+                    android:textColor="@color/du"
+                    android:textSize="@dimen/gy"/>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_follower"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/el"
+                android:paddingLeft="@dimen/el"
+                android:paddingRight="@dimen/el"
+                android:paddingTop="@dimen/el">
+
+                <TextView
+                    android:id="@id/tv_follower_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/gy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="粉丝"
+                    android:textColor="@color/du"
+                    android:textSize="@dimen/gy"/>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@id/view_badge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/el"
+                android:paddingLeft="@dimen/el"
+                android:paddingRight="@dimen/el"
+                android:paddingTop="@dimen/el">
+
+                <TextView
+                    android:id="@id/tv_badges_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:textColor="@color/ju"
+                    android:textSize="@dimen/gy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="勋章"
+                    android:textColor="@color/ju"
+                    android:textSize="@dimen/gy"/>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <include
+        layout="@layout/view_divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginTop="@dimen/el"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:background="@color/ju"
+        android:orientation="horizontal">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_health_report"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8s"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/t_"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@id/view_report"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/a_p"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/gt"
+                        android:text="@string/ad6"
+                        android:textColor="@color/e4"
+                        android:textSize="@dimen/dn"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/iv_week_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:paddingLeft="50.0dip"
+                    android:src="@drawable/aac"/>
+            </RelativeLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_nice"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8y"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/tq"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:background="@color/ju"
+        android:orientation="horizontal">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_favorite"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8r"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/t5"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_food"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8x"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/t7"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_hardware"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8l"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/t9"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:background="@color/ju"
+        android:orientation="horizontal">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_diamond"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8q"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/t3"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_question"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8z"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/tr"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            style="@style/GlobalRippleLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/view_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a8p"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="@string/tx"
+                    android:textColor="@color/e4"
+                    android:textSize="@dimen/dn"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+</LinearLayout>

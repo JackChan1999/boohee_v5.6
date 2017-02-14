@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include
+            android:id="@id/view_item_code"
+            layout="@layout/subview_item_upload_state"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <include
+            android:id="@id/view_item_brand"
+            android:visibility="gone"
+            layout="@layout/subview_item_upload_state"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <include
+            android:id="@id/view_item_name"
+            layout="@layout/subview_item_upload_state"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <include
+            android:id="@id/view_item_alias"
+            android:visibility="gone"
+            layout="@layout/subview_item_upload_state"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <include
+            android:id="@id/view_item_time"
+            layout="@layout/subview_item_upload_state"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <include
+            android:id="@id/view_item_state"
+            layout="@layout/subview_item_upload_state"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <include
+            android:id="@id/view_item_state_message"
+            layout="@layout/subview_item_upload_state"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <include layout="@layout/subview_two_horizontal_imageview"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginRight="@dimen/el"
+        android:layout_marginBottom="@dimen/h1"
+        style="@style/GlobalRippleLayout">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@id/iv_category_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            style="@style/style_round_image"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View
+        android:id="@id/v_divider_line"
+        android:visibility="gone"
+        style="@style/HorizontalSectionDivider"/>
+</LinearLayout>

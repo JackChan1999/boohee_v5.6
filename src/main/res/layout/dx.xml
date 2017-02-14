@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_content"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:padding="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/a8"
+            android:gravity="center"
+            android:id="@id/txt_orientation"
+            android:paddingLeft="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转屏幕"
+            android:drawableLeft="@drawable/a6h"
+            android:drawablePadding="@dimen/hm"
+            android:layout_centerVertical="true"/>
+
+        <include layout="@layout/view_weight_tab_date"/>
+    </RelativeLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@id/linechart"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_centerInParent="true"/>
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/by"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/rl_nice_top"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dl"
+                android:textColor="@color/c4"
+                android:id="@id/tv_nice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="@dimen/dk"
+                android:textColor="@color/c4"
+                android:id="@id/tv_nice_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_below="@id/tv_nice_title"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:id="@id/rl_nice_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_below="@id/tv_nice_day">
+
+                <TextView
+                    android:textSize="@dimen/dl"
+                    android:textColor="@color/c4"
+                    android:id="@id/tv_nice_begin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/c4"
+                    android:id="@id/tv_nice_renew"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要续费"
+                    android:drawableRight="@drawable/a1r"
+                    android:drawablePadding="5.0dip"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:textSize="@dimen/dl"
+                    android:textColor="@color/c4"
+                    android:id="@id/tv_nice_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nice_renew"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@id/pb_nice_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_below="@id/rl_nice_time"
+                style="@style/NiceProgress_horizontal"/>
+
+            <View
+                android:layout_marginTop="@dimen/el"
+                android:layout_below="@id/pb_nice_progress"
+                style="@style/HorizontalWholeDivider"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/el"
+            android:paddingRight="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d4"
+                    android:layout_weight="1.0"
+                    style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/rl_nice_report"
+                        android:background="@color/gw"
+                        android:padding="@dimen/el"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70.0dip">
+
+                        <TextView
+                            android:textSize="@dimen/dm"
+                            android:textColor="@color/gx"
+                            android:id="@id/tv_nice_report_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="评测报告"
+                            android:layout_centerHorizontal="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/a4u"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d4"
+                    android:layout_weight="1.0"
+                    style="@style/RippleLayout">
+
+                    <RelativeLayout
+                        android:id="@id/rl_nice_plan"
+                        android:background="@color/gr"
+                        android:padding="@dimen/el"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70.0dip">
+
+                        <TextView
+                            android:textSize="@dimen/dm"
+                            android:textColor="@color/gs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="减重方案"
+                            android:layout_centerHorizontal="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/a4x"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                style="@style/RippleLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/ll_nice_adviser"
+                    android:background="@color/gy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90.0dip">
+
+                    <RelativeLayout
+                        android:paddingLeft="@dimen/el"
+                        android:paddingRight="@dimen/el"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:textSize="@dimen/dm"
+                                android:textColor="@color/h0"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="联系顾问"/>
+
+                            <TextView
+                                android:textSize="@dimen/dl"
+                                android:textColor="@color/gz"
+                                android:gravity="center"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@id/tv_adviser_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d4"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/a4t"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                style="@style/RippleLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/ll_nice_diet"
+                    android:background="@color/gy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90.0dip">
+
+                    <RelativeLayout
+                        android:paddingLeft="@dimen/el"
+                        android:paddingRight="@dimen/el"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:textSize="@dimen/dm"
+                                android:textColor="@color/h0"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="饮食指南"/>
+
+                            <TextView
+                                android:textSize="@dimen/dl"
+                                android:textColor="@color/gz"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d4"
+                                android:text="查指南吃出好身材"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/a4v"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                style="@style/RippleLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/ll_nice_sport"
+                    android:background="@color/gy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90.0dip">
+
+                    <RelativeLayout
+                        android:paddingLeft="@dimen/el"
+                        android:paddingRight="@dimen/el"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:textSize="@dimen/dm"
+                                android:textColor="@color/h0"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="运动资料库"/>
+
+                            <TextView
+                                android:textSize="@dimen/dl"
+                                android:textColor="@color/gz"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d4"
+                                android:text="用汗水练出好身材"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/a4y"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                style="@style/RippleLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/ll_nice_knowledge"
+                    android:background="@color/gy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90.0dip">
+
+                    <RelativeLayout
+                        android:paddingLeft="@dimen/el"
+                        android:paddingRight="@dimen/el"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:textSize="@dimen/dm"
+                                android:textColor="@color/h0"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="减肥知识库"/>
+
+                            <TextView
+                                android:textSize="@dimen/dl"
+                                android:textColor="@color/gz"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d4"
+                                android:text="知识就是力量"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/d4"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/a4w"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <View
+                android:layout_marginTop="@dimen/el"
+                android:layout_below="@id/hrv_nice_progress"
+                style="@style/HorizontalWholeDivider"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

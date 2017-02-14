@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/gj"
+              android:paddingLeft="@dimen/g2"
+              android:paddingTop="@dimen/g0"
+              android:paddingRight="@dimen/g2"
+              android:paddingBottom="@dimen/g0"
+              android:focusableInTouchMode="true"
+              android:layout_marginLeft="@dimen/fy"
+              android:layout_marginRight="@dimen/fy"
+              style="@style/MQMatchWrap.Vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/g8"
+        android:textColor="@color/fo"
+        android:text="@string/va"
+        style="@style/MQMatchWrap"/>
+
+    <RadioGroup
+        android:id="@id/rg_evaluate_content"
+        android:layout_marginTop="@dimen/g0"
+        style="@style/MQMatchWrap.Vertical">
+
+        <RadioButton
+            android:textSize="@dimen/g8"
+            android:textColor="@color/fo"
+            android:id="@id/rb_evaluate_good"
+            android:background="@android:color/transparent"
+            android:checked="true"
+            android:button="@null"
+            android:text="@string/v7"
+            android:drawableLeft="@drawable/abl"
+            android:drawableRight="@drawable/g5"
+            android:drawablePadding="@dimen/g7"
+            style="@style/MQMatchWrap"/>
+
+        <RadioButton
+            android:textSize="@dimen/g8"
+            android:textColor="@color/fo"
+            android:id="@id/rb_evaluate_medium"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/fz"
+            android:button="@null"
+            android:text="@string/v9"
+            android:drawableLeft="@drawable/abm"
+            android:drawableRight="@drawable/g5"
+            android:drawablePadding="@dimen/g7"
+            style="@style/MQMatchWrap"/>
+
+        <RadioButton
+            android:textSize="@dimen/g8"
+            android:textColor="@color/fo"
+            android:id="@id/rb_evaluate_bad"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/fz"
+            android:button="@null"
+            android:text="@string/v5"
+            android:drawableLeft="@drawable/abk"
+            android:drawableRight="@drawable/g5"
+            android:drawablePadding="@dimen/g7"
+            style="@style/MQMatchWrap"/>
+    </RadioGroup>
+
+    <EditText
+        android:textSize="@dimen/g8"
+        android:textColor="@color/fo"
+        android:textColorHint="@color/g5"
+        android:id="@id/et_evaluate_content"
+        android:background="@drawable/g4"
+        android:padding="@dimen/fx"
+        android:layout_marginTop="@dimen/g0"
+        android:hint="@string/v8"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/gi"
+        style="@style/MQMatchWrap"/>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginTop="@dimen/g0"
+        style="@style/MQMatchWrap.Horizontal">
+
+        <TextView
+            android:textSize="@dimen/g8"
+            android:textStyle="bold"
+            android:textColor="@color/t"
+            android:id="@id/tv_evaluate_cancel"
+            android:padding="@dimen/fz"
+            android:clickable="true"
+            android:layout_marginRight="@dimen/g3"
+            android:text="@string/ur"
+            style="@style/MQWrapWrap"/>
+
+        <TextView
+            android:textSize="@dimen/g8"
+            android:textStyle="bold"
+            android:textColor="@color/t"
+            android:id="@id/tv_evaluate_confirm"
+            android:padding="@dimen/fz"
+            android:clickable="true"
+            android:text="@string/ut"
+            style="@style/MQWrapWrap"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:background="@drawable/dz"
+              android:paddingTop="@dimen/el"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/ed"
+              android:layout_marginRight="@dimen/ed"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/bd"
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择数据源"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ed"
+        android:layout_marginBottom="@dimen/el">
+
+        <Button
+            android:textSize="@dimen/en"
+            android:textColor="@color/e4"
+            android:id="@id/btn_miband"
+            android:background="@color/in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/el"
+            android:text="小米手环"
+            android:drawableTop="@drawable/te"
+            android:drawablePadding="@dimen/gt"/>
+
+        <Button
+            android:textSize="@dimen/en"
+            android:textColor="@color/e4"
+            android:id="@id/btn_ledongli"
+            android:background="@color/in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乐动力"
+            android:drawableTop="@drawable/td"
+            android:drawablePadding="@dimen/gt"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <TextView
+        android:textSize="@dimen/bd"
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:id="@id/btn_cancel"
+        android:background="@drawable/d7"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eq"/>
+</LinearLayout>

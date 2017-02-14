@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/week_view"/>
+
+        <com.boohee.myview.WeekView
+            android:id="@id/ll_week"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"/>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_plan"
+                android:paddingBottom="48.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@id/ll_bottom"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_reset"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/he"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换一批"
+                android:drawableLeft="@drawable/a90"
+                android:drawablePadding="4.0dip"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_copy"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/he"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="复制到饮食记录"
+                android:drawableLeft="@drawable/a8i"
+                android:drawablePadding="4.0dip"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_gravity="bottom"
+        android:id="@id/divider"
+        android:layout_marginBottom="48.0dip"
+        style="@style/HorizontalWholeDivider"/>
+</FrameLayout>

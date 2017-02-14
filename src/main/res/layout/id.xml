@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginBottom="@dimen/d4"
+        android:text="支付方式"/>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_alipay"
+        android:background="?cc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/el"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/iv_alipay_logo"
+                android:background="@drawable/a58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_content_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d4"
+                android:layout_weight="1.0"
+                android:layout_toRightOf="@id/iv_alipay_logo">
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/z3"/>
+            </LinearLayout>
+
+            <ToggleButton
+                android:gravity="center"
+                android:id="@id/tb_alipay"
+                android:background="@drawable/if"
+                android:clickable="false"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="@dimen/d3"
+                android:layout_marginRight="@dimen/d4"
+                android:textOn=""
+                android:textOff=""/>
+        </LinearLayout>
+
+        <View style="@style/SixteenHorizontalDivider"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_wechat"
+        android:background="?cc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/el"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/iv_wechat_logo"
+                android:background="@drawable/a5i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d4"
+                android:layout_weight="1.0"
+                android:layout_toRightOf="@id/iv_wechat_logo">
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/z5"/>
+            </LinearLayout>
+
+            <ToggleButton
+                android:gravity="center"
+                android:id="@id/tb_wechat"
+                android:background="@drawable/if"
+                android:clickable="false"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="@dimen/d3"
+                android:layout_marginRight="@dimen/d4"
+                android:textOn=""
+                android:textOff=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/d5"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/el"/>
+</LinearLayout>

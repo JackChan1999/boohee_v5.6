@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/ju"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/ho">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/civ_icon"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:riv_corner_radius="3.0dip"/>
+
+        <RelativeLayout
+            android:id="@id/view_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_toLeftOf="@id/iv_light"
+            android:layout_toRightOf="@id/civ_icon"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:id="@id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="12"
+                android:singleLine="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/he"
+                android:id="@id/tv_calory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/e4"
+                android:id="@id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_calory"
+                android:layout_below="@id/tv_name"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/iv_light"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginRight="@dimen/el"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.boohee.widgets.BooheeRippleLayout>

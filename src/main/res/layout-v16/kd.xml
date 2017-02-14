@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center"
+                android:id="@id/time_display"
+                android:background="@color/eg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@id/center_view"
+        android:background="#00000000"
+        android:visibility="invisible"
+        android:layout_width="1.0dip"
+        android:layout_height="1.0dip"
+        android:layout_centerInParent="true"
+        android:importantForAccessibility="no"/>
+
+    <TextView
+        android:id="@id/hour_space"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/se"
+        android:layout_toLeftOf="@id/separator"
+        android:layout_centerVertical="true"
+        android:importantForAccessibility="no"
+        style="@style/mdtp_time_label"/>
+
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/f0"
+        android:layout_marginRight="@dimen/f0"
+        android:layout_alignLeft="@id/hour_space"
+        android:layout_alignRight="@id/hour_space"
+        android:layout_centerVertical="true">
+
+        <com.wdullaer.materialdatetimepicker.AccessibleTextView
+            android:textColor="@color/ff"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:id="@id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/se"
+            style="@style/mdtp_time_label"/>
+    </FrameLayout>
+
+    <TextView
+        android:textColor="@color/ei"
+        android:id="@id/separator"
+        android:paddingLeft="@dimen/fi"
+        android:paddingRight="@dimen/fi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sf"
+        android:layout_alignRight="@id/center_view"
+        android:layout_centerVertical="true"
+        android:importantForAccessibility="no"
+        style="@style/mdtp_time_label"/>
+
+    <TextView
+        android:textColor="@color/ei"
+        android:id="@id/minutes_space"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/se"
+        android:layout_toRightOf="@id/separator"
+        android:layout_centerVertical="true"
+        android:importantForAccessibility="no"
+        style="@style/mdtp_time_label"/>
+
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/f0"
+        android:layout_marginRight="@dimen/f0"
+        android:layout_alignLeft="@id/minutes_space"
+        android:layout_alignRight="@id/minutes_space"
+        android:layout_centerVertical="true">
+
+        <com.wdullaer.materialdatetimepicker.AccessibleTextView
+            android:textColor="@color/ei"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:id="@id/minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/se"
+            style="@style/mdtp_time_label"/>
+    </FrameLayout>
+
+    <com.wdullaer.materialdatetimepicker.AccessibleTextView
+        android:id="@id/ampm_hitspace"
+        android:layout_width="@dimen/eq"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ampm_label"
+        android:layout_alignRight="@id/ampm_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:textColor="@color/ei"
+        android:id="@id/ampm_label"
+        android:paddingLeft="@dimen/er"
+        android:paddingRight="@dimen/er"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/se"
+        android:layout_toRightOf="@id/minutes_space"
+        android:layout_alignBaseline="@id/separator"
+        android:importantForAccessibility="no"
+        style="@style/mdtp_ampm_label"/>
+</RelativeLayout>

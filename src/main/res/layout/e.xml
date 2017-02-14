@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="18.0sp"
+          android:textColor="#ffffffff"
+          android:id="@id/__leak_canary_row_text"
+          android:background="#ff84a6c5"
+          android:padding="16.0dip"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="16.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android"/>

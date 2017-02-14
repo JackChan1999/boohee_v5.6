@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/action_share"
+        android:title="分享"/>
+    <item
+        android:id="@id/action_history"
+        android:title="查看历史"/>
+    <item
+        android:id="@id/action_bind"
+        android:title="绑定设备"/>
+    <item
+        android:id="@id/action_setting"
+        android:title="计步设置"/>
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/gn"
+        android:id="@id/txt_cancel"
+        android:background="@drawable/dl"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/el"
+        android:paddingRight="@dimen/gt"
+        android:paddingBottom="@dimen/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/dv"
+        android:gravity="center"
+        android:id="@id/txt_date"
+        android:padding="@dimen/gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80.0dip"
+        android:text=""
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@id/rl_left"
+        android:layout_width="@dimen/hn"
+        android:layout_height="@dimen/hn"
+        android:layout_toLeftOf="@id/txt_date"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:background="@drawable/eq"
+            android:layout_width="8.0dip"
+            android:layout_height="15.0dip"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/rl_right"
+        android:layout_width="@dimen/hn"
+        android:layout_height="@dimen/hn"
+        android:layout_toRightOf="@id/txt_date"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@id/txt_right"
+            android:background="@drawable/et"
+            android:padding="@dimen/hn"
+            android:layout_width="8.0dip"
+            android:layout_height="15.0dip"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/gn"
+        android:id="@id/txt_commit"
+        android:background="@drawable/dl"
+        android:paddingLeft="@dimen/gt"
+        android:paddingTop="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:text="确认"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

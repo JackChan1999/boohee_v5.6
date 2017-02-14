@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView android:gravity="fill"
+                                                              android:id="@id/pull_to_refresh_grid"
+                                                              android:layout_width="fill_parent"
+                                                              android:layout_height="wrap_content"
+                                                              android:layout_marginLeft="@dimen/el"
+                                                              android:layout_marginTop="@dimen/el"
+                                                              android:layout_marginRight="@dimen/el"
+                                                              android:horizontalSpacing="@dimen/el"
+                                                              android:verticalSpacing="@dimen/el"
+                                                              android:stretchMode="columnWidth"
+                                                              android:numColumns="2"
+                                                              android:layout_above="@id/view_bottom"
+                                                              android:layout_alignParentTop="true"
+                                                              ptr:ptrHeaderBackground="@color/d5"
+                                                              ptr:ptrHeaderTextColor="@android:color/darker_gray"
+                                                              ptr:ptrMode="both"
+                                                              ptr:ptrShowIndicator="false"
+                                                              ptr:ptrOverScroll="false"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrScrollingWhileRefreshingEnabled="true"
+                                                              xmlns:ptr="http://schemas.android.com/apk/res-auto"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_bottom"
+        android:background="@color/ju"
+        android:padding="@dimen/dw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:textColor="@color/gn"
+            android:gravity="center"
+            android:id="@id/tv_make_compare"
+            android:padding="@dimen/dw"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="制作对比照"/>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:id="@id/view_operate"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/gn"
+                android:id="@id/tv_cancel"
+                android:padding="@dimen/dw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@id/tv_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选择 0/2 张"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textColor="@color/gn"
+                android:id="@id/tv_submit"
+                android:padding="@dimen/dw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

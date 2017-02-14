@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@id/fl_partner"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewpager_partner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/view_line_indicator"/>
+    </FrameLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/ll_label"
+        android:background="@color/ju"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="68.0dip"/>
+</LinearLayout>

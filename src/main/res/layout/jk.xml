@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="112.0dip"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/iv_img"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_margin="@dimen/el"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_img">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/tv_lesson_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/e4"
+            android:id="@id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gt"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/du"
+            android:id="@id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"/>
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/gn"
+        android:gravity="center"
+        android:id="@id/tv_send_status"
+        android:padding="@dimen/el"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发动态"
+        android:drawableLeft="@drawable/a1g"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

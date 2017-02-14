@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal"
+                android:background="@color/ik"
+                android:paddingRight="@dimen/di"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:textSize="@dimen/em"
+        android:layout_gravity="center_vertical"
+        android:id="@id/et_search"
+        android:background="@color/ju"
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/a3m"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:imeOptions="actionSearch"/>
+
+    <ImageView
+        android:id="@id/view_clear"
+        android:paddingRight="-12.0dip"
+        android:visibility="invisible"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:src="@drawable/a2f"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

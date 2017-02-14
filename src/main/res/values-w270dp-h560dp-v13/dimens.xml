@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fd">230.0dip</dimen>
+    <dimen name="fe">100.0dip</dimen>
+    <dimen name="ff">190.0dip</dimen>
+    <dimen name="fg">30.0dip</dimen>
+    <dimen name="fh">30.0dip</dimen>
+</resources>

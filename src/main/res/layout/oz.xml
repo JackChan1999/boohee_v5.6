@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@id/mask"
+        android:background="#99000000"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:id="@id/popLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:textColor="@color/dv"
+            android:id="@id/redoBtn"
+            android:background="@color/k"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="重来"/>
+
+        <View
+            android:background="@color/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"/>
+
+        <Button
+            android:textColor="@color/if"
+            android:id="@id/saveDraftBtn"
+            android:background="@color/k"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="保存草稿"/>
+
+        <View
+            android:background="@color/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"/>
+
+        <Button
+            android:textColor="@color/if"
+            android:id="@id/unsaveBtn"
+            android:background="@color/k"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="不保存"/>
+
+        <View
+            android:background="@color/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"/>
+
+        <Button
+            android:textColor="@color/if"
+            android:id="@id/cancelBtn"
+            android:background="@color/k"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"/>
+
+        <View
+            android:background="@color/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"/>
+    </LinearLayout>
+</FrameLayout>

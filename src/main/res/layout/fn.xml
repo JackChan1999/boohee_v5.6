@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@id/chartlet_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d9">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/chartletImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.boohee.widgets.HorizontalListView
+        android:layout_gravity="center"
+        android:id="@id/charletListView"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:divider="@null"/>
+</LinearLayout>

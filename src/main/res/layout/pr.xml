@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:background="@color/io"
+              android:layout_width="fill_parent"
+              android:layout_height="48.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/play"
+        android:padding="4.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4.0dip"/>
+
+    <RelativeLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <SeekBar
+            android:id="@id/progress"
+            android:paddingTop="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="4.0dip"
+            android:progressDrawable="@drawable/in"
+            android:minHeight="4.0dip"
+            android:thumb="@drawable/a9j"
+            android:thumbOffset="0.0dip"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="@color/ju"
+            android:id="@id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:layout_alignRight="@id/progress"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/expand"
+        android:padding="6.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8.0dip"/>
+</LinearLayout>

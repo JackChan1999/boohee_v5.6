@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="kx">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="lh">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="li">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

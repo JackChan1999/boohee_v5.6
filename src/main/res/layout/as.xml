@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.BooheeListView
+        android:id="@id/blv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60.0dip"
+        android:layout_alignParentTop="true"
+        style="@style/BaseListView"/>
+
+    <RelativeLayout
+        android:id="@id/view_operate"
+        android:paddingTop="@dimen/dw"
+        android:paddingRight="@dimen/dv"
+        android:paddingBottom="@dimen/dw"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:textSize="@dimen/dk"
+            android:textColor="@color/hk"
+            android:id="@id/tv_clear"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g3"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:textColor="@color/h"
+            android:id="@id/bt_delete"
+            android:background="@drawable/cs"
+            android:paddingLeft="@dimen/du"
+            android:paddingRight="@dimen/du"
+            android:layout_width="@dimen/bs"
+            android:layout_height="@dimen/dq"
+            android:text="@string/g4"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/a7"
+            android:id="@id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:background="@color/ju"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        style="@style/RippleLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/btn_add_custom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/view_divide_line"/>
+
+            <TextView
+                android:textColor="@color/he"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_add_custom"
+                android:padding="@dimen/gt"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:text="自定义食物"
+                android:drawableLeft="@drawable/a1f"
+                android:drawablePadding="@dimen/gt"/>
+        </LinearLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+</RelativeLayout>

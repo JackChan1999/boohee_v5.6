@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/mine_report_body_fat_imageView"
+            android:layout_width="230.0dip"
+            android:layout_height="240.0dip"/>
+
+        <TextView
+            android:textSize="@dimen/fr"
+            android:textColor="@color/fg"
+            android:id="@id/mine_report_body_fat_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginTop="120.0dip"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/mine_report_whatis_bodyfat_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:src="@drawable/acy"
+            android:contentDescription="问号图标"/>
+
+        <TextView
+            android:textSize="@dimen/fo"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="什么是体脂率？"/>
+    </LinearLayout>
+</LinearLayout>

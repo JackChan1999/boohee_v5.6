@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@drawable/d1"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:id="@id/tv_timeline"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:text="薄荷动态"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <TextView
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:id="@id/tv_third"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:text="微信、微博等"/>
+</LinearLayout>

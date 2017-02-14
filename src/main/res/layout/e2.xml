@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@id/view_swiperefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view_bottom"
+        android:layout_alignParentTop="true">
+
+        <com.huewu.pla.lib.MultiColumnListView
+            android:id="@id/mclv_story"
+            android:paddingLeft="@dimen/gl"
+            android:paddingRight="@dimen/gl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:plaColumnNumber="3"
+            app:plaLandscapeColumnNumber="3"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@id/view_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/subview_login"/>
+</RelativeLayout>

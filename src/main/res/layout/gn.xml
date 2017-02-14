@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:minWidth="300.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.0dip"
+        android:src="@drawable/a2m"/>
+
+    <View
+        android:background="@color/cv"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginTop="@dimen/el"/>
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48.0dip"
+        android:layout_marginTop="24.0dip"
+        android:layout_marginRight="48.0dip">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/e4"
+            android:layout_gravity="center"
+            android:id="@id/calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/e4"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日消耗"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.0dip"
+            android:text="(千卡)"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48.0dip"
+        android:layout_marginTop="24.0dip"
+        android:layout_marginRight="48.0dip">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/e4"
+            android:layout_gravity="center"
+            android:id="@id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/e4"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日时长"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.0dip"
+            android:text="(分钟)"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:id="@id/diamond_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48.0dip"
+        android:layout_marginTop="24.0dip"
+        android:layout_marginRight="48.0dip">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/e4"
+            android:layout_gravity="center"
+            android:id="@id/diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/e4"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获得钻石"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.0dip"
+            android:text="(颗)    "/>
+    </FrameLayout>
+
+    <TextView
+        android:textColor="@color/du"
+        android:layout_gravity="center"
+        android:id="@id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginTop="40.0dip"
+        android:layout_marginRight="@dimen/el"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/complete_line"
+        android:paddingTop="24.0dip"
+        android:paddingBottom="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginRight="@dimen/el">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/GlobalRippleLayout">
+
+            <Button
+                android:textSize="@dimen/dm"
+                android:textColor="@color/hb"
+                android:id="@id/complete"
+                android:background="@drawable/ca"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="关闭"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_weight="1.0"
+            style="@style/GlobalRippleLayout">
+
+            <Button
+                android:textSize="@dimen/dm"
+                android:textColor="@color/ju"
+                android:id="@id/share"
+                android:background="@drawable/da"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="分享一下"
+                android:layout_weight="1.0"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:layout_gravity="center"
+        android:id="@id/close_line"
+        android:visibility="gone"
+        android:layout_width="150.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:layout_marginBottom="@dimen/el"
+        style="@style/GlobalRippleLayout">
+
+        <Button
+            android:textSize="@dimen/dm"
+            android:textColor="@color/hb"
+            android:id="@id/close"
+            android:background="@drawable/ca"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="关闭"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

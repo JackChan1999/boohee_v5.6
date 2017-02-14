@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:id="@id/ripple"
+                                       android:layout_width="fill_parent"
+                                       android:layout_height="wrap_content"
+                                       app:mrl_rippleColor="@color/hm"
+                                       app:mrl_rippleOverlay="@bool/p"
+                                       app:mrl_rippleAlpha="0.2"
+                                       app:mrl_rippleHover="@bool/o"
+                                       app:mrl_rippleDelayClick="@bool/n"
+                                       xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:background="@color/ju"
+                  android:paddingLeft="12.0dip"
+                  android:paddingTop="20.0dip"
+                  android:paddingRight="12.0dip"
+                  android:paddingBottom="20.0dip"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12.0dip"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/tv_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/tv_bubble"
+            android:background="@drawable/rg"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.boohee.widgets.BooheeRippleLayout>

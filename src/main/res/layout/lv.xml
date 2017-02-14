@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ptr_id_header_container"
+              android:background="@android:color/white"
+              android:layout_width="fill_parent"
+              android:layout_height="47.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/ptr_id_header"
+        android:layout_width="fill_parent"
+        android:layout_height="47.0dip">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@id/ptr_id_textwrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ff999999"
+                android:id="@id/ptr_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ff999999"
+                android:id="@id/ptr_id_last_updated"
+                android:paddingTop="3.0dip"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/ptr_id_arrow"
+            android:background="@drawable/kr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ptr_id_textwrapper"
+            android:layout_centerVertical="true"/>
+
+        <ProgressBar
+            android:id="@id/ptr_id_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/mp"
+            android:layout_toLeftOf="@id/ptr_id_textwrapper"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

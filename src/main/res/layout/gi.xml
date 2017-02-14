@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:fitsSystemWindows="true"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:gravity="center"
+                android:id="@id/tv_date"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:layout_marginTop="30.0dip">
+
+                <TextView
+                    android:textSize="48.0dip"
+                    android:textColor="@color/hb"
+                    android:id="@id/tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:textColor="@color/hb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gt"
+                    android:layout_marginTop="@dimen/gt"
+                    android:text="kg"
+                    android:layout_toRightOf="@id/tv_weight"
+                    android:layout_alignTop="@id/tv_weight"/>
+
+                <TextView
+                    android:textColor="@color/hz"
+                    android:gravity="center_vertical"
+                    android:id="@id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.0dip"
+                    android:text="删除"
+                    android:drawableLeft="@drawable/he"
+                    android:layout_below="@id/tv_weight"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:id="@id/iv_achieve"
+                    android:background="@drawable/a_y"
+                    android:layout_width="175.0dip"
+                    android:layout_height="175.0dip"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@id/iv_running"
+                    android:background="@drawable/a_z"
+                    android:visibility="gone"
+                    android:layout_width="175.0dip"
+                    android:layout_height="175.0dip"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_gravity="right"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginRight="@dimen/el"
+                android:layout_marginBottom="@dimen/el">
+
+                <View
+                    android:layout_gravity="center"
+                    android:id="@id/iv_camera"
+                    android:background="@drawable/fb"
+                    android:layout_width="39.0dip"
+                    android:layout_height="39.0dip"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@id/iv_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+            </FrameLayout>
+
+            <com.boohee.widgets.NoScrollGridView
+                android:id="@id/gv"
+                android:background="@color/cw"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="1.0px"
+                android:verticalSpacing="1.0px"
+                android:numColumns="2"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/hb"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_cancel"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="取消"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/cw"
+            android:layout_width="1.0px"
+            android:layout_height="16.0dip"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_send"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_send"
+                android:background="@color/hb"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="保存"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+</LinearLayout>

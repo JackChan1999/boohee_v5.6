@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ProgressBar android:id="@id/pb_loading"
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="64.0dip"
+                 android:layout_height="64.0dip"
+                 android:layout_gravity="center"
+                 android:background="@drawable/abf"
+                 android:indeterminateDrawable="@drawable/ee"
+                 android:padding="18.0dip"/>
+</LinearLayout>

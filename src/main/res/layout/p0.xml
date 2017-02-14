@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ju"
+                android:padding="@dimen/h1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/food_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h1"
+        android:layout_below="@id/food_img">
+
+        <View
+            android:layout_centerVertical="true"
+            style="@style/HorizontalWholeDivider"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/food_des"
+            android:background="@color/ju"
+            android:paddingLeft="@dimen/h1"
+            android:paddingRight="@dimen/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

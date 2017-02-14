@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+              android:id="@id/time_picker_dialog"
+              android:background="@color/ek"
+              android:focusable="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.wdullaer.materialdatetimepicker.time.RadialPickerLayout
+        android:layout_gravity="center"
+        android:id="@id/time_picker"
+        android:background="@color/ep"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="@dimen/fc"
+        android:layout_height="@dimen/fl"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fl">
+
+        <TextView
+            android:textSize="@dimen/fk"
+            android:textColor="@color/ff"
+            android:gravity="center"
+            android:id="@id/time_picker_header"
+            android:background="@color/eh"
+            android:padding="8.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:textAllCaps="true"/>
+
+        <FrameLayout
+            android:id="@id/time_display_background"
+            android:background="@color/eg"
+            android:layout_width="@dimen/hs"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <include
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/f2"
+                layout="@layout/mdtp_time_header_label"/>
+        </FrameLayout>
+
+        <include layout="@layout/mdtp_done_button"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:background="@color/ju"
+                                       android:layout_width="fill_parent"
+                                       android:layout_height="wrap_content"
+                                       style="@style/GlobalRippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/rl_partner_item"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/iv_item_img"
+                android:layout_width="@dimen/gm"
+                android:layout_height="@dimen/gm"
+                android:layout_marginLeft="@dimen/fq"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="@dimen/fq"
+                android:layout_marginBottom="15.0dip"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_item_img"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/c4"
+                    android:id="@id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/dv"
+                    android:id="@id/tv_item_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hm"/>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/hk"
+                android:gravity="right"
+                android:id="@id/tv_item_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/el"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@id/iv_sign"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a23"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@id/v_bottom_line"
+            style="@style/HorizontalSectionDivider"/>
+    </LinearLayout>
+</com.boohee.widgets.BooheeRippleLayout>

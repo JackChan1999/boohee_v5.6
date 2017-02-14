@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:padding="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择举报的理由"/>
+
+    <ListView
+        android:id="@id/contentList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/in"
+        android:divider="@color/cw"
+        android:dividerHeight="1.0dip"
+        android:choiceMode="singleChoice"
+        android:smoothScrollbar="true"/>
+</LinearLayout>

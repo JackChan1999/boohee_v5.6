@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <com.boohee.myview.PullToZoomScrollView
+        android:id="@id/layout_pull_down"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/aw">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/layout_top"
+                android:layout_width="fill_parent"
+                android:layout_height="250.0dip">
+
+                <ImageView
+                    android:id="@id/iv_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"/>
+
+                <RelativeLayout
+                    android:id="@id/rl_progress"
+                    android:layout_width="140.0dip"
+                    android:layout_height="140.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="52.0dip">
+
+                    <com.boohee.myview.ArcProgressView
+                        android:id="@id/arc_progress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4.0dip"/>
+
+                    <TextView
+                        android:id="@id/tv_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="28.0dip"
+                        android:text="已减重"
+                        android:textColor="@color/jw"
+                        android:textSize="10.0dip"/>
+
+                    <TextView
+                        android:id="@id/tv_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40.0dip"
+                        android:text="0.0"
+                        android:textColor="@color/ju"
+                        android:textSize="40.0dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_weight"
+                        android:layout_marginLeft="4.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:layout_toRightOf="@id/tv_weight"
+                        android:text="kg"
+                        android:textColor="@color/ju"
+                        android:textSize="11.0dip"/>
+
+                    <View
+                        android:id="@id/divider_weight"
+                        android:layout_width="80.0dip"
+                        android:layout_height="3.0px"
+                        android:layout_below="@id/tv_weight"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bw"
+                        android:layerType="software"/>
+
+                    <TextView
+                        android:id="@id/tv_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider_weight"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/gt"
+                        android:text="目标完成0%"
+                        android:textColor="@color/jw"
+                        android:textSize="11.0dip"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@id/tv_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="12.0dip"
+                    android:drawablePadding="4.0dip"
+                    android:drawableRight="@drawable/a51"
+                    android:padding="8.0dip"
+                    android:text="我的计划"
+                    android:textColor="@color/ju"
+                    android:textSize="11.0dip"/>
+
+                <TextView
+                    android:id="@id/tv_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/gt"
+                    android:paddingTop="@dimen/h6"
+                    android:textColor="@color/ju"
+                    android:textSize="@dimen/gy"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/layout_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/di"
+                android:paddingLeft="@dimen/di"
+                android:paddingRight="@dimen/di">
+
+                <com.boohee.widgets.BooheeRippleLayout
+                    android:id="@id/rp_check_in"
+                    style="@style/GlobalRippleLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/di">
+
+                    <RelativeLayout
+                        android:id="@id/rl_check_in"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hg"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dh">
+
+                        <ImageView
+                            android:id="@id/iv_check_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/a4n"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dh"
+                            android:layout_toRightOf="@id/iv_check_in"
+                            android:text="钻石打卡"
+                            android:textColor="@color/il"
+                            android:textSize="@dimen/fo"/>
+
+                        <TextView
+                            android:id="@id/tv_check_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/hf"
+                            android:paddingBottom="4.0dip"
+                            android:paddingLeft="8.0dip"
+                            android:paddingRight="8.0dip"
+                            android:paddingTop="4.0dip"
+                            android:text="@string/d6"
+                            android:textColor="@color/hb"
+                            android:textSize="@dimen/fo"/>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <com.boohee.widgets.BooheeRippleLayout
+                    android:id="@id/rp_diet_sport"
+                    style="@style/GlobalRippleLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rp_check_in"
+                    android:layout_marginTop="@dimen/di">
+
+                    <LinearLayout
+                        android:id="@id/rl_diet_sport"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dh">
+
+                        <ImageView
+                            android:id="@id/iv_diet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/a4m"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dh"
+                            android:layout_toRightOf="@id/iv_diet">
+
+                            <TextView
+                                android:id="@id/tv_record"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="@dimen/dh"
+                                android:text="热量记录(饮食&amp;运动)"
+                                android:textColor="@color/e4"
+                                android:textSize="@dimen/em"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@id/tv_record"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:id="@id/tv_calorie_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="还可以吃"
+                                    android:textColor="@color/i_"
+                                    android:textSize="@dimen/ef"/>
+
+                                <TextView
+                                    android:id="@id/tv_calorie"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@id/tv_calorie_status"
+                                    android:layout_marginTop="@dimen/di"
+                                    android:text="\?"
+                                    android:textColor="#ff666666"
+                                    android:textSize="@dimen/eo"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@id/tv_calorie"
+                                    android:layout_marginLeft="@dimen/di"
+                                    android:layout_marginTop="6.0dip"
+                                    android:layout_toRightOf="@id/tv_calorie"
+                                    android:text="千卡"
+                                    android:textColor="@color/i_"
+                                    android:textSize="@dimen/ef"/>
+                            </RelativeLayout>
+
+                            <com.boohee.myview.DietRecordBar
+                                android:id="@id/diet_bar"
+                                android:layout_width="124.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/tv_record"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <com.boohee.widgets.BooheeRippleLayout
+                    android:id="@id/rp_weight"
+                    style="@style/GlobalRippleLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rp_diet_sport"
+                    android:layout_marginTop="@dimen/di">
+
+                    <LinearLayout
+                        android:id="@id/rl_weight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dh">
+
+                        <ImageView
+                            android:id="@id/iv_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/a4s"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dh"
+                            android:layout_toRightOf="@id/iv_weight">
+
+                            <TextView
+                                android:id="@id/tv_weight_unit"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dh"
+                                android:text="体重记录"
+                                android:textColor="@color/e4"
+                                android:textSize="@dimen/em"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@id/tv_weight_unit">
+
+                                <TextView
+                                    android:id="@id/tv_latest_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="\?"
+                                    android:textColor="#ff666666"
+                                    android:textSize="@dimen/eo"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@id/tv_latest_weight"
+                                    android:layout_marginLeft="@dimen/di"
+                                    android:layout_marginTop="6.0dip"
+                                    android:layout_toRightOf="@id/tv_latest_weight"
+                                    android:text="公斤"
+                                    android:textColor="@color/i_"
+                                    android:textSize="@dimen/ef"/>
+                            </RelativeLayout>
+
+                            <com.boohee.myview.LineGraph
+                                android:id="@id/weight_graph"
+                                android:layout_width="124.0dip"
+                                android:layout_height="32.0dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/tv_weight_unit"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <com.boohee.widgets.BooheeRippleLayout
+                    android:id="@id/rl_step_parent"
+                    style="@style/GlobalRippleLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rp_weight"
+                    android:layout_marginTop="@dimen/di"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@id/rl_step"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dh">
+
+                        <ImageView
+                            android:id="@id/iv_step"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/a4r"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dh"
+                            android:layout_toRightOf="@id/iv_step">
+
+                            <TextView
+                                android:id="@id/tv_step"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dh"
+                                android:text="步数记录"
+                                android:textColor="@color/e4"
+                                android:textSize="@dimen/em"/>
+
+                            <RelativeLayout
+                                android:id="@id/rl_step_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@id/tv_step">
+
+                                <TextView
+                                    android:id="@id/tv_current_step"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="\?"
+                                    android:textColor="#ff666666"
+                                    android:textSize="@dimen/eo"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@id/tv_current_step"
+                                    android:layout_marginLeft="@dimen/di"
+                                    android:layout_marginTop="6.0dip"
+                                    android:layout_toRightOf="@id/tv_current_step"
+                                    android:text="步"
+                                    android:textColor="@color/i_"
+                                    android:textSize="@dimen/ef"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="120.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/tv_step">
+
+                                <com.boohee.myview.ProgressLine
+                                    android:id="@id/progress_step"
+                                    android:layout_width="120.0dip"
+                                    android:layout_height="4.0dip"
+                                    android:layout_marginBottom="@dimen/di"
+                                    app:orientation="horizontal"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@id/progress_step"
+                                    android:text="0"
+                                    android:textColor="@color/i_"
+                                    android:textSize="@dimen/ef"/>
+
+                                <TextView
+                                    android:id="@id/tv_target_step"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@id/progress_step"
+                                    android:textColor="@color/i_"
+                                    android:textSize="@dimen/ef"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+
+                <LinearLayout
+                    android:id="@id/view_measure_and_peroid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_step_parent"
+                    android:layout_marginTop="@dimen/di"
+                    android:background="@drawable/hg"
+                    android:orientation="vertical">
+
+                    <com.boohee.widgets.BooheeRippleLayout
+                        style="@style/GlobalRippleLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@id/rl_measure"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dh">
+
+                            <ImageView
+                                android:id="@id/iv_measure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/a4o"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dh"
+                                android:layout_toRightOf="@id/iv_measure"
+                                android:text="围度记录"
+                                android:textColor="@color/e4"
+                                android:textSize="@dimen/em"/>
+                        </RelativeLayout>
+                    </com.boohee.widgets.BooheeRippleLayout>
+
+                    <View
+                        android:id="@id/divider_period"
+                        style="@style/HorizontalWholeDivider"/>
+
+                    <com.boohee.widgets.BooheeRippleLayout
+                        style="@style/GlobalRippleLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@id/rl_peroid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dh">
+
+                            <ImageView
+                                android:id="@id/iv_peroid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/a4q"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dh"
+                                android:layout_toRightOf="@id/iv_peroid"
+                                android:text="生理期记录"
+                                android:textColor="@color/e4"
+                                android:textSize="@dimen/em"/>
+
+                            <TextView
+                                android:id="@id/tv_peroid_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:textSize="@dimen/gy"/>
+                        </RelativeLayout>
+                    </com.boohee.widgets.BooheeRippleLayout>
+                </LinearLayout>
+
+                <com.boohee.widgets.BooheeRippleLayout
+                    android:id="@id/brl_checkin_status"
+                    style="@style/GlobalRippleLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_measure_and_peroid"
+                    android:layout_marginTop="@dimen/di">
+
+                    <RelativeLayout
+                        android:id="@id/rl_checkin_status"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hg"
+                        android:padding="@dimen/dh">
+
+                        <ImageView
+                            android:id="@id/iv_checkin_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/a4n"/>
+
+                        <RelativeLayout
+                            android:id="@id/rl_check_in_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginBottom="@dimen/dh"
+                            android:layout_marginLeft="@dimen/dh"
+                            android:layout_toRightOf="@id/iv_checkin_status">
+
+                            <TextView
+                                android:id="@id/tv_checkin_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="钻石打卡"
+                                android:textColor="@color/e4"
+                                android:textSize="@dimen/em"/>
+
+                            <TextView
+                                android:id="@id/tv_checkin_status_alert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:textSize="@dimen/gy"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rl_check_in_title"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@id/cb_checkin_0"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawablePadding="@dimen/di"
+                                android:gravity="center_horizontal"
+                                android:text="日"/>
+
+                            <TextView
+                                android:id="@id/cb_checkin_1"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawablePadding="@dimen/di"
+                                android:gravity="center_horizontal"
+                                android:text="一"/>
+
+                            <TextView
+                                android:id="@id/cb_checkin_2"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawablePadding="@dimen/di"
+                                android:gravity="center_horizontal"
+                                android:text="二"/>
+
+                            <TextView
+                                android:id="@id/cb_checkin_3"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawablePadding="@dimen/di"
+                                android:gravity="center_horizontal"
+                                android:text="三"/>
+
+                            <TextView
+                                android:id="@id/cb_checkin_4"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawablePadding="@dimen/di"
+                                android:gravity="center_horizontal"
+                                android:text="四"/>
+
+                            <TextView
+                                android:id="@id/cb_checkin_5"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawablePadding="@dimen/di"
+                                android:gravity="center_horizontal"
+                                android:text="五"/>
+
+                            <TextView
+                                android:id="@id/cb_checkin_6"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawablePadding="@dimen/di"
+                                android:gravity="center_horizontal"
+                                android:text="六"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </com.boohee.widgets.BooheeRippleLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.boohee.myview.PullToZoomScrollView>
+
+    <View
+        android:id="@id/view_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"/>
+</FrameLayout>

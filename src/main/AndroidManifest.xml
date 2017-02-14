@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.boohee.one"
+          platformBuildVersionCode="23"
+          platformBuildVersionName="6.0-2438415"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:installLocation="auto"
+          android:versionCode="108"
+          android:versionName="5.6.3.1">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="andorid.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <permission
+        android:name="com.boohee.one.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="dangerous|signature|signatureOrSystem"/>
+
+    <uses-permission android:name="com.boohee.one.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <application
+        android:name="com.boohee.one.tinker.OneApplicationForTinker"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/c3"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.boohee.one.ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompat_FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.boohee.one.ui.MainActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainActivityTheme"/>
+        <activity
+            android:name="com.boohee.one.ui.PreferenceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.HomeMoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.main.BaseWebViewActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.SportListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.WeightRecordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/weight_measure"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.ScaleIndexActivity"
+            android:label="@string/scale_index"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.DimensionRecordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/dimension_measure"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.WeightPhotosActivity"
+            android:label="@string/weight_photos"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.WeightCompareActivity"
+            android:label="@string/weight_compare"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.WeightCurveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/weight_curve"/>
+        <activity
+            android:name="com.boohee.record.MeasureCurveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/measure_curve"/>
+        <activity
+            android:name="com.boohee.record.WeightGalleryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.NewWeightGalleryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.EvaluationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.FoodListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.FoodDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.LightIntroduceActivity"
+            android:label="@string/boohee_light"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.IngredientInfoActivity"
+            android:label="@string/detail_ingredient"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.RecipeActivity"
+            android:label="@string/from_recipe"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.AccountSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.account.ChangeProfileActivity2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.account.ChangeProfileActivity1"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.account.UserProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.account.ChangePasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.SubjectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.DescriptionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.NoticeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.BooheeNoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.GoodMorningNoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.DietNoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.SportNoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.WaterNoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.ViewTipActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.PasscodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.CheckPhoneActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.InviteFriendsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.SetInvitorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.MilestoneActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.account.UserInitActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.account.NewUserInitActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.account.ForgetPasspordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.SearchFoodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.ui.SearcherActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|stateAlwaysVisible"/>
+        <activity
+            android:name="com.boohee.one.ui.SearcherOtherActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|stateAlwaysVisible"/>
+        <activity
+            android:name="com.boohee.food.AddCustomFoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.AddCustomSportActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.AppRecommendActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.SelectStatusActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.boohee.status.LargeImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.MyTimelineActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.UserTimelineActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="com.boohee.one"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.boohee.status.FriendShipActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.ContactsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.HotTagActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.NotificationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.CommentListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.uchoice.GoodsDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.CartActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.OrderEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustNothing"/>
+        <activity
+            android:name="com.boohee.uchoice.AddressEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.AddressListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.OrderListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.OrderDetailsActivity"
+            android:label="@string/check_order"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.PaySuccessActivity"
+            android:label="@string/service_choose_pay_success"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ContactUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.SearchFriendsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/IndicatorTheme"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.boohee.status.MsgCategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.TopicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.ReportActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.UserGuideChooseInterestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.UserGuideRecomandActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.HelpInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.bet.BecomeTeamLeaderActivity"
+            android:label="@string/become_team_leader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.boohee.apn.ApnActivity"
+            android:label="@string/apn"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.ui.StatusPostTextActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainActivityTheme"
+            android:windowSoftInputMode="adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.mine.BroadcastListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.mine.McListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.mine.BiologyClockSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.mine.McInitActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.PeriodActivity"
+            android:label="@string/mc_period"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.SearchSportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.ui.ImageEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ImageChartletActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ImageFilterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.HomeTimelineActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ShopLabelActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ShopCategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ChannelPostsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.CouponActivity"
+            android:label="@string/title_activity_coupon"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.WelcomeActivity"
+            android:label="@string/activity_welcome"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAuth"/>
+        <activity
+            android:name="com.boohee.one.ui.BrowserSuccessHistoryActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAuth"/>
+        <activity
+            android:name="com.boohee.one.ui.WebViewPicUploadActivity"
+            android:label="@string/pic_upload"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAuth"
+            android:windowSoftInputMode="adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.ui.NineGridGalleryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="keyboard|orientation"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|stateAlwaysVisible|adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.ui.BrowserActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.boohee.one.ui.JumpBrowserActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name="com.boohee.more.MyBooheeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/hg"/>
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity-alias
+            android:name="com.boohee.one.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity"/>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <activity
+            android:name="com.boohee.one.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice"/>
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true"/>
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.boohee.push.XMPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.boohee.more.RemindReceiver"
+            android:process=":remote"/>
+        <receiver android:name="com.boohee.more.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.boohee.one.receiver.ShutDownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.boohee.one.update.UpdateDialogActivity"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar"/>
+        <service
+            android:name="com.boohee.one.update.UpdateService"
+            android:process=":update"/>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5195977f56240bba990032e9"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="RGsqsvYprxzFY2hWqx3LrSnf"/>
+        <meta-data
+            android:name="leyu_app_id"
+            android:value="424415371"/>
+        <meta-data
+            android:name="leyu_app_key"
+            android:value="7EE69BC691591E8D"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQConversationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/eb"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/eb"
+            android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible"/>
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPickerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/eb"
+            android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible"/>
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPickerPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/eb"
+            android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible"/>
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQMessageFormActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/eb"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing"/>
+
+        <service android:name="com.meiqia.core.MeiQiaService"/>
+
+        <activity
+            android:name="com.xiaomi.account.openauth.AuthorizeActivity"
+            android:configChanges="touchscreen|keyboard|orientation|screenLayout|screenSize|smallestScreenSize|fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainActivityTheme"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.openauth.action.AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.boohee.one.ui.MyFavoriteActivity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.boohee.one.service.ReadLeDongLiService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.ledongli.ldl.localdata"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.boohee.food.AddFoodListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.AddSportListActivity"
+            android:label="@string/title_activity_add_sport_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.GoSportActivity"
+            android:label="@string/title_activity_go_sport"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.SummaryActivity"
+            android:label="@string/title_activity_summary"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.RecommendTimelineActivity"
+            android:label="@string/title_activity_recommend_timeline"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.HistoryRecordActivity"
+            android:label="@string/title_activity_history_record"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.CopyRecordActivity"
+            android:label="@string/title_activity_copy_record"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.fragment.TodayAnalysisActivity"
+            android:label="@string/title_activity_today_analysis"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.TodayNutritionActivity"
+            android:label="@string/title_activity_today_nutrition"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.AddCameraRecordActivity"
+            android:label="@string/title_activity_add_camera_record"/>
+        <activity
+            android:name="com.boohee.food.EditCameraRecordActivity"
+            android:label="@string/title_activity_camera_record"/>
+        <activity
+            android:name="com.boohee.one.ui.DushouExampleActivity"
+            android:label="@string/title_activity_dushou_example"/>
+        <activity
+            android:name="com.boohee.one.video.ui.VideoPlayActivity"
+            android:label="@string/sport_video"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppCompat_FullScreen"/>
+        <activity
+            android:name="com.boohee.one.player.FullScreenVideoActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppCompat_FullScreen"/>
+        <activity
+            android:name="com.boohee.one.player.ContinueVideoActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppCompat_FullScreen"/>
+        <activity
+            android:name="com.boohee.one.ui.DiamondSignActivity"
+            android:label="@string/title_activity_diamond_sign"
+            android:screenOrientation="portrait"/>
+
+        <receiver
+            android:name="com.boohee.more.DailySignReceiver"
+            android:process=":remote"/>
+
+        <activity
+            android:name="com.boohee.one.ui.NewLoginAndRegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.boohee.one.ui.CompleteRegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.boohee.one.video.ui.SportPlanActivity"
+            android:label="@string/sport_plan"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.UserSettingActivity"
+            android:label="@string/my_boohee"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.MiBandActivity"
+            android:label="@string/my_devices"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ChangeEnvironmentActivity"
+            android:label="Change Environment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.AboutBooheeActivity"
+            android:label="@string/title_about_us"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.LessonDetailActivity"
+            android:label="@string/lesson_detail"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.MentionPreviewActivity"
+            android:label="@string/mention_preview"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.SportSettingActivity"
+            android:label="@string/sport_setting"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.VideoHistoryActivity"
+            android:label="@string/video_history"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.NewLessonDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.LessonFinishActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.DietChartActivity"
+            android:label="@string/diet_chart_title"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.boohee.one.ui.PeriodCalendarActivity"
+            android:label="@string/mc_period"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.MyFoodActivity"
+            android:label="@string/tools_my_food"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.CollectionActivity"
+            android:label="@string/food_my_collect"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.ListUploadActivity"
+            android:label="@string/food_my_upload"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.UploadStateActivity"
+            android:label="@string/title_upload_state"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.CustomFoodListActivity"
+            android:label="@string/food_my_custom"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.UploadFoodActivity"
+            android:label="@string/upload_food"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.ui.ScannerActivity"
+            android:label="@string/upload_state_code"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.more.EstimateFoodActivity"
+            android:label="@string/assessment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.DietSportCalendarActivity"
+            android:label="@string/title_activity_diet_and_sport"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.DietShareActivity"
+            android:label="@string/title_activity_diet_and_sport"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.NewSportPlanActivity"
+            android:label="@string/sport_plan"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.SpecialLessonDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.video.ui.AddSpecialLessonActivity"
+            android:label="@string/add_train"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.SuccessStoryActivity"
+            android:label="@string/success_story"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.SuccessStoryTagActivity"
+            android:label="@string/success_tag"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.StoryDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.StoryCommentActivity"
+            android:label="@string/success_story"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.food.BooheeRecipeActivity"
+            android:label="@string/from_recipe"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.AddCustomCookActivity"
+            android:label="@string/my_custom_cook"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.CustomCookActivity"
+            android:label="@string/my_custom_cook_info"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.CustomCookListActivity"
+            android:label="@string/my_custom_cook_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.CookSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustNothing"/>
+
+        <receiver
+            android:name="com.boohee.more.SportRemindReceiver"
+            android:process=":remote"/>
+
+        <activity
+            android:name="com.boohee.one.bet.BetMainActivity"
+            android:label="@string/I_bet"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.bet.BetPaySuccessActivity"
+            android:label="@string/bet_pay_success"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.bet.BetActivity"
+            android:label="@string/I_bet"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.bet.BetAllActivity"
+            android:label="@string/all_bet"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.bet.BetMineActivity"
+            android:label="@string/bet_mine"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.ShopMainActivity"
+            android:label="@string/title_activity_shop_main"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.sport.SportCourseActivity"
+            android:label="@string/title_v3_sport_course"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.sport.SportStatisticsActivity"
+            android:label="@string/title_v3_sport_statistics"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.sport.SportCourseChangeActivity"
+            android:label="@string/title_v3_sport_course_change"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.sport.SportCourseHistoryActivity"
+            android:label="@string/title_v3_sport_course_history"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.sport.SportDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.sport.DownloadManageActivity"
+            android:label="@string/download_manager"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.sport.SportPlayActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppCompat_FullScreen"/>
+        <activity
+            android:name="com.boohee.one.ui.WeightStatusActivity"
+            android:label="@string/weight_status"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.pedometer.StepCounterActivity"
+            android:label="@string/steps_record"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.pedometer.StepHistoryActivity"
+            android:label="@string/step_history"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.ScaleIntroActivity"
+            android:label="@string/weight_scale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.record.ScaleBindActivity"
+            android:label="@string/weight_bind_scale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.radar.RadarActivity"
+            android:label="@string/radar_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.status.HotTopicActivity"
+            android:label="@string/title_hot_topic"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="com.boohee.one.sport.DownloadService"/>
+
+        <activity
+            android:name="com.boohee.one.ui.DietPlanActivity"
+            android:label="@string/diet_plan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.pedometer.StepSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.HardwareActivity"
+            android:label="@string/title_hardware"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.ui.HardwareIntroActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.nice.NiceServiceActivity"
+            android:label="@string/nice_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.nice.NiceAdviserActivity"
+            android:label="@string/nice_adviser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing"/>
+        <activity
+            android:name="com.boohee.nice.NiceSellActivity"
+            android:label="@string/nice_sell"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.nice.NiceConfirmOrderActivity"
+            android:label="@string/nice_confirm_order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing"/>
+        <activity
+            android:name="com.boohee.one.pedometer.v2.StepMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.one.pedometer.v2.StepHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.RefundApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustNothing"/>
+        <activity
+            android:name="com.boohee.uchoice.GoodsReturnApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustNothing"/>
+        <activity
+            android:name="com.boohee.uchoice.RefundStatusActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.uchoice.GoodsReturnStatusActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustNothing"/>
+
+        <service
+            android:name="com.boohee.one.service.StepCounterService"
+            android:exported="true"
+            android:process=":pedometer">
+            <intent-filter android:priority="1000">
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.boohee.one.receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.boohee.one.service.DaemonService"
+            android:exported="true"
+            android:process=":daemon"/>
+        <service
+            android:name="com.boohee.one.service.MyListenerService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:process=":pedometer">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.boohee.one.receiver.DaemonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.TIME_TICK"/>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.boohee.one.ui.MWHandleActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="boohee"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zxinsight.common.base.MWActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="MW_APPID"
+            android:value="L5ALMMZXE95TDNTU5STBP04HO1ODVTWT"/>
+        <meta-data
+            android:name="MW_CHANNEL"
+            android:value="boohee"/>
+
+        <activity
+            android:name="com.boohee.one.pedometer.BindClingActivity"
+            android:label="@string/bind_cling"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.boohee.food.FoodErrorActivity"
+            android:label="@string/food_error"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.boohee.one.tinker.service.OneTinkerResultService"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.boohee.uchoice.IdCardInfoActivity"
+            android:label="@string/id_card"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImagePreviewActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/hg"/>
+
+        <service
+            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+            android:enabled="false"
+            android:process=":leakcanary"/>
+        <service
+            android:name="com.squareup.leakcanary.DisplayLeakService"
+            android:enabled="false"/>
+
+        <activity
+            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+            android:enabled="false"
+            android:icon="@drawable/j_"
+            android:label="@string/q"
+            android:taskAffinity="com.squareup.leakcanary"
+            android:theme="@style/kq">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing">
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="boohee.lib.share.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+            android:exported="false"
+            android:process=":patch"/>
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+            android:exported="false"
+            android:process=":patch"/>
+        <service
+            android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="TINKER_ID"
+            android:value="5.6.3.1"/>
+    </application>
+</manifest>

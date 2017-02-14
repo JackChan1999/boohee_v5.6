@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.PagerSlidingTabStrip android:textColor="@color/il"
+                                             android:id="@id/sliding_tabs"
+                                             android:background="@color/ik"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="40.0dip"
+                                             android:layout_alignParentRight="true"
+                                             app:pstsIndicatorColor="@color/hb"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"/>
+</LinearLayout>

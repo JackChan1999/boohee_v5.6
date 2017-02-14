@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="@dimen/hl"
+            android:background="@color/j8"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:orientation="horizontal"
+            android:padding="@dimen/el">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:hint="@string/eo"
+                android:text="@string/mk"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <EditText
+                android:id="@id/et_food_name"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/in"
+                android:gravity="end"
+                android:hint="如：水果沙拉"
+                android:singleLine="true"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/em"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:orientation="horizontal"
+            android:padding="@dimen/el">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:hint="@string/eo"
+                android:text="@string/ml"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <EditText
+                android:id="@id/et_food_num"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/in"
+                android:gravity="end"
+                android:hint="如：1"
+                android:inputType="numberDecimal"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/em"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:orientation="horizontal"
+            android:padding="@dimen/el">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:hint="@string/eo"
+                android:text="@string/mo"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <EditText
+                android:id="@id/et_food_unit"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/in"
+                android:gravity="end"
+                android:hint="如：盘、碟、克"
+                android:singleLine="true"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/em"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:orientation="horizontal"
+            android:padding="@dimen/el">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:hint="@string/we"
+                android:text="@string/bi"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <EditText
+                android:id="@id/et_food_calory"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/in"
+                android:gravity="end"
+                android:hint="如：100"
+                android:inputType="number"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/em"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/h1"
+            android:paddingLeft="@dimen/el"
+            android:paddingTop="@dimen/h1"
+            android:text="以下为选填"
+            android:textColor="@color/du"
+            android:textSize="@dimen/gy"/>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <RelativeLayout
+            android:id="@id/rl_food_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:minHeight="70.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/fq"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="照片"
+                    android:textColor="@color/c4"
+                    android:textSize="@dimen/gy"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/iv_food_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/el"
+                android:src="@drawable/a44"/>
+
+            <RelativeLayout
+                android:id="@id/rl_food"
+                android:layout_width="@dimen/dy"
+                android:layout_height="@dimen/dx"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_food_camera"
+                android:visibility="gone">
+
+                <com.boohee.widgets.RoundedCornersImage
+                    android:id="@id/iv_food_img"
+                    android:layout_width="@dimen/ek"
+                    android:layout_height="@dimen/ej"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/aa0"/>
+
+                <ImageView
+                    android:id="@id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/a6f"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:orientation="horizontal"
+            android:padding="@dimen/el">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:hint="@string/eo"
+                android:text="@string/a0c"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <EditText
+                android:id="@id/et_protein_num"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/in"
+                android:gravity="end"
+                android:hint="克"
+                android:inputType="numberDecimal"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/em"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:orientation="horizontal"
+            android:padding="@dimen/el">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:hint="@string/eo"
+                android:text="@string/lh"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <EditText
+                android:id="@id/et_fat_num"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/in"
+                android:gravity="end"
+                android:hint="克"
+                android:inputType="numberDecimal"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/em"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ju"
+            android:orientation="horizontal"
+            android:padding="@dimen/el">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:hint="@string/eo"
+                android:text="@string/f1"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <EditText
+                android:id="@id/et_carbohydrate_num"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/in"
+                android:gravity="end"
+                android:hint="克"
+                android:inputType="numberDecimal"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/em"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

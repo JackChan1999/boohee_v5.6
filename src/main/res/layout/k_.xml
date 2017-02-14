@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/eu"
+          android:textColor="@color/ff"
+          android:gravity="center"
+          android:id="@id/date_picker_header"
+          android:background="@color/en"
+          android:layout_width="@dimen/es"
+          android:layout_height="@dimen/et"
+          android:includeFontPadding="false"
+          xmlns:android="http://schemas.android.com/apk/res/android"/>

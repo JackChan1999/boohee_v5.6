@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaowen.commentlibrary.emoji.EmojiconTextView android:textSize="@dimen/gy"
+                                                   android:textColor="@color/ii"
+                                                   android:id="@id/body"
+                                                   android:background="@drawable/bu"
+                                                   android:padding="@dimen/gt"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:text="哈~哈哈~哈哈哈~哈哈哈哈~哈哈哈哈哈~"
+                                                   android:lineSpacingMultiplier="1.2"
+                                                   xmlns:android="http://schemas.android.com/apk/res/android"/>

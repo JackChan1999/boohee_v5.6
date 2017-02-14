@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:gravity="center"
+        android:id="@id/tv_level"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/doing_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="180.0dip"
+            android:layout_marginTop="-9.0dip"
+            android:layout_below="@id/recycler_view">
+
+            <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                <ImageView
+                    android:id="@id/iv_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"/>
+            </com.boohee.widgets.BooheeRippleLayout>
+
+            <TextView
+                android:textSize="@dimen/dk"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50.0dip"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_des"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:layout_below="@id/tv_title"/>
+
+            <ImageView
+                android:id="@id/iv_status"
+                android:background="@drawable/r7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:layout_below="@id/tv_des"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/ju"
+                android:id="@id/tv_btn"
+                android:background="@drawable/cz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:text="进入课程"
+                android:layout_below="@id/tv_des"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textColor="@color/du"
+                android:id="@id/tv_story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/el"
+                android:text="看看别人的运动故事>>"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/recycler_view"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="98.0dip"/>
+    </RelativeLayout>
+</LinearLayout>

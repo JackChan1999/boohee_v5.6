@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/hn"
+              android:background="@color/ju"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <com.boohee.widgets.BooheeRippleLayout
+        style="@style/RippleLayout"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@id/rl_category"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/a7x"
+                android:gravity="center"
+                android:text="分类"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+        </RelativeLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        style="@style/RippleLayout"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <RelativeLayout
+            android:id="@id/rl_cart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@id/tv_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/a7x"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <TextView
+                android:id="@id/tv_badge_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hm"
+                android:layout_toRightOf="@id/tv_cart"
+                android:paddingBottom="@dimen/gt"
+                android:textSize="@dimen/ef"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/el"
+        android:layout_marginTop="@dimen/el"
+        android:background="@color/j8"/>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        style="@style/RippleLayout"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <RelativeLayout
+            android:id="@id/fl_order"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@id/tv_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/a7v"
+                android:gravity="center"
+                android:text="订单"
+                android:textColor="@color/e4"
+                android:textSize="@dimen/gy"/>
+
+            <TextView
+                android:id="@id/tv_badge_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hm"
+                android:layout_toRightOf="@id/tv_order"
+                android:paddingBottom="@dimen/gt"
+                android:textSize="@dimen/ef"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

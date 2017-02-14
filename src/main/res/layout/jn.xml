@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/GlobalRippleLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view_content"
+            android:background="@color/ju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/iv_photo"
+                android:layout_width="115.0dip"
+                android:layout_height="115.0dip"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gt"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gt"/>
+        </LinearLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <CheckBox
+        android:gravity="top|left|center"
+        android:layout_gravity="top|left|center"
+        android:id="@id/cb_select"
+        android:paddingRight="@dimen/du"
+        android:paddingBottom="@dimen/du"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dv"
+        android:layout_marginTop="@dimen/dv"
+        android:button="@drawable/bn"/>
+</FrameLayout>

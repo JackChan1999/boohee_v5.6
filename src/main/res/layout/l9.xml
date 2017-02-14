@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/ft"
+                style="@style/MQMatchMatch"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/fu"
+        android:textColor="@color/fl"
+        android:id="@id/tv_recorder_keyboard_status"
+        android:text="@string/ul"
+        android:layout_centerHorizontal="true"
+        style="@style/MQWrapWrap"/>
+
+    <ImageView
+        android:id="@id/iv_recorder_keyboard_anim"
+        android:clickable="true"
+        android:src="@drawable/acj"
+        android:layout_below="@id/tv_recorder_keyboard_status"
+        android:layout_centerHorizontal="true"
+        style="@style/MQWrapWrap"/>
+</RelativeLayout>

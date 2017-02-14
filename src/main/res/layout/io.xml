@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:background="@drawable/d2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/ho">
+
+        <RelativeLayout
+            android:id="@id/rl_del"
+            android:padding="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@id/iv_delete"
+                android:background="@drawable/pp"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/view_content"
+            android:paddingLeft="@dimen/el"
+            android:paddingTop="@dimen/gt"
+            android:paddingRight="@dimen/el"
+            android:paddingBottom="@dimen/gt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_calory"
+            android:layout_toRightOf="@id/rl_del"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:id="@id/tv_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxEms="12"
+                android:singleLine="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:id="@id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hm"
+                android:text=""
+                android:layout_toRightOf="@id/tv_count"
+                android:layout_below="@id/tv_name"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:id="@id/tv_calory"
+            android:paddingRight="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

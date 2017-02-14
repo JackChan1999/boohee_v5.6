@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginTop="@dimen/hl"
+        android:background="@color/j8"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ju"
+        android:orientation="horizontal"
+        android:padding="@dimen/el">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:hint="@string/eo"
+            android:text="运动名称"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/gy"/>
+
+        <EditText
+            android:id="@id/et_food_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/in"
+            android:gravity="end"
+            android:hint="如：跑步、健身操"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/em"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ju"
+        android:orientation="horizontal"
+        android:padding="@dimen/el">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:hint="@string/eo"
+            android:text="@string/ml"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/gy"/>
+
+        <EditText
+            android:id="@id/et_food_num"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/in"
+            android:gravity="end"
+            android:hint="如：1"
+            android:inputType="numberDecimal"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/em"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ju"
+        android:orientation="horizontal"
+        android:padding="@dimen/el">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:hint="@string/eo"
+            android:text="@string/mo"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/gy"/>
+
+        <TextView
+            android:id="@id/tv_food_unit"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/in"
+            android:gravity="end"
+            android:hint="如：个、组"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/em"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ju"
+        android:orientation="horizontal"
+        android:padding="@dimen/el">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:hint="@string/we"
+            android:text="@string/bi"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/gy"/>
+
+        <EditText
+            android:id="@id/et_food_calory"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/in"
+            android:gravity="end"
+            android:hint="如：100"
+            android:inputType="number"
+            android:textColor="@color/e4"
+            android:textSize="@dimen/em"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

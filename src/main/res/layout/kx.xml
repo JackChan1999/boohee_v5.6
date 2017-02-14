@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:background="@drawable/gj"
+              android:paddingLeft="120.0dip"
+              android:paddingTop="@dimen/fx"
+              android:paddingRight="120.0dip"
+              android:paddingBottom="@dimen/fx"
+              style="@style/MQMatchWrap.Vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/g1"
+        style="?android:progressBarStyle"/>
+
+    <TextView
+        android:id="@id/content_tv"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/fz"
+        style="@style/MQWrapWrap"/>
+</LinearLayout>

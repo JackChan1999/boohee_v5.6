@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/mc_display_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:layout_marginTop="@dimen/h1"
+        style="@style/HorizontalWholeDivider"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/mc_days_click"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingBottom="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/gd">
+
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mc_days"
+                    android:layout_weight="1.0"
+                    style="@style/MainText"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:id="@id/mc_days"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/zn"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/a2l"
+                    android:drawablePadding="5.0dip"
+                    android:layout_weight="1.0"
+                    style="@style/MainTextGray"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View style="@style/SixteenHorizontalDivider"/>
+
+        <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/mc_circle_click"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingBottom="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/gd">
+
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mc_circle"
+                    android:layout_weight="1.0"
+                    style="@style/MainText"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:id="@id/mc_circle"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/zn"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/a2l"
+                    android:drawablePadding="5.0dip"
+                    android:layout_weight="1.0"
+                    style="@style/MainTextGray"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <View
+        android:layout_marginTop="@dimen/h1"
+        style="@style/HorizontalWholeDivider"/>
+
+    <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/mc_history"
+            android:background="@color/ju"
+            android:paddingLeft="16.0dip"
+            android:paddingTop="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gd">
+
+            <TextView
+                android:gravity="left"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/mc_history"
+                android:layout_weight="1.0"
+                style="@style/MainText"/>
+
+            <TextView
+                android:ellipsize="end"
+                android:gravity="right|center"
+                android:id="@id/mc_count"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableRight="@drawable/a2l"
+                android:drawablePadding="5.0dip"
+                android:layout_weight="1.0"
+                style="@style/MainTextGray"/>
+        </LinearLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+</LinearLayout>

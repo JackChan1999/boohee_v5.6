@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/da"
+        android:gravity="center_horizontal"
+        android:id="@id/favorite_hint"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80.0dip"
+        android:text="@string/xp"
+        android:drawableTop="@drawable/a5n"
+        android:drawablePadding="15.0dip"
+        android:layout_centerHorizontal="true"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarStyle="outsideOverlay"
+                                                              android:id="@id/listview"
+                                                              android:background="@color/d5"
+                                                              android:layout_width="fill_parent"
+                                                              android:layout_height="fill_parent"
+                                                              android:layout_marginTop="-2.0dip"
+                                                              android:drawSelectorOnTop="false"
+                                                              android:scrollingCache="true"
+                                                              android:headerDividersEnabled="false"
+                                                              android:footerDividersEnabled="true"
+                                                              ptr:ptrHeaderBackground="@color/d5"
+                                                              ptr:ptrHeaderTextColor="@android:color/darker_gray"
+                                                              ptr:ptrShowIndicator="false"
+                                                              ptr:ptrOverScroll="false"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrScrollingWhileRefreshingEnabled="true"
+                                                              style="@style/PullToRefreshListViewStyle"
+                                                              xmlns:android="http://schemas.android.com/apk/res/android"
+                                                              xmlns:ptr="http://schemas.android.com/apk/res-auto"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/dn"
+        android:textColor="@color/e4"
+        android:id="@id/tv_tag_title"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="jianshen"/>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@id/tag_layout"
+        android:background="@color/ju"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:auto_select_effect="false"
+        app:max_select="1"/>
+</LinearLayout>

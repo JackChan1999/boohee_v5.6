@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GridView
+        android:id="@id/grid"
+        android:paddingBottom="?android:actionBarSize"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:horizontalSpacing="@dimen/gz"
+        android:verticalSpacing="@dimen/gz"
+        android:columnWidth="@dimen/e7"
+        android:numColumns="auto_fit"/>
+
+    <TextView
+        android:textSize="14.0sp"
+        android:textColor="#ffcdcece"
+        android:id="@id/timeline_area"
+        android:background="#cc000000"
+        android:paddingLeft="10.0sp"
+        android:paddingTop="5.0dip"
+        android:paddingBottom="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@id/footer"
+        android:background="@color/c5"
+        android:paddingTop="5.0dip"
+        android:paddingBottom="5.0dip"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:textSize="@dimen/en"
+            android:textColor="#ffcdcece"
+            android:gravity="center_vertical"
+            android:id="@id/category_btn"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableRight="@drawable/adm"
+            android:drawablePadding="5.0dip"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:textSize="14.0sp"
+            android:textColor="@color/j"
+            android:id="@id/preview"
+            android:background="@drawable/b9"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingBottom="5.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16.0dip"
+            android:minWidth="1.0dip"
+            android:minHeight="1.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:background="#90000000"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="@dimen/gt"
+            android:layout_marginBottom="5.0dip"
+            android:layout_toLeftOf="@id/preview"/>
+    </RelativeLayout>
+</RelativeLayout>

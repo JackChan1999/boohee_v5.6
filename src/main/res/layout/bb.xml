@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/listview"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gt">
+
+        <TextView
+            android:textSize="@dimen/dk"
+            android:textColor="@color/he"
+            android:gravity="center"
+            android:id="@id/tv_more_percent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gt"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/du"
+            android:gravity="center"
+            android:id="@id/tv_calory_suggest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gt"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_food_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gt"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/da"
+            android:gravity="right|center"
+            android:id="@id/tv_total"
+            android:paddingTop="@dimen/el"
+            android:paddingRight="@dimen/el"
+            android:paddingBottom="@dimen/gt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+</ScrollView>

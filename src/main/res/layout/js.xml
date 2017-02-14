@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="#ffdbeeff"
+              android:paddingBottom="32.0dip"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="18.0sp"
+        android:textColor="#ff3b3b3b"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.0dip"
+        android:text="营养"
+        android:drawableLeft="@drawable/dw"
+        android:drawablePadding="8.0dip"/>
+
+    <TextView
+        android:textColor="#803b3b3b"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:text="@string/a1d"/>
+
+    <TextView
+        android:textColor="#ff3b3b3b"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28.0dip"
+        android:text="饮食结构"/>
+
+    <com.boohee.one.radar.NutritionLayout
+        android:id="@id/layout_nutrition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"/>
+
+    <RelativeLayout
+        android:background="@drawable/cl"
+        android:paddingRight="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="32.0dip"
+        android:layout_marginRight="16.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:src="@drawable/a_7"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textColor="#ff419bf9"
+            android:id="@id/tv_veg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/jc"/>
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:id="@id/tv_veg_content"
+            android:paddingBottom="8.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:text="@string/jb"
+            android:layout_below="@id/tv_veg_title"
+            android:layout_alignLeft="@id/tv_veg_title"/>
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#ff3b3b3b"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.0dip"
+        android:text="三大营养元素"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:layout_marginTop="16.0dip">
+
+        <com.boohee.one.radar.RingView
+            android:id="@id/ring_nutrition"
+            android:layout_width="fill_parent"
+            android:layout_height="200.0dip"/>
+
+        <include
+            android:id="@id/empty_diet_element"
+            layout="@layout/view_razor_empty"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="16.0dip"
+        android:layout_marginLeft="32.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="32.0dip">
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="碳水"
+            android:drawableLeft="@drawable/d3"
+            android:drawablePadding="4.0dip"/>
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="蛋白质"
+            android:drawableLeft="@drawable/d4"
+            android:drawablePadding="4.0dip"/>
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="脂肪"
+            android:drawableLeft="@drawable/d6"
+            android:drawablePadding="4.0dip"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:background="@drawable/cl"
+        android:paddingRight="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="32.0dip"
+        android:layout_marginRight="16.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:src="@drawable/a_n"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textColor="#ff419bf9"
+            android:id="@id/tv_protein_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/k6"/>
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:id="@id/tv_protein_content"
+            android:paddingBottom="8.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:text="@string/k5"
+            android:layout_below="@id/tv_protein_title"
+            android:layout_alignLeft="@id/tv_protein_title"/>
+    </RelativeLayout>
+</LinearLayout>

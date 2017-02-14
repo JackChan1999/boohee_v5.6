@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/a1e"
+        android:id="@id/action_more"
+        android:title="@string/at"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@id/action_share"
+                android:title="@string/a4l"
+                app:showAsAction="always"/>
+            <item
+                android:id="@id/action_copy_history"
+                android:title="@string/h0"
+                app:showAsAction="always"/>
+            <item
+                android:id="@id/action_diet_chart"
+                android:title="@string/j5"
+                app:showAsAction="always"/>
+            <item
+                android:id="@id/action_summary"
+                android:visible="false"
+                android:title="@string/a90"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+</menu>

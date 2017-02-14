@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="#ffdbeeff"
+              android:paddingBottom="32.0dip"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="18.0sp"
+        android:textColor="#ff3b3b3b"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.0dip"
+        android:text="热平衡"
+        android:drawableLeft="@drawable/dw"
+        android:drawablePadding="8.0dip"/>
+
+    <TextView
+        android:textColor="#803b3b3b"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:text="@string/a1b"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:layout_marginTop="16.0dip">
+
+        <com.boohee.one.radar.RingView
+            android:id="@id/ring_heat"
+            android:layout_width="fill_parent"
+            android:layout_height="200.0dip"/>
+
+        <include
+            android:id="@id/empty_heat"
+            layout="@layout/view_razor_empty"/>
+
+        <RelativeLayout
+            android:id="@id/heat_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textColor="#80419bf9"
+                android:id="@id/tv_heat_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40.0dip"
+                android:text="本周"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textColor="#80419bf9"
+                android:id="@id/tv_heat_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:text="预算热量达标"
+                android:layout_below="@id/tv_heat_week"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="50.0dip"
+                android:textStyle="bold"
+                android:textColor="#ff419bf9"
+                android:id="@id/tv_heat_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:text=" ? "
+                android:layout_below="@id/tv_heat_calorie"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textColor="#80419bf9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:text="天"
+                android:layout_toRightOf="@id/tv_heat_day"
+                android:layout_alignBaseline="@id/tv_heat_day"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="16.0dip"
+        android:layout_marginLeft="32.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="32.0dip">
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="热量达标天数"
+            android:drawableLeft="@drawable/d3"
+            android:drawablePadding="4.0dip"/>
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="热量未达标天数"
+            android:drawableLeft="@drawable/d5"
+            android:drawablePadding="4.0dip"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:background="@drawable/cl"
+        android:paddingRight="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="32.0dip"
+        android:layout_marginRight="16.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:src="@drawable/a_9"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textColor="#ff419bf9"
+            android:id="@id/tv_balance_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/cm"/>
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="#80419bf9"
+            android:id="@id/tv_balance_content"
+            android:paddingBottom="8.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:text="@string/cl"
+            android:layout_below="@id/tv_balance_title"
+            android:layout_alignLeft="@id/tv_balance_title"/>
+    </RelativeLayout>
+</LinearLayout>

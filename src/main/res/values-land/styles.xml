@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="km" parent="@style/d4">
+        <item name="m2">fixed</item>
+        <item name="m3">center</item>
+    </style>
+</resources>

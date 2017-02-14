@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="56.0dip"
+              android:layout_alignParentBottom="true"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:background="@color/cv"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="56.0dip"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@id/view_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/f6"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_cart_badge"
+                android:background="@drawable/rg"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:background="@color/cw"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/di"
+            android:layout_marginBottom="@dimen/di"/>
+
+        <ImageView
+            android:id="@id/view_contact_us"
+            android:layout_width="56.0dip"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f7"/>
+
+        <Button
+            android:enabled="false"
+            android:textSize="@dimen/em"
+            android:textColor="#fff66355"
+            android:gravity="center"
+            android:id="@id/btn_buy_immediately"
+            android:background="@drawable/d8"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/ej"
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:enabled="false"
+            android:textSize="@dimen/em"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/btn_cart_add"
+            android:background="@drawable/d9"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/b8"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+</LinearLayout>

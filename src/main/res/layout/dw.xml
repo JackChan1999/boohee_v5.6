@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:padding="@dimen/dv"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_compare"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="264.0dip">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <uk.co.senab.photoview.PhotoView
+                    android:layout_gravity="center"
+                    android:id="@id/view_photo_before"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:textColor="@color/ju"
+                    android:background="@color/ax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="减肥前"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <uk.co.senab.photoview.PhotoView
+                    android:layout_gravity="center"
+                    android:id="@id/view_photo_now"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:textColor="@color/ju"
+                    android:background="@color/ax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="减肥后"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:padding="@dimen/dv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/view_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/dk"
+                    android:textColor="@color/gn"
+                    android:id="@id/tv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 天，"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:textSize="@dimen/dk"
+                    android:textColor="@color/gn"
+                    android:id="@id/tv_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 公斤"
+                    android:layout_alignParentLeft="true"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来自薄荷App"
+                android:layout_alignBottom="@id/view_alert"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:textSize="@dimen/dm"
+        android:textColor="@color/ju"
+        android:id="@id/bt_save_compare"
+        android:background="@drawable/da"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dv"
+        android:text="保存到相册"/>
+
+    <Button
+        android:textSize="@dimen/dm"
+        android:textColor="@color/ju"
+        android:id="@id/bt_share_compare"
+        android:background="@drawable/da"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dv"
+        android:text="分享"/>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bg_layout"
+                android:background="@drawable/pn"
+                android:layout_width="wrap_content"
+                android:layout_height="98.0dip"
+                android:layout_marginRight="@dimen/gt"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/daily_course_container"
+        android:background="@color/j4"
+        android:layout_width="85.0dip"
+        android:layout_height="85.0dip"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:id="@id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6.0dip"
+            android:text="12月23日"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@id/daily_course_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@id/tv_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@id/iv_course_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_below="@id/tv_course_name"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="@dimen/ee"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/tv_big"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:minLines="2"
+            android:layout_below="@id/tv_time"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

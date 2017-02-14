@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15.0dip"
+              android:layout_marginBottom="15.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/nf"
+        android:layout_width="300.0dip"
+        android:layout_height="300.0dip">
+
+        <TextView
+            android:textSize="@dimen/bd"
+            android:textColor="@color/b5"
+            android:padding="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eh"/>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/fr"
+                android:textColor="@color/fg"
+                android:id="@id/target_calory_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/hk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:text="@string/hz"
+                android:layout_toRightOf="@id/target_calory_text"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.0dip"
+            android:text="建议摄入热量范围"/>
+
+        <TextView
+            android:textSize="@dimen/bd"
+            android:textColor="@color/b5"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/recommend_calory_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="1200~1300 千卡"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/mine_report_whatis_budget_hot_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:src="@drawable/acy"
+            android:contentDescription="问号图标"/>
+
+        <TextView
+            android:textSize="@dimen/fo"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="什么是预算热量？"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+             android:background="@color/d5"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/d5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include layout="@layout/view_sport_search"/>
+
+        <com.boohee.widgets.PagerSlidingTabStrip android:textColor="@color/du"
+                                                 android:id="@id/sliding_tabs"
+                                                 android:background="@color/ju"
+                                                 android:layout_width="fill_parent"
+                                                 android:layout_height="40.0dip"
+                                                 app:pstsIndicatorColor="@color/hb"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"/>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/ll_add_custom_sport"
+            android:background="@drawable/d2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hn">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/he"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="12.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义运动"
+                android:drawableLeft="@drawable/a1f"
+                android:drawablePadding="@dimen/hm"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:id="@id/iv_sport_cart"
+        android:visibility="gone"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:src="@drawable/aa5"/>
+</FrameLayout>

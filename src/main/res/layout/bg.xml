@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/rl_scale"
+        android:layout_width="fill_parent"
+        android:layout_height="84.0dip">
+
+        <ImageView
+            android:id="@id/iv_scale"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="@dimen/el"
+            android:src="@drawable/a9o"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/tv_scale_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_toRightOf="@id/iv_scale"
+            android:layout_alignTop="@id/iv_scale"/>
+
+        <TextView
+            android:textColor="@color/du"
+            android:id="@id/tv_scale_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_scale_name"
+            android:layout_alignBottom="@id/iv_scale"/>
+
+        <TextView
+            android:textColor="@color/hb"
+            android:gravity="center"
+            android:id="@id/tv_scale_go"
+            android:background="@drawable/ca"
+            android:paddingTop="6.0dip"
+            android:paddingBottom="6.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/el"
+            android:minEms="4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            style="@style/HorizontalWholeDivider"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="84.0dip">
+
+        <ImageView
+            android:id="@id/iv_cling"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="@dimen/el"
+            android:src="@drawable/a2g"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/tv_cling_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/el"
+            android:text="Cling系统手表 / 手环"
+            android:layout_toRightOf="@id/iv_cling"
+            android:layout_alignTop="@id/iv_cling"/>
+
+        <TextView
+            android:textColor="@color/du"
+            android:id="@id/tv_cling_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_cling_name"
+            android:layout_alignBottom="@id/iv_cling"/>
+
+        <TextView
+            android:textColor="@color/hb"
+            android:gravity="center"
+            android:id="@id/tv_cling_go"
+            android:background="@drawable/ca"
+            android:paddingTop="6.0dip"
+            android:paddingBottom="6.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/el"
+            android:text="去查看"
+            android:minEms="4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            style="@style/HorizontalWholeDivider"/>
+    </RelativeLayout>
+</LinearLayout>

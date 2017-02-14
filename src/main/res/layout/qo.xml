@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:orientation="horizontal"
+              android:background="@color/cw"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/gd"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/me"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gt"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="@dimen/gt"
+        android:layout_marginBottom="5.0dip"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@id/search_close_btn"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a2f"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:textSize="@dimen/em"
+            android:textColorHint="@color/dd"
+            android:id="@id/search_text"
+            android:background="@null"
+            android:paddingLeft="@dimen/hm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lz"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/r2"
+            android:drawablePadding="@dimen/hm"
+            android:layout_toLeftOf="@id/search_close_btn"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionSearch"/>
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/a5"
+        android:id="@id/txt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gt"
+        android:layout_marginRight="@dimen/el"
+        android:text="@string/a38"/>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_dialog"
+                android:background="@color/ip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lLayout_bg"
+        android:background="@drawable/bi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60.0dip"
+        android:layout_marginRight="60.0dip"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:src="@drawable/icon"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:textSize="18.0sp"
+                android:textColor="@color/e4"
+                android:id="@id/txt_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="打卡提醒"/>
+        </LinearLayout>
+
+        <ImageView
+            android:background="@color/aj"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"/>
+
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/e4"
+            android:id="@id/txt_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="亲忘记打卡啦?快来打卡吧"/>
+
+        <ImageView
+            android:background="@color/aj"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="10.0dip"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="16.0sp"
+                android:textColor="@color/hk"
+                android:gravity="center"
+                android:id="@id/btn_pos"
+                android:background="@drawable/bf"
+                android:layout_width="wrap_content"
+                android:layout_height="43.0dip"
+                android:text="打卡"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

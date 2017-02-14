@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/br"
+              android:layout_width="fill_parent"
+              android:layout_height="200.0dip"
+              android:layout_weight="1.0"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0px"
+        android:layout_weight="1.0">
+
+        <Button
+            android:id="@id/btn1"
+            android:tag="@string/q4"
+            android:layout_marginRight="1.0px"
+            android:text="@string/q4"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn2"
+            android:tag="@string/q8"
+            android:layout_marginRight="1.0px"
+            android:text="@string/q8"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn3"
+            android:tag="@string/q7"
+            android:text="@string/q7"
+            style="@style/style_diet_keyboard_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0px"
+        android:layout_weight="1.0">
+
+        <Button
+            android:id="@id/btn4"
+            android:tag="@string/q2"
+            android:layout_marginRight="1.0px"
+            android:text="@string/q2"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn5"
+            android:tag="@string/q1"
+            android:layout_marginRight="1.0px"
+            android:text="@string/q1"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn6"
+            android:tag="@string/q6"
+            android:text="@string/q6"
+            style="@style/style_diet_keyboard_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0px"
+        android:layout_weight="1.0">
+
+        <Button
+            android:id="@id/btn7"
+            android:tag="@string/q5"
+            android:layout_marginRight="1.0px"
+            android:text="@string/q5"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn8"
+            android:tag="@string/q0"
+            android:layout_marginRight="1.0px"
+            android:text="@string/q0"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn9"
+            android:tag="@string/q3"
+            android:text="@string/q3"
+            style="@style/style_diet_keyboard_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0px"
+        android:layout_weight="1.0">
+
+        <Button
+            android:id="@id/btn_dot"
+            android:tag="@string/pz"
+            android:layout_marginRight="1.0px"
+            android:text="@string/pz"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn0"
+            android:tag="@string/q9"
+            android:layout_marginRight="1.0px"
+            android:text="@string/q9"
+            style="@style/style_diet_keyboard_button"/>
+
+        <Button
+            android:id="@id/btn_back"
+            android:background="@drawable/de"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="horizontal"
+            android:id="@id/rg_weight"
+            android:background="@drawable/hi"
+            android:padding="1.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/gt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RadioButton
+        android:textSize="@dimen/gy"
+        android:textColor="@drawable/ir"
+        android:gravity="center"
+        android:id="@id/rb_week"
+        android:background="@drawable/hv"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:button="@null"
+        android:text="周"/>
+
+    <RadioButton
+        android:textSize="@dimen/gy"
+        android:textColor="@drawable/ir"
+        android:gravity="center"
+        android:id="@id/rb_month"
+        android:background="@drawable/hw"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:button="@null"
+        android:text="月"/>
+
+    <RadioButton
+        android:textColor="@drawable/ir"
+        android:gravity="center"
+        android:id="@id/rb_year"
+        android:background="@drawable/hx"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="年"/>
+</RadioGroup>

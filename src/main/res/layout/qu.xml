@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_bg"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/ll_top"
+        android:background="@drawable/h5"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip">
+
+        <ImageView
+            android:id="@id/iv_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vw"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@id/iv_icon"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:src="@drawable/vx"/>
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="此次训练没有完成"/>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip">
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/ju"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时长/分钟"/>
+
+                <TextView
+                    android:textSize="@dimen/ee"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_time"
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="30"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip">
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/ju"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消耗/千卡"/>
+
+                <TextView
+                    android:textSize="@dimen/ee"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_calory"
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="100"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:background="@color/aj"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/be"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="16.0sp"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:id="@id/btn_neg"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="43.0dip"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:id="@id/img_line"
+            android:background="@color/aj"
+            android:layout_width="0.5dip"
+            android:layout_height="43.0dip"/>
+
+        <Button
+            android:textSize="16.0sp"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:id="@id/btn_pos"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="43.0dip"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+</LinearLayout>

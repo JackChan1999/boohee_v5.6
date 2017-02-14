@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center"
+                android:padding="3.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="35.0sp"
+        android:textColor="@color/ju"
+        android:id="@id/upMiddleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:selectAllOnFocus="true"
+        android:layout_alignParentTop="true"
+        style="@style/EditTextShadow"/>
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textColor="@color/ju"
+        android:id="@id/upRightText"
+        android:padding="5.0dip"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起床"
+        android:layout_toRightOf="@id/upMiddleText"
+        android:layout_alignParentTop="true"
+        style="@style/EditTextShadow"/>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/d5"
+              android:fitsSystemWindows="true"
+              android:clipToPadding="false"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@id/iv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@id/grid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:layout_marginBottom="40.0dip"
+        android:layout_below="@id/iv_avatar"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="@dimen/fo"
+            android:textColor="@color/du"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/tv_send_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发动态"
+            android:drawableLeft="@drawable/a9n"
+            android:drawablePadding="4.0dip"/>
+
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="@color/hb"
+            android:layout_width="70.0dip"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="4.0dip"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gd">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/iv_close"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/a4p"
+            android:scaleType="centerInside"/>
+    </FrameLayout>
+</LinearLayout>

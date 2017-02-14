@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:id="@id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120.0dip"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@id/rl_left"
+            android:layout_width="@dimen/hn"
+            android:layout_height="@dimen/hn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:background="@drawable/a1t"
+                android:layout_width="8.0dip"
+                android:layout_height="15.0dip"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_right"
+            android:layout_width="@dimen/hn"
+            android:layout_height="@dimen/hn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@id/txt_right"
+                android:background="@drawable/a1w"
+                android:padding="@dimen/hn"
+                android:layout_width="8.0dip"
+                android:layout_height="15.0dip"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/week_view"/>
+
+    <ViewFlipper
+        android:id="@id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.boohee.widgets.NoScrollGridView
+            android:gravity="center"
+            android:id="@id/calendar"
+            android:background="@color/cw"
+            android:visibility="visible"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/in"
+            android:cacheColorHint="@color/in"
+            android:verticalSpacing="1.0px"
+            android:numColumns="7"/>
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/ju"
+        android:padding="@dimen/dt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/n"
+            android:id="@id/bt_today"
+            android:background="@drawable/c8"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:text="返回今天"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@id/bottom_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>

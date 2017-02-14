@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginTop="@dimen/el"
+        android:layout_marginRight="@dimen/el"
+        style="@style/RippleLayout">
+
+        <RelativeLayout
+            android:id="@id/ll_bet"
+            android:background="@drawable/c6"
+            android:layout_width="fill_parent"
+            android:layout_height="90.0dip">
+
+            <ImageView
+                android:id="@id/iv_bet"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_margin="@dimen/el"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:id="@id/tv_bet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gt"
+                android:layout_marginBottom="@dimen/gt"
+                android:layout_toRightOf="@id/iv_bet"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:id="@id/tv_bet_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_toRightOf="@id/iv_bet"
+                android:layout_below="@id/tv_bet_name"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:id="@id/tv_bet_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gt"
+                android:layout_toRightOf="@id/iv_bet"
+                android:layout_below="@id/tv_bet_time"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:id="@id/tv_bet_scope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gt"
+                android:layout_marginBottom="@dimen/gt"
+                android:layout_toRightOf="@id/tv_bet_percent"
+                android:layout_below="@id/tv_bet_time"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/btn_bet"
+                android:background="@drawable/cx"
+                android:layout_width="56.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginRight="@dimen/el"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@id/iv_fruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

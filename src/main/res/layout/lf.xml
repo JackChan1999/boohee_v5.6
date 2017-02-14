@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/layout"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <include layout="@layout/view_lesson_detail_header"/>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/du"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:layout_marginBottom="@dimen/el"
+                android:text="@string/a5w"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/e4"
+                android:id="@id/tv_mention_des"
+                android:background="@color/ju"
+                android:paddingLeft="@dimen/el"
+                android:paddingRight="@dimen/el"
+                android:paddingBottom="@dimen/hl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/du"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:layout_marginBottom="@dimen/el"
+                android:text="课程内容"/>
+
+            <TextView
+                android:id="@id/tv_warm_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:text="热身运动"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recycler_view_warm_up"
+                android:background="@color/ju"
+                android:paddingLeft="@dimen/gt"
+                android:paddingTop="@dimen/gt"
+                android:paddingRight="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"/>
+
+            <TextView
+                android:id="@id/tv_train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:text="训练"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recycler_view_train"
+                android:background="@color/ju"
+                android:paddingLeft="@dimen/gt"
+                android:paddingTop="@dimen/gt"
+                android:paddingRight="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/bottom_layout"
+        android:background="@drawable/cx"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_margin="@dimen/el">
+
+        <TextView
+            android:textSize="@dimen/ee"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/tv_start"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/a6j"/>
+
+        <ProgressBar
+            android:id="@id/progress_bar_download"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0dip"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_marginRight="@dimen/gt"
+            android:progressDrawable="@drawable/h3"
+            android:layout_toLeftOf="@id/tv_download_status"
+            android:layout_centerVertical="true"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/ju"
+            android:id="@id/tv_download_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/el"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/hk"
+        android:gravity="center"
+        android:id="@id/tv_order"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@id/iv_photo"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="@dimen/el"
+        android:layout_marginBottom="@dimen/el"
+        android:scaleType="centerCrop"
+        android:layout_toRightOf="@id/tv_order"/>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/du"
+        android:id="@id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/el"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:id="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_toRightOf="@id/iv_photo"
+        android:layout_alignTop="@id/iv_photo"/>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/du"
+        android:id="@id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:layout_below="@id/tv_name"
+        android:layout_alignLeft="@id/tv_name"/>
+
+    <View
+        android:id="@id/divider"
+        android:background="@color/j8"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/iv_photo"
+        android:layout_alignLeft="@id/tv_name"/>
+</RelativeLayout>

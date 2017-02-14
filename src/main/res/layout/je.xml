@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+                android:background="@color/ju"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/iv_tag"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@id/iv_avatar"
+                                                  android:layout_width="@dimen/ek"
+                                                  android:layout_height="@dimen/ek"
+                                                  android:layout_margin="@dimen/fq"
+                                                  app:border_color="@color/ay"
+                                                  xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <ProgressBar
+        android:id="@id/pb_active"
+        android:layout_width="@dimen/ek"
+        android:layout_height="12.0dip"
+        android:layout_marginTop="@dimen/hm"
+        android:indeterminateDrawable="@drawable/fp"
+        android:layout_alignLeft="@id/iv_avatar"/>
+
+    <ImageView
+        android:id="@id/iv_avatar_tag"
+        android:layout_width="12.0dip"
+        android:layout_height="12.0dip"
+        android:layout_alignRight="@id/iv_avatar"
+        android:layout_alignBottom="@id/iv_avatar"/>
+
+    <TextView
+        android:textSize="@dimen/h3"
+        android:textColor="@color/hk"
+        android:id="@id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hm"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:layout_alignTop="@id/iv_avatar"/>
+
+    <TextView
+        android:textSize="@dimen/h2"
+        android:textColor="@color/da"
+        android:id="@id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fq"
+        android:layout_alignTop="@id/tv_username"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/e4"
+        android:id="@id/tv_content"
+        android:padding="@dimen/hm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hm"
+        android:layout_marginRight="@dimen/fq"
+        android:layout_below="@id/tv_username"
+        android:layout_alignLeft="@id/tv_username"
+        android:lineSpacingMultiplier="1.4"/>
+
+    <com.boohee.myview.NineGridLayout
+        android:id="@id/iv_content"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fq"
+        android:layout_marginRight="@dimen/el"
+        android:layout_below="@id/tv_content"
+        android:layout_alignLeft="@id/tv_username"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fq"
+        android:layout_marginRight="@dimen/el"
+        android:layout_marginBottom="@dimen/el"
+        android:layout_below="@id/iv_content"
+        android:layout_alignLeft="@id/tv_username">
+
+        <CheckBox
+            android:textSize="@dimen/h2"
+            android:textColor="@color/h1"
+            android:gravity="start|center"
+            android:id="@id/cb_fav"
+            android:paddingLeft="4.0dip"
+            android:paddingTop="@dimen/fs"
+            android:paddingBottom="@dimen/fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:button="@drawable/ea"
+            android:drawablePadding="4.0dip"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:textSize="@dimen/h2"
+            android:textColor="@color/h1"
+            android:id="@id/tv_comment"
+            android:padding="@dimen/fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/f0"
+            android:drawablePadding="4.0dip"
+            android:layout_weight="1.0"
+            android:drawableStart="@drawable/f0"/>
+
+        <TextView
+            android:textColor="@color/e4"
+            android:id="@id/tv_del"
+            android:padding="@dimen/fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/fa"
+            android:layout_weight="1.0"
+            android:drawableStart="@drawable/fa"/>
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:id="@id/tv_share"
+            android:padding="@dimen/fs"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/f4"
+            android:layout_weight="1.0"
+            android:drawableEnd="@drawable/f4"/>
+
+        <Button
+            android:id="@id/btn_menu"
+            android:background="@drawable/fy"
+            android:layout_width="40.0dip"
+            android:layout_height="34.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</RelativeLayout>

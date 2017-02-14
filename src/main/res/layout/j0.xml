@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+        <RelativeLayout
+            android:id="@id/layout"
+            android:paddingBottom="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/iv_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:textSize="@dimen/dk"
+                android:textColor="@color/ju"
+                android:id="@id/tv_train_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="50.0dip"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/ju"
+                android:id="@id/tv_train_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/el"
+                android:maxLength="15"
+                android:layout_below="@id/tv_train_name"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:id="@id/tv_calory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/gt"
+                android:layout_below="@id/tv_train_des"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:id="@id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/gt"
+                android:layout_toRightOf="@id/tv_calory"
+                android:layout_below="@id/tv_train_des"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:id="@id/tv_person_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/el"
+                android:layout_marginBottom="@dimen/el"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:id="@id/iv_is_joined"
+                android:background="@drawable/q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="380.0dip"
+        android:layout_marginTop="-160.0dip">
+
+        <ImageView
+            android:id="@id/bmi_wheel"
+            android:layout_width="500.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/kt"/>
+
+        <ImageView
+            android:layout_width="500.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ks"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="220.0dip">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/c3"
+                android:gravity="center"
+                android:id="@id/last_updated"
+                android:background="@drawable/d"
+                android:layout_width="fill_parent"
+                android:layout_height="34.0dip"
+                android:text="@string/qe"/>
+
+            <TextView
+                android:textSize="@dimen/bd"
+                android:textColor="@color/ax"
+                android:padding="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ae_"/>
+
+            <TextView
+                android:textSize="@dimen/bd"
+                android:textColor="@color/hk"
+                android:gravity="center"
+                android:id="@id/bmi_text"
+                android:background="@drawable/d"
+                android:layout_width="140.0dip"
+                android:layout_height="40.0dip"/>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/c3"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/df"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/mine_report_whatis_bmi_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginBottom="15.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/acy"
+                android:contentDescription="问号图标"/>
+
+            <TextView
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="什么是BMI？"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

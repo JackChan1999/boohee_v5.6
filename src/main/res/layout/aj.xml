@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/iv_avatar"
+        android:layout_width="@dimen/dy"
+        android:layout_height="@dimen/dx"
+        android:layout_marginTop="72.0dip"/>
+
+    <TextView
+        android:textSize="@dimen/dn"
+        android:textColor="@color/du"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ed"
+        android:text="付款完成啦"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"
+        android:text="下一步\n提交当前体重以及照片\n审核成功后才算报名成功呦"
+        android:lineSpacingExtra="10.0dip"/>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/cx"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_margin="@dimen/el"
+        style="@style/GlobalRippleLayout">
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/btn_upload_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="去上传照片"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

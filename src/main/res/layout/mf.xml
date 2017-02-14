@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/view_evaluate"
+              android:background="@color/ju"
+              android:padding="@dimen/dh"
+              android:visibility="gone"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/dh"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dh">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品评价"/>
+
+        <TextView
+            android:id="@id/tv_evaluate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@id/avatar"
+                android:layout_width="@dimen/ek"
+                android:layout_height="@dimen/ej"
+                android:src="@drawable/icon"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:textSize="@dimen/h3"
+                android:textColor="@color/ij"
+                android:ellipsize="end"
+                android:id="@id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gt"
+                android:layout_marginRight="20.0dip"
+                android:singleLine="true"
+                android:layout_toLeftOf="@id/post_time"
+                android:layout_toRightOf="@id/avatar"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:textSize="@dimen/h2"
+                android:textColor="@color/ii"
+                android:id="@id/tv_post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@id/tv_evaluate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dh"
+            android:layout_marginBottom="@dimen/dh"
+            android:maxLines="3"/>
+    </LinearLayout>
+
+    <Button
+        android:textColor="@color/da"
+        android:layout_gravity="center"
+        android:id="@id/view_more"
+        android:background="@drawable/bk"
+        android:paddingLeft="@dimen/dh"
+        android:paddingRight="@dimen/dh"
+        android:layout_width="wrap_content"
+        android:layout_height="36.0dip"
+        android:text="查看更多评论"/>
+</LinearLayout>

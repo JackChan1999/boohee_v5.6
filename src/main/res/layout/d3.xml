@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="188.0dip">
+
+        <ImageView
+            android:id="@id/iv_header_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:background="#33000000"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@id/view_course_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dg"
+                android:layout_marginRight="@dimen/dg"
+                android:src="@drawable/a29"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/view_middle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/ju"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ac3"/>
+
+                    <TextView
+                        android:textSize="30.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ju"
+                        android:id="@id/tv_course_finished"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/di"
+                        android:layout_marginRight="@dimen/di"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/ju"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"/>
+
+                    <TextView
+                        android:textSize="30.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ju"
+                        android:id="@id/tv_course_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/di"
+                        android:layout_marginRight="@dimen/di"/>
+
+                    <TextView
+                        android:textColor="@color/ju"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ac2"/>
+                </LinearLayout>
+
+                <com.boohee.one.sport.view.SportProgress
+                    android:id="@id/view_course_progress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dh"
+                    android:layout_marginTop="@dimen/di"
+                    android:layout_marginRight="@dimen/dh"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@id/view_course_finish"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_middle"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:textColor="@color/ju"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ac4"/>
+
+                <TextView
+                    android:textColor="@color/hb"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" >"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@id/tablayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/hb"
+        app:tabTextColor="#7f62cc74"
+        app:tabSelectedTextColor="@color/hb"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

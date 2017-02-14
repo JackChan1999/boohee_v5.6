@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/msg_view"
+        android:background="@color/e4"
+        android:paddingLeft="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip">
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/ju"
+            android:id="@id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/du"
+            android:id="@id/tv_time"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/j5"
+            android:id="@id/btn_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点我报名>>"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarStyle="outsideOverlay"
+                                                              android:id="@id/listview"
+                                                              android:background="@color/d5"
+                                                              android:layout_width="fill_parent"
+                                                              android:layout_height="fill_parent"
+                                                              android:layout_marginTop="-2.0dip"
+                                                              android:drawSelectorOnTop="false"
+                                                              android:scrollingCache="true"
+                                                              android:headerDividersEnabled="false"
+                                                              android:footerDividersEnabled="true"
+                                                              ptr:ptrHeaderBackground="@color/d5"
+                                                              ptr:ptrHeaderTextColor="@android:color/darker_gray"
+                                                              ptr:ptrShowIndicator="false"
+                                                              ptr:ptrOverScroll="false"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrScrollingWhileRefreshingEnabled="true"
+                                                              style="@style/ListViewStyleNoDivider"
+                                                              xmlns:android="http://schemas.android.com/apk/res/android"
+                                                              xmlns:ptr="http://schemas.android.com/apk/res-auto"/>
+</LinearLayout>

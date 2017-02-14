@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@id/rl_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@id/tv_begin_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textColor="@color/hb"
+                android:id="@id/btn_pick_date"
+                android:background="@drawable/c8"
+                android:padding="@dimen/gt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:text="修改日期"
+                android:layout_toRightOf="@id/tv_begin_date"/>
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="当前体重"/>
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/hb"
+            android:gravity="center"
+            android:id="@id/tv_weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gt"/>
+
+        <com.boohee.myview.BooheeRulerView
+            android:id="@id/rv_weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"/>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.8"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="目标"/>
+
+        <RadioGroup
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/rg_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:textColor="@color/m"
+                android:gravity="center"
+                android:id="@id/rb_target_lose_weight"
+                android:tag="0"
+                android:background="@drawable/i5"
+                android:layout_width="150.0dip"
+                android:layout_height="70.0dip"
+                android:button="@null"
+                android:text="@string/rh"/>
+
+            <RadioButton
+                android:textColor="@color/m"
+                android:gravity="center"
+                android:id="@id/rb_target_keep"
+                android:tag="-1"
+                android:background="@drawable/i6"
+                android:layout_width="150.0dip"
+                android:layout_height="70.0dip"
+                android:button="@null"
+                android:text="@string/px"/>
+        </RadioGroup>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/he"
+            android:gravity="center"
+            android:id="@id/tv_suggest"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gt"
+            android:text="年底"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.8"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_margin="@dimen/el"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/btn_next"
+                android:background="@drawable/cx"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/x4"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@id/picker_layout"
+        android:background="@color/ju"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="209.0dip"
+        android:layout_marginTop="@dimen/el"/>
+</FrameLayout>

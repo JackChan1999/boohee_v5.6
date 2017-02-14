@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gd"
+        layout="@layout/view_search_bar"/>
+
+    <include
+        android:visibility="gone"
+        layout="@layout/global_list_view"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.boohee.widgets.PagerSlidingTabStrip android:textColor="@color/du"
+                                                 android:id="@id/indicator"
+                                                 android:background="@color/ju"
+                                                 android:layout_width="fill_parent"
+                                                 android:layout_height="40.0dip"
+                                                 app:pstsIndicatorColor="@color/hb"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+</LinearLayout>

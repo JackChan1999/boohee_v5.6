@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="a">
+        <item>提到我的</item>
+        <item>评论</item>
+        <item>收到的钻石</item>
+        <item>新粉丝</item>
+        <item>推荐</item>
+        <item>广播</item>
+        <item>联系客服</item>
+    </string-array>
+    <string-array name="b">
+        <item>个人资料</item>
+        <item>30天减重计划</item>
+        <item>我的主页</item>
+        <item>好友与粉丝</item>
+    </string-array>
+    <string-array name="c">
+        <item>活跃用户</item>
+        <item>在我附近</item>
+        <item>情况相似</item>
+    </string-array>
+    <string-array name="d">
+        <item>为减肥找一个理由，你会更容易成功！为了不再被卖衣服的欧巴桑翻白眼，为了2个月后给TA一个惊喜，为了穿上美美的婚纱……</item>
+        <item>如果你想减肥又不知道该吃多少，最简单的办法就是“只吃8分饱”——感觉到饱了，但是还能再吃一些，这时候就放下筷子吧。</item>
+        <item>零食嘛，多吃无益。蛋糕、巧克力、饼干、薯片、糖果，冰淇淋……虽然这些真的很诱人，巴特，女人就是要对自己狠一点！</item>
+    </string-array>
+    <string-array name="e">
+        <item>等待审核</item>
+        <item>审核通过</item>
+        <item>审核未通过</item>
+    </string-array>
+    <string-array name="f">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+</resources>

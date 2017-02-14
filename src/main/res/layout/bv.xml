@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip">
+
+                <ImageView
+                    android:id="@id/iv_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/el"
+                    android:layout_above="@id/progress_bar_horizontal"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.boohee.one.video.view.HorizontalProgressView
+                    android:id="@id/progress_bar_horizontal"
+                    android:visibility="invisible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5.0dip"
+                    android:layout_marginLeft="@dimen/el"
+                    android:layout_marginRight="@dimen/el"
+                    android:layout_marginBottom="68.0dip"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:textSize="@dimen/ef"
+                        android:textColor="@color/du"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a6d"/>
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/e4"
+                        android:id="@id/tv_sport_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:textSize="@dimen/ef"
+                        android:textColor="@color/du"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/em"/>
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/e4"
+                        android:id="@id/tv_calory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:textSize="@dimen/ef"
+                        android:textColor="@color/du"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sl"/>
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/e4"
+                        android:id="@id/tv_menton_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/el"
+                android:text="@string/sj"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recycler_view"
+                android:background="@color/ju"
+                android:padding="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="125.0dip"/>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/el"
+                android:text="@string/a5w"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/e4"
+                android:id="@id/tv_mention_des"
+                android:background="@color/ju"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/bottom_layout"
+        android:background="@drawable/cq"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_margin="@dimen/el">
+
+        <TextView
+            android:textSize="@dimen/ee"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/tv_start"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/a6j"/>
+
+        <ProgressBar
+            android:id="@id/progress_bar_download"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0dip"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_marginRight="@dimen/gt"
+            android:progressDrawable="@drawable/h3"
+            android:layout_toLeftOf="@id/tv_download_status"
+            android:layout_centerVertical="true"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+        <TextView
+            android:textSize="@dimen/ef"
+            android:textColor="@color/ju"
+            android:id="@id/tv_download_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/el"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

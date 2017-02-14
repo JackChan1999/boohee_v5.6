@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/dm"
+        android:textColor="@color/e4"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/el"
+        android:drawableRight="@drawable/aax"
+        android:drawablePadding="5.0dip"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:layout_below="@id/tv_title">
+
+        <kankan.wheel.widget.WheelView
+            android:layout_gravity="center"
+            android:id="@id/wheel_date"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"/>
+
+        <kankan.wheel.widget.WheelView
+            android:layout_gravity="center"
+            android:id="@id/wheel_time_type"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout style="@style/RippleLayout">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/hb"
+            android:gravity="center"
+            android:id="@id/tv_confirm"
+            android:background="@color/d5"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gn"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

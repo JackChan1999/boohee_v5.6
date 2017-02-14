@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/iv_previous"
+        android:layout_width="30.0dip"
+        android:layout_height="20.0dip"
+        android:src="@drawable/a1t"
+        android:text="@null"
+        android:layout_toLeftOf="@id/tv_date"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/il"
+        android:gravity="center"
+        android:id="@id/tv_date"
+        android:paddingLeft="@dimen/dt"
+        android:paddingRight="@dimen/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:minWidth="120.0dip"
+        android:text="今天"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@id/iv_next"
+        android:layout_width="30.0dip"
+        android:layout_height="20.0dip"
+        android:src="@drawable/a1w"
+        android:layout_toRightOf="@id/tv_date"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

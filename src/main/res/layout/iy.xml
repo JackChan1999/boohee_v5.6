@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_shop_item_1"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/h1"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip">
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/j8"
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_shop_type"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h1"
+            android:layout_marginRight="@dimen/h1"/>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/j8"
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

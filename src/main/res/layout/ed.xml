@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/reset_pwd_layout"
+        android:background="@drawable/mi"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20.0dip">
+
+        <EditText
+            android:textSize="@dimen/em"
+            android:textColorHint="@color/dv"
+            android:id="@id/old_pwd"
+            android:background="@null"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="请输入旧密码"
+            android:singleLine="true"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:background="@color/dv"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"/>
+
+        <EditText
+            android:textSize="@dimen/em"
+            android:textColorHint="@color/dv"
+            android:id="@id/new_pwd"
+            android:background="@null"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="请输入新密码"
+            android:singleLine="true"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <EditText
+        android:textSize="@dimen/em"
+        android:textColorHint="@color/dv"
+        android:id="@id/set_pwd"
+        android:background="@drawable/mi"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20.0dip"
+        android:hint="请输入密码 (6到32个字符)"
+        android:singleLine="true"
+        android:maxLength="32"
+        android:inputType="textPassword"/>
+</LinearLayout>

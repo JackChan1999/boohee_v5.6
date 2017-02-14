@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/ll_calory_distribute"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/ll_record"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <include
+                        android:id="@id/ll_card_breakfast"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_card_detail"/>
+
+                    <include
+                        android:id="@id/ll_card_snacks_breakfast"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_card_detail"/>
+
+                    <include
+                        android:id="@id/ll_card_lunch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_card_detail"/>
+
+                    <include
+                        android:id="@id/ll_card_snacks_lunch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_card_detail"/>
+
+                    <include
+                        android:id="@id/ll_card_dinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_card_detail"/>
+
+                    <include
+                        android:id="@id/ll_card_snacks_dinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_card_detail"/>
+
+                    <include
+                        android:id="@id/ll_card_sport"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_card_detail"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@id/ll_today_analysis"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.boohee.widgets.BooheeRippleLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hl"
+                        android:layout_marginTop="@dimen/el"
+                        android:layout_marginRight="@dimen/hl"
+                        android:layout_marginBottom="@dimen/el"
+                        style="@style/RippleLayout">
+
+                        <Button
+                            android:textSize="@dimen/em"
+                            android:textColor="@color/ju"
+                            android:id="@id/btn_today_analysis"
+                            android:background="@drawable/cd"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="饮食分析"/>
+                    </com.boohee.widgets.BooheeRippleLayout>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/du"
+                        android:paddingBottom="@dimen/el"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完整记录三餐分析才准确"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@id/ll_record_null"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/du"
+                        android:gravity="center"
+                        android:id="@id/tv_name"
+                        android:padding="@dimen/el"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50.0dip"
+                        android:text="@string/a1x"
+                        android:drawableTop="@drawable/aab"
+                        android:drawablePadding="@dimen/el"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/nav_diet_sport"/>
+    </LinearLayout>
+
+    <com.boohee.myview.DietPopView
+        android:id="@id/diet_pop_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

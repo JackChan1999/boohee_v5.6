@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:layout_gravity="bottom"
+              android:orientation="horizontal"
+              android:id="@id/ll_bottom"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/hn"
+              app:layout_behavior=".behavior.QuickHideBehavior"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@id/rl_praise"
+        android:background="@drawable/fq"
+        android:clickable="true"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <CheckBox
+            android:textSize="@dimen/h2"
+            android:textColor="@color/du"
+            android:gravity="center"
+            android:id="@id/cb_praise"
+            android:background="@null"
+            android:paddingLeft="@dimen/hm"
+            android:paddingRight="@dimen/hm"
+            android:visibility="visible"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:button="@drawable/ea"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/d6"
+            android:gravity="center"
+            android:id="@id/tv_praise_plus"
+            android:padding="@dimen/gt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zq"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/ll_comment"
+        android:background="@drawable/fq"
+        android:clickable="true"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="@dimen/h2"
+            android:textColor="@color/dv"
+            android:gravity="center"
+            android:id="@id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/f0"
+            android:drawablePadding="@dimen/hm"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/ll_collect"
+        android:background="@drawable/fq"
+        android:clickable="true"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <CheckBox
+            android:textSize="@dimen/h2"
+            android:textColor="@color/du"
+            android:gravity="center"
+            android:id="@id/cb_collect"
+            android:background="@null"
+            android:paddingLeft="@dimen/hm"
+            android:paddingRight="@dimen/hm"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:button="@drawable/dy"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+</LinearLayout>

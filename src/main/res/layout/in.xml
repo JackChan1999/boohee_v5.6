@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/iv_avatar"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_marginTop="@dimen/el"
+            android:layout_marginRight="@dimen/gt"
+            android:layout_marginBottom="@dimen/el"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:riv_corner_radius="3.0dip"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:ellipsize="end"
+            android:id="@id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/hm"
+            android:singleLine="true"
+            android:layout_toLeftOf="@id/txt_calory"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:id="@id/txt_calory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/el"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@id/view_divide"
+        android:background="@color/j8"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="@dimen/ho"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

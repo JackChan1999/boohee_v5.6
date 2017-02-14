@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_analysis_meals"
+              android:background="@color/d5"
+              android:visibility="visible"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="260.0dip"
+        android:layout_marginTop="@dimen/hn">
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:layout_gravity="center"
+            android:id="@id/pie_meals"
+            android:layout_width="240.0dip"
+            android:layout_height="240.0dip"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三餐热量比例"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:gravity="center"
+            android:id="@id/tv_meals_knowledge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三餐比例知识"
+            android:drawableLeft="@drawable/acy"
+            android:drawablePadding="@dimen/gt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/e4"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dp"
+                android:drawableLeft="@drawable/a1i"
+                android:drawablePadding="@dimen/gt"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <com.boohee.myview.risenumber.RiseNumberTextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:id="@id/tv_meals_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:id="@id/tv_meals_breakfast_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@id/iv_meals_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gt"
+                android:layout_toLeftOf="@id/tv_meals_breakfast_state"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/e4"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ri"
+                android:drawableLeft="@drawable/a1n"
+                android:drawablePadding="@dimen/gt"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <com.boohee.myview.risenumber.RiseNumberTextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:id="@id/tv_meals_lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:id="@id/tv_meals_lunch_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@id/iv_meals_lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gt"
+                android:layout_toLeftOf="@id/tv_meals_lunch_state"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/e4"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a7m"
+                android:drawableLeft="@drawable/a1m"
+                android:drawablePadding="@dimen/gt"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <com.boohee.myview.risenumber.RiseNumberTextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:id="@id/tv_meals_dinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:id="@id/tv_meals_dinner_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@id/iv_meals_dinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gt"
+                android:layout_toLeftOf="@id/tv_meals_dinner_state"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

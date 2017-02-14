@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/ad4"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:layout_gravity="top|right|center"
+        android:id="@id/checkmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.5dip"
+        android:layout_marginRight="5.5dip"
+        android:src="@drawable/ad2"/>
+</FrameLayout>

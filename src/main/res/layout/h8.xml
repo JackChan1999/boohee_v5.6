@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:background="@drawable/or"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15.0dip"
+              android:layout_marginBottom="15.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/bd"
+        android:textColor="@color/b5"
+        android:padding="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35.0dip"
+        android:text="@string/o5"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/d"
+        android:layout_width="160.0dip"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/fr"
+            android:textColor="@color/fg"
+            android:id="@id/healthy_weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/fg"
+            android:layout_gravity="top|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:text="@string/q_"/>
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/b5"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:text="健康体重范围"/>
+
+    <TextView
+        android:textSize="20.0dip"
+        android:textColor="@color/b5"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/healthy_weight_range_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="50~70 Kg"/>
+</LinearLayout>

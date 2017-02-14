@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@drawable/dz"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                           android:layout_height="wrap_content"
+                                           app:mrl_rippleColor="@color/hm"
+                                           app:mrl_rippleOverlay="@bool/p"
+                                           app:mrl_rippleAlpha="0.2"
+                                           app:mrl_rippleHover="@bool/o"
+                                           app:mrl_rippleDelayClick="@bool/n"
+                                           xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:textSize="@dimen/bd"
+            android:textColor="@color/dv"
+            android:gravity="center"
+            android:id="@id/date_taoday"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                           android:layout_height="wrap_content"
+                                           app:mrl_rippleColor="@color/hm"
+                                           app:mrl_rippleOverlay="@bool/p"
+                                           app:mrl_rippleAlpha="0.2"
+                                           app:mrl_rippleHover="@bool/o"
+                                           app:mrl_rippleDelayClick="@bool/n"
+                                           xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:textSize="@dimen/bd"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:id="@id/mc_coming"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mc_coming"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                           android:layout_height="wrap_content"
+                                           app:mrl_rippleColor="@color/hm"
+                                           app:mrl_rippleOverlay="@bool/p"
+                                           app:mrl_rippleAlpha="0.2"
+                                           app:mrl_rippleHover="@bool/o"
+                                           app:mrl_rippleDelayClick="@bool/n"
+                                           xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:textSize="@dimen/bd"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:id="@id/mc_leave"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mc_leave"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                           android:layout_height="wrap_content"
+                                           app:mrl_rippleColor="@color/hm"
+                                           app:mrl_rippleOverlay="@bool/p"
+                                           app:mrl_rippleAlpha="0.2"
+                                           app:mrl_rippleHover="@bool/o"
+                                           app:mrl_rippleDelayClick="@bool/n"
+                                           xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:textSize="@dimen/bd"
+            android:textColor="@color/gn"
+            android:gravity="center"
+            android:id="@id/delete_mc"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i9"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                           android:layout_height="wrap_content"
+                                           app:mrl_rippleColor="@color/hm"
+                                           app:mrl_rippleOverlay="@bool/p"
+                                           app:mrl_rippleAlpha="0.2"
+                                           app:mrl_rippleHover="@bool/o"
+                                           app:mrl_rippleDelayClick="@bool/n"
+                                           xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:textSize="@dimen/bd"
+            android:textColor="@color/e4"
+            android:gravity="center"
+            android:id="@id/cancel_dialog"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eq"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

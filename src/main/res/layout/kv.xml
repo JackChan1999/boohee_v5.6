@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/gj"
+              android:layout_marginLeft="@dimen/fy"
+              android:layout_marginRight="@dimen/fy"
+              style="@style/MQMatchWrap.Vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/g8"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:id="@id/tv_comfirm_title"
+        android:padding="@dimen/g1"
+        style="@style/MQMatchWrap"/>
+
+    <TextView
+        android:textSize="@dimen/g8"
+        android:textColor="@android:color/black"
+        android:id="@id/tv_comfirm_content"
+        android:paddingLeft="@dimen/g1"
+        android:paddingRight="@dimen/g1"
+        android:paddingBottom="@dimen/g1"
+        style="@style/MQMatchWrap"/>
+
+    <View style="@style/MQHLine"/>
+
+    <LinearLayout style="@style/MQMatchWrap.Horizontal">
+
+        <TextView
+            android:textSize="@dimen/g8"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:id="@id/tv_confirm_cancel"
+            android:background="@drawable/g_"
+            android:padding="@dimen/g0"
+            android:clickable="true"
+            android:text="@string/ur"
+            style="@style/MQAutoWrap"/>
+
+        <View style="@style/MQVLine"/>
+
+        <TextView
+            android:textSize="@dimen/g8"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:id="@id/tv_confirm_confirm"
+            android:background="@drawable/ga"
+            android:padding="@dimen/g0"
+            android:clickable="true"
+            android:text="@string/ut"
+            style="@style/MQAutoWrap"/>
+    </LinearLayout>
+</LinearLayout>

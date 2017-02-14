@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:background="#ff554743"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/a4"
+        android:gravity="center"
+        android:id="@id/tv_breakfast_snack"
+        android:padding="@dimen/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dq"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/a4"
+        android:gravity="center"
+        android:id="@id/tv_lunch_snack"
+        android:padding="@dimen/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rj"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/a4"
+        android:gravity="center"
+        android:id="@id/tv_supper_snack"
+        android:padding="@dimen/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a7n"/>
+</LinearLayout>

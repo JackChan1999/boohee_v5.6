@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center"
+              android:orientation="vertical"
+              android:background="@drawable/dz"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="#ff515151"
+        android:gravity="center"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="你的运动计划"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="35.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动基础"/>
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="#ff515151"
+                android:gravity="center"
+                android:id="@id/tv_dialog_level"
+                android:background="@drawable/c4"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginTop="@dimen/el"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="35.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI"/>
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="#ff515151"
+                android:gravity="center"
+                android:id="@id/tv_dialog_bmi"
+                android:background="@drawable/c4"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginTop="@dimen/el"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="35.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重/公斤"/>
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="#ff515151"
+                android:gravity="center"
+                android:id="@id/tv_dialog_weight"
+                android:background="@drawable/c4"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginTop="@dimen/el"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/du"
+        android:gravity="center"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="运动介绍"/>
+
+    <TextView
+        android:textSize="@dimen/dn"
+        android:textColor="#ff515151"
+        android:id="@id/tv_dialog_des"
+        android:paddingLeft="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="干得好！你已经完成了我们的运动评测，走出了第一步！根据你的运动基础，我们推荐了两周左右的健身计划，计划有三个阶段，坚持下去，不仅能甩掉身上肥肉，还能有完美的身材曲线。\n\n重要提醒：如果连续3天不训练, 计划会重新回到第一天哦, 再冷也要起来动动~"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@id/btn_ok"
+        android:background="@drawable/c_"
+        android:paddingLeft="@dimen/hl"
+        android:paddingTop="10.0dip"
+        android:paddingRight="@dimen/hl"
+        android:paddingBottom="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:text="好哒，我知道了"/>
+</LinearLayout>

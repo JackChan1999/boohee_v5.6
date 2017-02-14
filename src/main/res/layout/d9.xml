@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_marginTop="10.0dip"
+        style="@style/HorizontalWholeDivider"/>
+
+    <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+        <com.boohee.myview.CommonLineView
+            android:id="@id/clv_sport_history"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            app:clvTitle="@string/a5z"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <View
+        android:layout_marginTop="10.0dip"
+        style="@style/HorizontalWholeDivider"/>
+
+    <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+        <com.boohee.myview.CommonLineView
+            android:id="@id/clv_sport_test"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            app:clvTitle="@string/a6c"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+        <RelativeLayout
+            android:id="@id/rl_remind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/c4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/el"
+                    android:text="@string/a6_"
+                    android:layout_weight="1.0"/>
+
+                <com.boohee.widgets.AnimCheckBox
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/check_box"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_marginRight="@dimen/el"
+                    app:stroke_width="1.0dip"
+                    app:stroke_color="@color/hk"
+                    app:circle_color="@color/ju"/>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/gn"
+                android:gravity="center"
+                android:id="@id/remind_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每天 20点: 30分"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <View
+        android:layout_marginTop="@dimen/el"
+        style="@style/HorizontalWholeDivider"/>
+
+    <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+        <com.boohee.myview.CommonLineView
+            android:id="@id/clv_clean_cache"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            app:clvTitle="@string/fk"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+</LinearLayout>

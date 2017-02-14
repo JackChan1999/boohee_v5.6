@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_content"
+        android:background="@color/an"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view_header"
+            android:background="@color/ju"
+            android:padding="@dimen/dh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="21.0sp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dh"
+                android:text="已减去"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="48.0sp"
+                    android:textColor="@color/hb"
+                    android:id="@id/tv_lose_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:textSize="21.0sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:text="公斤"
+                    android:layout_toRightOf="@id/tv_lose_weight"
+                    android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+
+            <com.boohee.circleview.LineIndicator
+                android:id="@id/li_weight_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textColor="@color/hb"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/bt_reset_1"
+                android:background="@drawable/ca"
+                android:layout_width="wrap_content"
+                android:layout_height="32.0dip"
+                android:layout_marginTop="@dimen/dh"
+                android:text="重设目标"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view_content_reset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@color/hb"
+                android:layout_gravity="right"
+                android:id="@id/bt_reset_2"
+                android:background="@drawable/ca"
+                android:layout_width="wrap_content"
+                android:layout_height="32.0dip"
+                android:layout_margin="@dimen/dh"
+                android:text="重设目标"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/dg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.boohee.circleview.CircleIndicator
+                android:id="@id/ci_bmi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.boohee.circleview.CircleIndicator
+                android:id="@id/ci_body_fat_rate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.boohee.circleview.CircleProgress
+                android:id="@id/cp_body_age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

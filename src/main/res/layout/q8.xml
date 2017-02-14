@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_pay_type"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/d4"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="32.0dip">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/el"
+            android:text="支付方式"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/ll_pay_more"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/bs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"/>
+
+            <ImageView
+                android:id="@id/iv_pay_more"
+                android:background="@drawable/p8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/el"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <include layout="@layout/item_pay_alipay"/>
+
+    <include layout="@layout/item_pay_wechat"/>
+
+    <include layout="@layout/item_pay_upacp"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+              android:layout_gravity="center"
+              android:orientation="vertical"
+              android:id="@id/ll_add_measure"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_pop_date_top"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_measure"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <include layout="@layout/view_measure_waist"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <include layout="@layout/view_measure_brass"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <include layout="@layout/view_measure_hip"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <include layout="@layout/view_measure_arm"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <include layout="@layout/view_measure_thigh"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <include layout="@layout/view_measure_shank"/>
+
+            <include layout="@layout/view_divide_line"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

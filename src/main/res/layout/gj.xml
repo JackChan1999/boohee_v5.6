@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_pop_punch_top"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.0">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:gravity="left"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/gt"
+                android:paddingTop="@dimen/h1"
+                android:paddingBottom="@dimen/h1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a39"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <com.boohee.widgets.tablayout.BooheeTabLayout
+                android:id="@id/time_tab_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:gravity="left"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/gt"
+                android:paddingTop="@dimen/h1"
+                android:paddingBottom="@dimen/h1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a3a"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <com.boohee.widgets.tablayout.BooheeTabLayout
+                android:id="@id/diet_tab_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:gravity="left"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/gt"
+                android:paddingTop="@dimen/h1"
+                android:paddingBottom="@dimen/h1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a3_"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0">
+
+            <include layout="@layout/view_divide_line"/>
+
+            <com.booheee.view.keyboard.DietKeyboard
+                android:id="@id/diet_keyboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

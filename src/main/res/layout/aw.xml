@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.one.player.ExVideoView
+        android:id="@id/video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    `
+
+    <FrameLayout
+        android:id="@id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/btn_back"
+            android:paddingLeft="@dimen/el"
+            android:paddingTop="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a22"/>
+    </FrameLayout>
+</FrameLayout>

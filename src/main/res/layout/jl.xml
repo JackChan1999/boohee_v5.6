@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:layout_gravity="end|top|center"
+        android:id="@id/btn_del"
+        android:background="@drawable/h7"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="-8.0dip"
+        android:layout_marginRight="-8.0dip"/>
+</FrameLayout>

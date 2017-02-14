@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_pay_type"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8.0dip"
+              android:layout_marginBottom="8.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/c4"
+            android:padding="8.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/ll_pay_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"/>
+
+            <ImageView
+                android:id="@id/iv_pay_more"
+                android:background="@drawable/p8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gt"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/rl_alipay"
+            android:background="@drawable/fq"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/iv_alipay_logo"
+                android:background="@drawable/qn"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="8.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_alipay_logo"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textStyle="bold"
+                    android:textColor="@color/c4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/z3"/>
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/c4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/z0"/>
+            </LinearLayout>
+
+            <ToggleButton
+                android:gravity="center"
+                android:id="@id/tb_ali"
+                android:background="@drawable/if"
+                android:clickable="false"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginRight="8.0dip"
+                android:textOn=""
+                android:textOff=""
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <RelativeLayout
+            android:id="@id/rl_wechat"
+            android:background="@drawable/fq"
+            android:padding="8.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/iv_wechat_logo"
+                android:background="@drawable/qp"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="8.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_wechat_logo"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textStyle="bold"
+                    android:textColor="@color/c4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/z5"/>
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/c4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/z6"/>
+            </LinearLayout>
+
+            <ToggleButton
+                android:gravity="center"
+                android:id="@id/tb_wechat"
+                android:background="@drawable/if"
+                android:clickable="false"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginRight="8.0dip"
+                android:textOn=""
+                android:textOff=""
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/view_divide_line"/>
+    </LinearLayout>
+</LinearLayout>

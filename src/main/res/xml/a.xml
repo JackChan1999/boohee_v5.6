@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="基本设置">
+        <Preference android:title="个人资料">
+            <intent
+                android:targetPackage="com.boohee.one"
+                android:targetClass="com.boohee.account.UserProfileActivity"/>
+        </Preference>
+        <Preference android:title="账号设置">
+            <intent
+                android:targetPackage="com.boohee.one"
+                android:targetClass="com.boohee.one.ui.AccountSettingActivity"/>
+        </Preference>
+        <CheckBoxPreference
+            android:title="隐私保护"
+            android:key="password"/>
+        <CheckBoxPreference
+            android:title="接收推送"
+            android:key="isReceivePush"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="常用设置">
+        <Preference android:title="应用推荐">
+            <intent
+                android:targetPackage="com.boohee.one"
+                android:targetClass="com.boohee.one.ui.AppRecommendActivity"/>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="其它">
+        <Preference
+            android:title="推荐薄荷给朋友"
+            android:key="pref_share"/>
+        <Preference
+            android:title="评个分吧"
+            android:key="pref_score"/>
+        <Preference android:title="商务合作">
+            <intent
+                android:targetPackage="com.boohee.one"
+                android:targetClass="com.boohee.one.ui.ContactUsActivity"/>
+        </Preference>
+        <Preference
+            android:title="使用条款"
+            android:key="pref_terms"/>
+        <Preference
+            android:title="关于薄荷"
+            android:key="pref_about_boohee"/>
+    </PreferenceCategory>
+</PreferenceScreen>

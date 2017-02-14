@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@id/view_mine_header_weight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_mine_head_view"/>
+
+    <com.boohee.widgets.TextProgressBar
+        android:id="@id/view_mine_header_weight_textBar"
+        android:layout_width="fill_parent"
+        android:layout_height="24.0dip"
+        android:layout_marginTop="-12.0dip"
+        android:layout_below="@id/view_mine_header_weight"/>
+</RelativeLayout>

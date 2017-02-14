@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/icon"
+        android:layout_width="45.0dip"
+        android:layout_height="45.0dip"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:id="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_toRightOf="@id/icon"
+        android:layout_alignTop="@id/icon"/>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/he"
+        android:id="@id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"/>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/du"
+        android:id="@id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 分钟"
+        android:layout_toRightOf="@id/duration"
+        android:layout_alignTop="@id/duration"/>
+
+    <Button
+        android:id="@id/record"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/el"
+        android:text="去记录"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:background="@color/cw"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignLeft="@id/name"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

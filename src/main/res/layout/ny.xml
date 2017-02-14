@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ViewFlipper
+            android:id="@id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.boohee.user.view.UserGenderView
+                android:id="@id/gender_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <com.boohee.user.view.UserBirthdayView
+                android:id="@id/birthday_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <com.boohee.user.view.UserHeightView
+                android:id="@id/height_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <com.boohee.user.view.UserWeightView
+                android:id="@id/weight_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <com.boohee.user.view.UserTargetView
+                android:id="@id/target_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <com.boohee.user.view.UserTargetWeightView
+                android:id="@id/target_weight_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <com.boohee.user.view.UserTargetDateView
+                android:id="@id/target_date_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+        </ViewFlipper>
+    </LinearLayout>
+</FrameLayout>

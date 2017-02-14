@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_cover"
+        android:background="@drawable/p0"
+        android:padding="@dimen/ed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:textSize="@dimen/dk"
+            android:textColor="@color/dv"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/tv_nice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_gravity="center_horizontal"
+            android:id="@id/v_line"
+            android:background="@color/dv"
+            android:layout_width="100.0dip"
+            android:layout_height="2.0dip"
+            android:layout_marginTop="@dimen/d4"
+            android:layout_marginBottom="@dimen/hl"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@id/ll_buy_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/c4"
+                android:layout_gravity="left"
+                android:id="@id/tv_desc_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="量身定制的减重方案"
+                android:drawableLeft="@drawable/a5_"
+                android:drawablePadding="@dimen/d4"/>
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/c4"
+                android:layout_gravity="left"
+                android:id="@id/tv_desc_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:text="量身定制的减重方案"
+                android:drawableLeft="@drawable/a5h"
+                android:drawablePadding="@dimen/d4"/>
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/c4"
+                android:layout_gravity="left"
+                android:id="@id/tv_desc_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:text="量身定制的减重方案"
+                android:drawableLeft="@drawable/a59"
+                android:drawablePadding="@dimen/d4"/>
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/c4"
+                android:layout_gravity="left"
+                android:id="@id/tv_desc_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:text="量身定制的减重方案"
+                android:drawableLeft="@drawable/a5d"
+                android:drawablePadding="@dimen/d4"/>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/c4"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/tv_renew_desc"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="160.0dip"
+            android:text="1个月 减重顾问服务 \n(不包含方案)"/>
+
+        <TextView
+            android:textSize="@dimen/dk"
+            android:textColor="@color/gt"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/tv_nice_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hl"/>
+
+        <Button
+            android:textSize="@dimen/dm"
+            android:textColor="@color/ju"
+            android:id="@id/bt_buy"
+            android:background="@drawable/da"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hn"
+            android:layout_marginTop="@dimen/hl"
+            android:layout_marginRight="@dimen/hn"
+            android:layout_marginBottom="@dimen/el"
+            android:text="我要购买"/>
+    </LinearLayout>
+</RelativeLayout>

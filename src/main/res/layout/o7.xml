@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_analysis_micro_nutrients"
+              android:background="@color/d5"
+              android:visibility="visible"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/du"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:id="@id/tv_micro_title"
+        android:paddingLeft="@dimen/el"
+        android:paddingBottom="@dimen/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60.0dip"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <include layout="@layout/subview_micro_nutrients_title"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <com.boohee.myview.WholeListView
+        android:id="@id/lv_micro_nutrients"
+        android:background="@color/ju"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/bx"
+        android:divider="@color/cw"
+        android:dividerHeight="@dimen/dj"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <Button
+        android:textSize="@dimen/em"
+        android:textColor="@color/hk"
+        android:gravity="center"
+        android:id="@id/bt_micro_more"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

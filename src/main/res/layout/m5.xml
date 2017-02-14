@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#e6ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@id/actionbarLayout"
+        layout="@layout/skyblue_share_actionbar"/>
+
+    <RelativeLayout
+        android:id="@id/mainRelLayout"
+        android:background="@drawable/y9"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14.0dip"
+        android:layout_below="@id/actionbarLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/titleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="#ffa7a7a7"
+                android:id="@id/titleEditText"
+                android:background="@null"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"/>
+
+            <ImageView
+                android:id="@id/closeImageView"
+                android:paddingLeft="10.0dip"
+                android:layout_width="30.0dip"
+                android:layout_height="20.0dip"
+                android:src="@drawable/y_"
+                android:scaleType="center"/>
+        </LinearLayout>
+
+        <View
+            android:id="@id/divider"
+            android:background="@drawable/ya"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_below="@id/titleLayout"/>
+
+        <EditText
+            android:textColor="#ff333333"
+            android:gravity="top|left|center"
+            android:id="@id/textEditText"
+            android:background="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:minLines="1"
+            android:layout_below="@id/divider"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/atLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textEditText"/>
+
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="#ffcfcfcf"
+            android:id="@id/textCounterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_below="@id/textEditText"
+            android:layout_alignParentRight="true"/>
+
+        <HorizontalScrollView
+            android:id="@id/hScrollView"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:layout_width="wrap_content"
+            android:layout_height="56.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_below="@id/atLayout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/imagesLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>

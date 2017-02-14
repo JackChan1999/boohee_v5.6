@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ju"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@id/select_line"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip">
+
+            <CheckBox
+                android:layout_gravity="bottom"
+                android:id="@id/select_all"
+                android:background="@drawable/bp"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_marginLeft="@dimen/el"
+                android:button="@null"/>
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/e4"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:text="@string/g2"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/recycler_view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/delete"
+            android:background="@color/he"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:text="@string/i5"/>
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@id/empty_layout"
+        android:layout="@layout/oy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

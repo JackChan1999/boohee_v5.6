@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip">
+
+        <ImageView
+            android:id="@id/iv_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#7f333333"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="12.0sp"
+                android:textColor="#7fffffff"
+                android:gravity="center"
+                android:id="@id/tv_period"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/dh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="bottom|center"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0">
+
+                    <TextView
+                        android:textSize="17.0sp"
+                        android:textColor="@color/ju"
+                        android:gravity="center"
+                        android:id="@id/tv_course_progress"
+                        android:background="@drawable/i0"
+                        android:layout_width="68.0dip"
+                        android:layout_height="68.0dip"/>
+
+                    <TextView
+                        android:textColor="#7fffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dh"
+                        android:text="课程（节）"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="bottom|center"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0">
+
+                    <TextView
+                        android:textSize="24.0sp"
+                        android:textColor="@color/ju"
+                        android:gravity="center"
+                        android:id="@id/tv_duration"
+                        android:background="@drawable/i0"
+                        android:layout_width="96.0dip"
+                        android:layout_height="96.0dip"/>
+
+                    <TextView
+                        android:textColor="#7fffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dh"
+                        android:text="总时长（分钟）"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="bottom|center"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0">
+
+                    <TextView
+                        android:textSize="17.0sp"
+                        android:textColor="@color/ju"
+                        android:gravity="center"
+                        android:id="@id/tv_kcal"
+                        android:background="@drawable/i0"
+                        android:layout_width="68.0dip"
+                        android:layout_height="68.0dip"/>
+
+                    <TextView
+                        android:textColor="#7fffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dh"
+                        android:text="消耗（千卡）"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="top|right|center"
+            android:id="@id/iv_finish"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dh"
+            android:src="@drawable/a2n"/>
+    </FrameLayout>
+
+    <TextView
+        android:textColor="@color/du"
+        android:gravity="center"
+        android:background="@color/ju"
+        android:padding="@dimen/dh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="我的课表"/>
+
+    <View
+        android:background="@color/j8"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"/>
+</LinearLayout>

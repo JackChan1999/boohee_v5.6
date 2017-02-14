@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+                android:id="@id/item"
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dip"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@id/select"
+        android:background="@drawable/bp"
+        android:visibility="gone"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_marginLeft="@dimen/el"
+        android:button="@null"
+        android:layout_centerVertical="true"/>
+
+    <FrameLayout
+        android:id="@id/cover_area"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginTop="@dimen/el"
+        android:layout_toRightOf="@id/select">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/cover"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="6.0px"/>
+
+        <View
+            android:id="@id/shadow"
+            android:background="@drawable/cv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <com.boohee.widgets.ProgressWheel
+            android:id="@id/wheel"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            app:textColor="#ff222222"
+            app:textSize="14.0sp"
+            app:barColor="#ff62cc74"
+            app:rimColor="#ff494d4b"
+            app:rimWidth="3.0dip"
+            app:spinSpeed="3.0dip"
+            app:barWidth="3.0dip"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/hb"
+            android:layout_gravity="center"
+            android:id="@id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/continue_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a36"/>
+
+        <TextView
+            android:textSize="@dimen/de"
+            android:textColor="@color/hb"
+            android:layout_gravity="center"
+            android:id="@id/wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待中"/>
+    </FrameLayout>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:id="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginTop="24.0dip"
+        android:layout_toRightOf="@id/cover_area"/>
+
+    <TextView
+        android:textColor="@color/du"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gt"
+        android:layout_toRightOf="@id/name"
+        android:layout_alignBaseline="@id/name"/>
+
+    <TextView
+        android:textColor="@color/du"
+        android:id="@id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gt"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"/>
+
+    <ImageView
+        android:id="@id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/el"
+        android:src="@drawable/a1r"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@id/divider"
+        android:background="@color/cw"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_toRightOf="@id/select"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

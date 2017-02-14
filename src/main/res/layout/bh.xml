@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <WebView
+        android:id="@id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <LinearLayout
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.0">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/el"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/hb"
+                android:gravity="center"
+                android:id="@id/tv_buy"
+                android:background="@drawable/ca"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:text="购买"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            android:layout_marginRight="@dimen/el"
+            android:layout_marginBottom="@dimen/el"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_bind"
+                android:background="@drawable/c_"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:text="绑定"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+</LinearLayout>

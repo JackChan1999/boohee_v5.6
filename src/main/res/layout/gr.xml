@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/dg"
+                android:paddingTop="96.0dip"
+                android:paddingRight="@dimen/dg"
+                android:paddingBottom="64.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:layout_above="@id/bt_close"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view_list"
+            android:background="@drawable/a0z"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dh"
+                android:text="礼物列表"/>
+
+            <ListView
+                android:id="@id/listview"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:divider="@color/cv"
+                android:dividerHeight="1.0px"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@id/view_content"
+            android:background="@drawable/a0z"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a7a"/>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dh"
+                android:src="@drawable/a4i"/>
+        </LinearLayout>
+
+        <Button
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/bt_operate"
+            android:background="@drawable/a11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a7c"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/bt_close"
+        android:padding="@dimen/dg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dg"
+        android:src="@drawable/a6g"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

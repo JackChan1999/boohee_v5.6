@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/d5"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_welcome"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view_recommend"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="bottom|left|center"
+                android:paddingLeft="@dimen/di"
+                android:paddingTop="@dimen/dh"
+                android:paddingBottom="@dimen/di"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a3p"
+                android:layout_alignParentTop="true"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rv_recommend"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dg"
+                android:layout_marginBottom="@dimen/dh"
+                android:text="@string/a3o"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/dh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@id/view_search_topic"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a3q"
+                    android:drawableTop="@drawable/a6m"
+                    android:drawablePadding="@dimen/dh"
+                    android:layout_weight="1.0"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@id/view_search_article"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a3l"
+                    android:drawableTop="@drawable/a6l"
+                    android:drawablePadding="@dimen/dh"
+                    android:layout_weight="1.0"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@id/view_search_user"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a3r"
+                    android:drawableTop="@drawable/a6k"
+                    android:drawablePadding="@dimen/dh"
+                    android:layout_weight="1.0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/view_search"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:gravity="center"
+            android:id="@id/view_no_result"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/a3n"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rv_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@id/view_load_more"
+                android:padding="@dimen/dh"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="查看更多搜索结果"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_search_alert"
+        android:background="@color/ju"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:id="@id/tv_search_alert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dh"/>
+
+        <include layout="@layout/view_divide_line"/>
+    </LinearLayout>
+</FrameLayout>

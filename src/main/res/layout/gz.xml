@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview"
+                                                          android:layout_width="fill_parent"
+                                                          android:layout_height="fill_parent"
+                                                          android:fastScrollEnabled="false"
+                                                          android:headerDividersEnabled="false"
+                                                          android:footerDividersEnabled="true"
+                                                          android:smoothScrollbar="true"
+                                                          ptr:ptrHeaderBackground="@color/d5"
+                                                          ptr:ptrHeaderTextColor="@android:color/darker_gray"
+                                                          ptr:ptrAnimationStyle="flip"
+                                                          style="@style/PullToRefreshListViewStyle"
+                                                          xmlns:android="http://schemas.android.com/apk/res/android"
+                                                          xmlns:ptr="http://schemas.android.com/apk/res-auto"/>

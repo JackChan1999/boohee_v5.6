@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.boohee.myview.CustomInsetLayout
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include layout="@layout/view_divide_line"/>
+
+        <ListView
+            android:id="@id/lv_order_edit"
+            android:paddingTop="40.0dip"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:layout_weight="1.0"/>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="56.0dip">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/di"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/btn_pay"
+                android:layout_alignParentLeft="true">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/c4"
+                        android:id="@id/tv_price_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a05"/>
+
+                    <TextView
+                        android:textSize="@dimen/ee"
+                        android:textStyle="bold"
+                        android:textColor="@color/gn"
+                        android:id="@id/tv_price_all_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/di"/>
+                </LinearLayout>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@id/tv_bonus_info"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <Button
+                android:textSize="@dimen/em"
+                android:textColor="@color/ju"
+                android:id="@id/btn_pay"
+                android:background="@drawable/dk"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:text="确认"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </com.boohee.myview.CustomInsetLayout>
+
+    <RelativeLayout
+        android:id="@id/rl_order_postage"
+        android:background="@color/h3"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/h4"
+            android:gravity="center"
+            android:id="@id/tv_order_postage"
+            android:paddingLeft="16.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/h4"
+            android:id="@id/tv_order_postage_close"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X "
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/th"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.0dip"
+                android:layout_marginBottom="32.0dip"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.RoundedCornersImage
+        android:id="@id/avatar"
+        android:layout_width="@dimen/ek"
+        android:layout_height="@dimen/ej"
+        android:layout_marginLeft="@dimen/fq"
+        android:layout_marginTop="@dimen/fs"
+        android:layout_marginRight="@dimen/fq"
+        android:layout_marginBottom="@dimen/fs"
+        android:src="@drawable/icon"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/c4"
+        android:gravity="center_vertical"
+        android:id="@id/userName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:layout_marginRight="@dimen/fq"
+        android:text="我是小鱼人"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_alignTop="@id/avatar"
+        android:drawableEnd="@drawable/a2l"/>
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="320.0dip"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/avatar"/>
+</RelativeLayout>

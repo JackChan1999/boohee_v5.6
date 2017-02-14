@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="48.0dip"
+              android:weightSum="2.0"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:id="@id/read"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        style="@style/RippleLayout">
+
+        <TextView
+            android:text="@string/yo"
+            android:drawableLeft="@drawable/a3w"
+            style="@style/style_partner_enter"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <TextView
+        android:textSize="17.0sp"
+        android:textColor="@color/hy"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"/>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:id="@id/story"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        style="@style/RippleLayout">
+
+        <TextView
+            android:text="@string/yq"
+            android:drawableLeft="@drawable/a3x"
+            style="@style/style_partner_enter"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

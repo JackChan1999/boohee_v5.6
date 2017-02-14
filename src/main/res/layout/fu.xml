@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fq"
+        android:paddingTop="@dimen/fs"
+        android:paddingRight="@dimen/fq"
+        android:paddingBottom="@dimen/fs"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/c4"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\#早餐#"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/dv"
+            android:id="@id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一日之计在于晨"/>
+    </LinearLayout>
+
+    <com.boohee.widgets.RoundedCornersImage
+        android:id="@id/image1"
+        android:layout_width="44.0dip"
+        android:layout_height="44.0dip"/>
+
+    <com.boohee.widgets.RoundedCornersImage
+        android:id="@id/image2"
+        android:layout_width="44.0dip"
+        android:layout_height="44.0dip"
+        android:layout_marginLeft="@dimen/fq"/>
+
+    <com.boohee.widgets.RoundedCornersImage
+        android:id="@id/image3"
+        android:layout_width="44.0dip"
+        android:layout_height="44.0dip"
+        android:layout_marginLeft="@dimen/fq"
+        android:layout_marginRight="@dimen/fq"/>
+</LinearLayout>

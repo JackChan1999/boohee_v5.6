@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <TextView
+        android:textSize="@dimen/dn"
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d3"/>
+
+    <TextView
+        android:textSize="@dimen/dm"
+        android:textColor="@color/hb"
+        android:gravity="center"
+        android:id="@id/tv_birth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/picker_layout"
+        android:background="@color/ju"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="209.0dip"
+        android:layout_marginTop="@dimen/el"/>
+
+    <TextView
+        android:textColor="@color/he"
+        android:gravity="center"
+        android:id="@id/tv_no_use"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"
+        android:text="你的年龄太小，不适合使用本App"/>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:layout_margin="@dimen/el"
+        style="@style/RippleLayout">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/btn_next"
+            android:background="@drawable/cx"
+            android:padding="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/x4"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+</LinearLayout>

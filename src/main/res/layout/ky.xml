@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dip"
+                style="@style/MQWrapWrap"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.meiqia.meiqiasdk.widget.MQImageView
+        android:id="@id/us_avatar_iv"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:layout_marginRight="6.0dip"
+        app:mq_iv_isCircle="true"/>
+
+    <RelativeLayout
+        android:id="@id/chat_box"
+        android:layout_toRightOf="@id/us_avatar_iv"
+        android:layout_centerVertical="true"
+        style="@style/MQWrapWrap">
+
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/fs"
+            android:textColorLink="@color/fr"
+            android:autoLink="phone|web|email"
+            android:id="@id/content_text"
+            android:background="@drawable/tp"
+            android:visibility="visible"
+            android:maxWidth="260.0dip"
+            android:singleLine="false"
+            style="@style/MQWrapWrap"/>
+
+        <com.meiqia.meiqiasdk.widget.MQImageView
+            android:id="@id/content_pic"
+            android:focusable="true"
+            android:visibility="gone"
+            android:maxWidth="105.0dip"
+            android:maxHeight="105.0dip"
+            app:mq_iv_cornerRadius="3.0dip"
+            style="@style/MQWrapWrap"/>
+
+        <RelativeLayout
+            android:id="@id/rl_voice_container"
+            android:visibility="gone"
+            style="@style/MQWrapWrap">
+
+            <TextView
+                android:textSize="@dimen/g8"
+                android:textColor="@color/fs"
+                android:gravity="right"
+                android:id="@id/tv_voice_content"
+                android:background="@drawable/tp"
+                android:layout_centerVertical="true"
+                style="@style/MQMatchWrap"/>
+
+            <ImageView
+                android:id="@id/iv_voice_anim"
+                android:layout_marginLeft="@dimen/g2"
+                android:src="@drawable/acf"
+                android:layout_centerVertical="true"
+                style="@style/MQWrapWrap"/>
+        </RelativeLayout>
+
+        <com.meiqia.meiqiasdk.widget.MQChatFileItem
+            android:id="@id/file_container"
+            android:background="@drawable/tp"
+            android:visibility="gone"
+            style="@style/MQWrapWrap"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/unread_view"
+        android:background="@drawable/gh"
+        android:visibility="gone"
+        android:layout_width="8.0dip"
+        android:layout_height="8.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginBottom="4.0dip"
+        android:layout_toRightOf="@id/chat_box"
+        android:layout_alignBottom="@id/chat_box"/>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@drawable/a13"
+              android:padding="@dimen/dh"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@id/view_reward"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.boohee.one.pedometer.v2.view.ProgressIndicator
+                android:id="@id/pi_coupon"
+                android:layout_width="56.0dip"
+                android:layout_height="56.0dip"/>
+
+            <com.boohee.one.pedometer.v2.view.ProgressIndicator
+                android:id="@id/pi_diamond"
+                android:layout_width="56.0dip"
+                android:layout_height="56.0dip"
+                android:layout_marginLeft="72.0dip"/>
+        </LinearLayout>
+
+        <com.boohee.one.pedometer.v2.view.NumberView
+            android:textSize="12.0sp"
+            android:textColor="@color/i_"
+            android:gravity="center"
+            android:id="@id/tv_icon_alert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.0dip"
+            android:minLines="2"/>
+    </LinearLayout>
+
+    <com.boohee.one.pedometer.v2.view.NumberView
+        android:textSize="64.0sp"
+        android:textColor="@color/i7"
+        android:gravity="center_horizontal"
+        android:id="@id/tv_step"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.boohee.one.pedometer.v2.view.NumberView
+        android:textSize="14.0sp"
+        android:textColor="@color/i7"
+        android:gravity="center_horizontal"
+        android:id="@id/tv_step_alert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60.0dip"/>
+</LinearLayout>

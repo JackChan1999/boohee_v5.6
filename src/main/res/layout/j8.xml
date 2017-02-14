@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:id="@id/view_item"
+                                       style="@style/RippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/view_content"
+        android:background="@drawable/hu"
+        android:padding="@dimen/dh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100.0dip">
+
+        <com.boohee.one.pedometer.v2.view.NumberView
+            android:textSize="15.0sp"
+            android:textColor="@color/ju"
+            android:id="@id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dg"
+            android:layout_marginRight="@dimen/dg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <com.boohee.one.pedometer.v2.view.NumberView
+                android:textSize="36.0sp"
+                android:textColor="@color/ju"
+                android:gravity="center_horizontal"
+                android:id="@id/tv_step"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_step_calory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/a7l"
+                    android:drawablePadding="3.0dip"/>
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@id/ll_step_diamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gt">
+
+                    <View
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/ju"
+                        android:layout_width="1.0px"
+                        android:layout_height="10.0dip"/>
+
+                    <TextView
+                        android:textColor="@color/ju"
+                        android:id="@id/tv_step_diamond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gt"
+                        android:drawableLeft="@drawable/a7m"
+                        android:drawablePadding="3.0dip"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@id/ll_step_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gt">
+
+                    <View
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/ju"
+                        android:layout_width="1.0px"
+                        android:layout_height="10.0dip"/>
+
+                    <TextView
+                        android:textColor="@color/ju"
+                        android:id="@id/tv_step_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gt"
+                        android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.boohee.one.pedometer.v2.view.NumberView
+                android:textColor="@color/ju"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@id/tv_info"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.boohee.widgets.BooheeRippleLayout>

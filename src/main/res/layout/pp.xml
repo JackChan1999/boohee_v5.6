@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:orientation="horizontal"
+              android:background="@color/ju"
+              android:padding="@dimen/el"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/ee"
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hn"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/he"
+        android:gravity="center"
+        android:id="@id/txt_del_thigh"
+        android:paddingLeft="@dimen/gt"
+        android:paddingRight="@dimen/gt"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hk"
+        android:drawableLeft="@drawable/nv"
+        android:drawablePadding="@dimen/hm"/>
+
+    <EditText
+        android:id="@id/et_thigh"
+        android:layout_weight="1.0"
+        android:layout_toLeftOf="@id/txt_add_record_unit"
+        android:layout_toRightOf="@id/txt_add_record_del"
+        android:layout_centerVertical="true"
+        style="@style/RecordEditTxtStyle"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/du"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</LinearLayout>

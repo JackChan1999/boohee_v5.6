@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:id="@id/ll_item"
+              android:layout_width="90.0dip"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/iv_step"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"/>
+
+    <TextView
+        android:textSize="@dimen/dl"
+        android:id="@id/tv_fruit_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gt"
+        android:maxLines="1"/>
+
+    <TextView
+        android:textSize="@dimen/dl"
+        android:id="@id/tv_calory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+</LinearLayout>

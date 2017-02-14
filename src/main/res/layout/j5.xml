@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@id/bg_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/ju"
+            android:gravity="center"
+            android:id="@id/tv_lesson_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@id/iv_completed"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nt"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</com.boohee.widgets.BooheeRippleLayout>

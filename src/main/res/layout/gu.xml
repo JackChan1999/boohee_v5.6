@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/e4"
+        android:gravity="center"
+        android:id="@id/tv_date"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"/>
+
+    <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="24.0dip">
+
+        <View
+            android:layout_gravity="center"
+            android:id="@id/iv_camera"
+            android:background="@drawable/fb"
+            android:layout_width="49.0dip"
+            android:layout_height="49.0dip"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/iv_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </FrameLayout>
+
+    <TextView
+        android:textColor="@color/du"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="拍照记录"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36.0dip">
+
+        <TextView
+            android:textSize="36.0dip"
+            android:textColor="@color/hb"
+            android:id="@id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:textColor="@color/hb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gt"
+            android:layout_marginTop="6.0dip"
+            android:text="kg"
+            android:layout_toRightOf="@id/tv_weight"
+            android:layout_alignTop="@id/tv_weight"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="@dimen/el"
+        style="@style/HorizontalWholeDivider"/>
+
+    <com.boohee.myview.BooheeRulerView
+        android:id="@id/ruler"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:ruler_bg_color="#fff8f8f8"
+        app:ruler_line_color="@color/cw"
+        app:ruler_text_color="@color/e4"
+        app:ruler_indicator_color="@color/hb"
+        app:ruler_indicator_type="line"/>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <TextView
+        android:textColor="@color/hz"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.0dip"
+        android:text="删除这条记录"
+        android:drawableLeft="@drawable/he"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/hb"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_marginTop="32.0dip">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_cancel"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="取消"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/cw"
+            android:layout_width="1.0px"
+            android:layout_height="16.0dip"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_send"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_send"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="保存"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+</LinearLayout>

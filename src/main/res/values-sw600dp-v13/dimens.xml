@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="a">24.0dip</dimen>
+    <dimen name="b">64.0dip</dimen>
+    <dimen name="c">8.0dip</dimen>
+    <dimen name="d">8.0dip</dimen>
+    <dimen name="u">580.0dip</dimen>
+    <dimen name="b1">16.0dip</dimen>
+    <dimen name="b3">20.0dip</dimen>
+    <dimen name="ci">320.0dip</dimen>
+    <dimen name="cl">0.0dip</dimen>
+    <dimen name="cm">2.0dip</dimen>
+    <dimen name="co">24.0dip</dimen>
+    <dimen name="cp">576.0dip</dimen>
+    <dimen name="cq">320.0dip</dimen>
+    <item type="dimen" name="ct">@dimen/cs</item>
+    <dimen name="cw">160.0dip</dimen>
+    <dimen name="eq">16.0sp</dimen>
+    <dimen name="er">6.0dip</dimen>
+    <dimen name="es">400.0dip</dimen>
+    <dimen name="et">45.0dip</dimen>
+    <dimen name="eu">21.0dip</dimen>
+    <dimen name="ev">400.0dip</dimen>
+    <dimen name="ew">20.0dip</dimen>
+    <dimen name="ex">14.0sp</dimen>
+    <dimen name="f0">-50.0dip</dimen>
+    <dimen name="f1">60.0dip</dimen>
+    <dimen name="f2">120.0dip</dimen>
+    <dimen name="f7">48.0dip</dimen>
+    <dimen name="f8">24.0dip</dimen>
+    <dimen name="f9">12.0sp</dimen>
+    <dimen name="f_">16.0sp</dimen>
+    <dimen name="fa">75.0dip</dimen>
+    <dimen name="fb">36.0dip</dimen>
+    <dimen name="fc">400.0dip</dimen>
+    <dimen name="fd">360.0dip</dimen>
+    <dimen name="fe">150.0dip</dimen>
+    <dimen name="fg">45.0dip</dimen>
+    <dimen name="fh">45.0dip</dimen>
+    <dimen name="fi">5.0dip</dimen>
+    <dimen name="fj">76.0sp</dimen>
+    <dimen name="fl">450.0dip</dimen>
+    <dimen name="fm">96.0dip</dimen>
+    <dimen name="fn">33.0dip</dimen>
+    <dimen name="hp">20.0dip</dimen>
+    <dimen name="hq">18.0sp</dimen>
+</resources>

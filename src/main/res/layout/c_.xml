@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="#ff343434"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/ju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计消耗/千卡"/>
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_total_calory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/ju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="训练时间/分钟"/>
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_train_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/ju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="连续天数/天"/>
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/ju"
+                    android:id="@id/tv_continue_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@id/tab_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/hb"
+        app:tabIndicatorHeight="1.0dip"
+        app:tabBackground="@color/ju"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/da"
+        app:tabSelectedTextColor="@color/hb"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <FrameLayout
+        android:id="@id/frame_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"/>
+</LinearLayout>

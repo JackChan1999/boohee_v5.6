@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+              android:padding="@dimen/el"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/dn"
+        android:textColor="@color/e4"
+        android:gravity="left"
+        android:layout_gravity="center_vertical"
+        android:id="@id/tv_micro_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.0"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.0">
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/e4"
+            android:gravity="left"
+            android:id="@id/tv_micro_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/dl"
+            android:textColor="@color/du"
+            android:gravity="left"
+            android:id="@id/tv_micro_rec_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.0">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/iv_micro_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/hm"
+            android:src="@drawable/a1k"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_micro_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

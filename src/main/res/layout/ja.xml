@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:id="@id/view_item"
+                                       style="@style/RippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:padding="@dimen/dh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dh"
+            android:layout_toLeftOf="@id/tv_value"
+            android:layout_toRightOf="@id/iv_icon"
+            android:layout_centerVertical="true">
+
+            <com.boohee.one.pedometer.v2.view.NumberView
+                android:id="@id/tv_step"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.boohee.one.pedometer.v2.view.NumberView
+                android:id="@id/tv_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <com.boohee.one.pedometer.v2.view.NumberView
+            android:textSize="36.0sp"
+            android:textColor="@color/i7"
+            android:id="@id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.boohee.widgets.BooheeRippleLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/a3b"
+        android:id="@id/action_collection"
+        android:title="@string/is"
+        app:showAsAction="always"/>
+</menu>

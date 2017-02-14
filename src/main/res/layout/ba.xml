@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/activity_food_error"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:layout_marginTop="@dimen/el"
+        style="@style/HorizontalWholeDivider"/>
+
+    <EditText
+        android:textSize="@dimen/dm"
+        android:textColorHint="@color/du"
+        android:gravity="top"
+        android:id="@id/edit"
+        android:background="@color/ju"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="225.0dip"
+        android:hint="请输入你要反馈的问题..."/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <TextView
+        android:textColor="@color/ju"
+        android:gravity="center"
+        android:id="@id/btn"
+        android:background="@color/hb"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="iw">#ffcff1ff</item>
+    <item type="drawable" name="ix">#3333b5e5</item>
+    <item type="drawable" name="iy">#00000000</item>
+    <item type="drawable" name="iz">#ffffffff</item>
+</resources>

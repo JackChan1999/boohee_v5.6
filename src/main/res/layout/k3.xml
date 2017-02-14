@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/d5"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/du"
+        android:id="@id/tv_section"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:background="@color/ju"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:textColorHint="@color/dv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gs"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:textColorHint="@color/dv"
+            android:id="@id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:background="@color/ju"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:textColorHint="@color/dv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:textColorHint="@color/dv"
+            android:id="@id/tv_cellphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:background="@color/ju"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/gt"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:textColorHint="@color/dv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gq"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:textColorHint="@color/dv"
+            android:id="@id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

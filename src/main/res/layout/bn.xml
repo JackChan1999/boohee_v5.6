@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout android:id="@id/fl_container"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="bottom|right|center"
+        android:id="@id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/el"
+        android:layout_marginBottom="@dimen/el"
+        android:src="@drawable/a1h"
+        app:elevation="2.0dip"
+        app:backgroundTint="@color/hb"
+        app:fabSize="normal"
+        app:pressedTranslationZ="8.0dip"/>
+</FrameLayout>

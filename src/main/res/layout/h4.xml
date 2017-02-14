@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout
+    style="@style/RippleLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/ju">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/nb"
+            android:drawablePadding="@dimen/gt"
+            android:padding="@dimen/el"
+            android:text="添加或编辑"
+            android:textColor="@color/hb"
+            android:textSize="@dimen/dn"/>
+
+        <include layout="@layout/view_divide_line"/>
+    </LinearLayout>
+</com.boohee.widgets.BooheeRippleLayout>

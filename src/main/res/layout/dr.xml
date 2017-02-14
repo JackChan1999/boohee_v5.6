@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dv">
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_account_setting"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_icon="@drawable/a6x"
+            app:siv_title="@string/am"
+            app:siv_top_divider="true"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_mi_band"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:siv_icon="@drawable/a71"
+            app:siv_title="@string/wl"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_clean_cache"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_bottom_divider="true"
+            app:siv_icon="@drawable/a6y"
+            app:siv_text_indicator="0 MB"
+            app:siv_title="@string/fk"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_order"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dv"
+            app:siv_icon="@drawable/a7u"
+            app:siv_title="@string/yd"
+            app:siv_top_divider="true"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_address"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_icon="@drawable/a7t"
+            app:siv_title="@string/be"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_coupon"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_bottom_divider="true"
+            app:siv_icon="@drawable/a7s"
+            app:siv_title="@string/h4"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_step"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            app:siv_bottom_divider="true"
+            app:siv_icon="@drawable/a6v"
+            app:siv_title="@string/a77"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_question"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dv"
+            app:siv_icon="@drawable/a72"
+            app:siv_title="@string/a18"
+            app:siv_top_divider="true"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_estimate"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_icon="@drawable/a6z"
+            app:siv_title="@string/a17"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_score"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_icon="@drawable/a70"
+            app:siv_title="@string/a34"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_share"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_icon="@drawable/a73"
+            app:siv_title="@string/a1z"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_about_boohee"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_bottom_divider="true"
+            app:siv_icon="@drawable/a6w"
+            app:siv_title="@string/a8i"/>
+
+        <Button
+            android:id="@id/logoutBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dv"
+            android:background="@drawable/da"
+            android:text="@string/rg"
+            android:textColor="@color/ju"
+            android:textSize="@dimen/dm"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_change_environment"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dh"
+            android:layout_marginTop="@dimen/dh"
+            app:siv_bottom_divider="true"
+            app:siv_icon="@drawable/a8p"
+            app:siv_title="Change Environment"
+            app:siv_top_divider="true"/>
+    </LinearLayout>
+</ScrollView>

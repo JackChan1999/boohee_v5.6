@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:paddingLeft="@dimen/dv"
+              android:paddingRight="@dimen/dv"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/e4"
+            android:gravity="left"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dt"
+            android:text="@string/aba"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/iv_front"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:src="@drawable/sl"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/e4"
+            android:gravity="left"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dt"
+            android:text="@string/aaw"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/iv_back"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:src="@drawable/sk"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+</LinearLayout>

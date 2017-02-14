@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView android:orientation="vertical"
+                                                            android:id="@id/scrollview"
+                                                            android:scrollbars="none"
+                                                            android:layout_width="fill_parent"
+                                                            android:layout_height="fill_parent"
+                                                            android:layout_marginTop="@dimen/h5"
+                                                            android:fastScrollEnabled="false"
+                                                            ptr:ptrHeaderBackground="@color/d5"
+                                                            ptr:ptrHeaderTextColor="@android:color/darker_gray"
+                                                            ptr:ptrOverScroll="false"
+                                                            ptr:ptrAnimationStyle="flip"
+                                                            ptr:ptrScrollingWhileRefreshingEnabled="true"
+                                                            xmlns:android="http://schemas.android.com/apk/res/android"
+                                                            xmlns:ptr="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout"
+                                               xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/ll_check_in"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/el"
+                    android:layout_marginTop="@dimen/gt"
+                    android:layout_marginRight="@dimen/gt"
+                    android:layout_marginBottom="@dimen/gt"
+                    android:src="@drawable/a2k"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="8.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/e4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="钻石打卡"/>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/bv"
+                        android:id="@id/tv_check_in_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已连续打卡 ? 天"/>
+                </LinearLayout>
+
+                <com.boohee.widgets.BooheeRippleLayout android:layout_width="wrap_content"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_marginRight="@dimen/gt"
+                                                       style="@style/RippleLayout"
+                                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <Button
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/ju"
+                        android:id="@id/btn_check_in"
+                        android:background="@drawable/da"
+                        android:paddingLeft="@dimen/el"
+                        android:paddingTop="@dimen/gt"
+                        android:paddingRight="@dimen/el"
+                        android:paddingBottom="@dimen/gt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="0.0dip"
+                        android:minHeight="0.0dip"
+                        android:text="@string/d6"/>
+                </com.boohee.widgets.BooheeRippleLayout>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <com.boohee.widgets.BooheeRippleLayout android:layout_marginTop="16.0dip"
+                                               style="@style/RippleLayout"
+                                               xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/ll_friends"
+                android:background="@color/ju"
+                android:padding="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="@dimen/gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/a4g"/>
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/e4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d9"
+                    android:layout_weight="1.0"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/hk"
+                    android:id="@id/tv_friends_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:background="@color/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="@dimen/hn"/>
+
+        <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout"
+                                               xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/ll_hot"
+                android:background="@color/ju"
+                android:padding="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="@dimen/gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/a4z"/>
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/e4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/da"
+                    android:layout_weight="1.0"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/hk"
+                    android:id="@id/tv_hot_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:background="@color/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="@dimen/hn"/>
+
+        <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout"
+                                               xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/ll_collect"
+                android:background="@color/ju"
+                android:padding="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="@dimen/gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/a2h"/>
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/e4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d8"
+                    android:layout_weight="1.0"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:background="@color/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="@dimen/hn"/>
+
+        <com.boohee.widgets.BooheeRippleLayout android:visibility="gone"
+                                               android:layout_marginBottom="@dimen/gt"
+                                               style="@style/RippleLayout"
+                                               xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/ll_chat"
+                android:background="@color/ju"
+                android:padding="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/gt"
+                    android:src="@drawable/a2_"/>
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/e4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d5"
+                    android:layout_weight="1.0"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/hk"
+                    android:id="@id/tv_chat_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@id/ll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ay" parent="@style/ln"/>
+
+    <style name="b5" parent="@style/lo"/>
+
+    <style name="ln" parent="@style/lj">
+        <item name="by">?android:layout_childType</item>
+        <item name="cn">?android:editTextBackground</item>
+    </style>
+
+    <style name="lo" parent="@style/ll">
+        <item name="by">?android:layout_childType</item>
+        <item name="cn">?android:editTextBackground</item>
+    </style>
+</resources>

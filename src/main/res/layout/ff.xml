@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/dm"
+        android:textColor="@color/e4"
+        android:layout_gravity="center"
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/el"
+        android:drawableRight="@drawable/aaw"
+        android:drawablePadding="5.0dip"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@id/ll_diet_info"
+        android:layout_width="fill_parent"
+        android:layout_height="75.0dip">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/iv_diet"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_marginRight="@dimen/gt"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:riv_corner_radius="3.0dip"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_diet"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/e4"
+                android:id="@id/tv_diet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gt"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:id="@id/tv_calory_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/iv_calory_status"
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_marginRight="@dimen/el"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:layout_marginBottom="@dimen/gt">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:textColor="@color/du"
+                android:id="@id/tv_calory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/du"
+                android:id="@id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="36.0dip"
+            android:textColor="@color/hb"
+            android:id="@id/tv_unit_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:textColor="@color/hb"
+            android:id="@id/tv_unit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gt"
+            android:layout_marginTop="6.0dip"
+            android:layout_toRightOf="@id/tv_unit_value"
+            android:layout_alignTop="@id/tv_unit"/>
+
+        <TextView
+            android:textColor="@color/du"
+            android:id="@id/tv_estimate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/el"
+            android:text="估算"
+            android:drawableTop="@drawable/a3_"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.boohee.myview.BooheeRulerView
+        android:id="@id/ruler"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:ruler_bg_color="#fff8f8f8"
+        app:ruler_line_color="@color/cw"
+        app:ruler_text_color="@color/e4"
+        app:ruler_indicator_color="@color/hb"
+        app:ruler_indicator_type="line"/>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <com.boohee.widgets.tablayout.BooheeTabLayout
+        android:id="@id/diet_unit_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        app:tabLayout_textColor="@color/hb"
+        app:tabLayout_textSize="@dimen/en"/>
+
+    <TextView
+        android:textColor="@color/hz"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el"
+        android:text="删除这条记录"
+        android:drawableLeft="@drawable/he"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/hb"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_marginTop="@dimen/el">
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_cancel"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="取消"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/cw"
+            android:layout_width="1.0px"
+            android:layout_height="16.0dip"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/ripple_send"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/RippleLayout">
+
+            <TextView
+                android:textColor="@color/ju"
+                android:gravity="center"
+                android:id="@id/tv_send"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="保存"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+</LinearLayout>

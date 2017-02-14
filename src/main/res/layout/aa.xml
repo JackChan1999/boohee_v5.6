@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@color/d5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/d5"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_search"/>
+
+        <com.boohee.widgets.PagerSlidingTabStrip
+            android:id="@id/sliding_tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="@color/ju"
+            android:textColor="@color/du"
+            app:pstsIndicatorColor="@color/hb"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"/>
+
+        <include layout="@layout/view_divide_line"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:id="@id/rl_camera"
+            style="@style/GlobalRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hn"
+            android:background="@color/ju">
+
+            <TextView
+                android:id="@id/fl_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/f1"
+                android:drawablePadding="@dimen/hm"
+                android:gravity="center"
+                android:padding="12.0dip"
+                android:text="拍照记录"
+                android:textColor="@color/he"
+                android:textSize="@dimen/gy"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_calorie"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hn"
+            android:background="@color/ju">
+
+            <TextView
+                android:id="@id/suggest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="4.0dip"
+                android:textColor="@color/du"/>
+
+            <TextView
+                android:id="@id/calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/suggest"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4.0dip"
+                android:textColor="@color/e4"/>
+
+            <TextView
+                android:id="@id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/suggest"
+                android:layout_marginRight="@dimen/el"
+                android:text="已添加"
+                android:textColor="@color/du"/>
+
+            <TextView
+                android:id="@id/calorie_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/add"
+                android:layout_alignTop="@id/calorie"
+                android:drawablePadding="@dimen/gt"
+                android:textColor="@color/e4"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/iv_diet_cart"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_gravity="center"
+        android:src="@drawable/aa2"
+        android:visibility="gone"/>
+</FrameLayout>

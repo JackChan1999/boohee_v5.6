@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gf"
+                style="@style/MQMatchMatch"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.meiqia.meiqiasdk.widget.MQHackyViewPager
+        android:id="@id/content_hvp"
+        style="@style/MQMatchMatch"/>
+
+    <RelativeLayout
+        android:id="@id/title_rl"
+        android:background="@color/gj"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/g9">
+
+        <ImageView
+            android:id="@id/back_iv"
+            android:paddingLeft="@dimen/g0"
+            android:paddingRight="@dimen/g0"
+            android:src="@drawable/abp"
+            style="@style/MQWrapMatch"/>
+
+        <TextView
+            android:textSize="@dimen/ga"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:id="@id/title_tv"
+            android:layout_toRightOf="@id/back_iv"
+            style="@style/MQWrapMatch"/>
+
+        <TextView
+            android:textSize="@dimen/g_"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@id/submit_tv"
+            android:background="@drawable/g2"
+            android:paddingLeft="@dimen/fz"
+            android:paddingRight="@dimen/fz"
+            android:clickable="true"
+            android:layout_margin="@dimen/fz"
+            android:minWidth="80.0dip"
+            android:text="@string/ut"
+            android:singleLine="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/MQWrapMatch"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/choose_rl"
+        android:background="@color/gj"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/g9"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:textSize="@dimen/g_"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:id="@id/choose_tv"
+            android:paddingLeft="@dimen/fz"
+            android:paddingRight="@dimen/fz"
+            android:clickable="true"
+            android:layout_marginRight="@dimen/fz"
+            android:text="@string/us"
+            android:drawableLeft="@drawable/abt"
+            android:drawablePadding="@dimen/fx"
+            android:layout_alignParentRight="true"
+            style="@style/MQWrapMatch"/>
+    </RelativeLayout>
+</RelativeLayout>

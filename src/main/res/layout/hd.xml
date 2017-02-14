@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textColor="@color/dv"
+        android:paddingLeft="@dimen/fq"
+        android:paddingTop="@dimen/fs"
+        android:paddingRight="@dimen/fq"
+        android:paddingBottom="@dimen/fs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="通过以下方式邀请伙伴"/>
+
+    <TextView
+        android:textSize="20.0sp"
+        android:id="@id/txtMsg"
+        android:background="@color/ju"
+        android:padding="@dimen/fq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:text="短信"/>
+
+    <TextView
+        android:textSize="20.0sp"
+        android:id="@id/sinaWeibo"
+        android:background="@color/ju"
+        android:padding="@dimen/fq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:text="新浪微博"/>
+
+    <TextView
+        android:textSize="20.0sp"
+        android:id="@id/weichatFriends"
+        android:background="@color/ju"
+        android:padding="@dimen/fq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:text="微信好友"/>
+
+    <TextView
+        android:textSize="20.0sp"
+        android:id="@id/circle"
+        android:background="@color/ju"
+        android:padding="@dimen/fq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:text="朋友圈"/>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                       android:layout_height="wrap_content"
+                                       style="@style/GlobalRippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/view_content"
+        android:background="@color/ju"
+        android:paddingLeft="@dimen/dh"
+        android:paddingTop="@dimen/di"
+        android:paddingRight="@dimen/di"
+        android:paddingBottom="@dimen/di"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/view_checked"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/du"
+                    android:id="@id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/view_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/di"
+                    android:src="@drawable/a8a"/>
+
+                <TextView
+                    android:textColor="@color/du"
+                    android:id="@id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/di"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/di">
+
+                <TextView
+                    android:textSize="@dimen/dm"
+                    android:textStyle="normal"
+                    android:id="@id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/du"
+                    android:id="@id/tv_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（已下载）"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/view_checked"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/di"
+            android:src="@drawable/a2a"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.boohee.widgets.BooheeRippleLayout>

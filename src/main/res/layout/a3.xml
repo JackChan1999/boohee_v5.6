@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@id/select_dialog_listview"
+          style="@style/Widget.AppCompat.ListView"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:cacheColorHint="@null"
+          android:clipToPadding="false"
+          android:divider="?c6"
+          android:fadingEdge="none"
+          android:overScrollMode="ifContentScrolls"
+          android:paddingBottom="@dimen/a2"
+          android:paddingTop="@dimen/a2"
+          android:scrollbars="vertical"/>

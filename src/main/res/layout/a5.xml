@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40.0dip"
+            android:src="@drawable/aa9"/>
+
+        <TextView
+            android:id="@id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:textColor="@color/du"
+            android:textSize="@dimen/gy"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_job"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_title="@string/a7v"
+            app:siv_top_divider="true"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_business"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_title="@string/gt"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_article"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_title="@string/abp"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_shop"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_title="@string/ah"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_boohee"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_bottom_divider="true"
+            app:siv_title="@string/ag"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dw"
+            android:layout_marginLeft="@dimen/dv"
+            android:layout_marginTop="@dimen/dv"
+            android:text="应用推荐"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_top_model"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_icon="@drawable/a9_"
+            app:siv_sub_title="一个正经的新女性生活方式APP"
+            app:siv_title="超模25"
+            app:siv_top_divider="true"/>
+
+        <com.boohee.myview.SettingItemView
+            android:id="@id/clv_food_library"
+            style="@style/SettingItemRippleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:siv_bottom_divider="true"
+            app:siv_icon="@drawable/a4e"
+            app:siv_sub_title="查热量 吃不胖"
+            app:siv_title="食物派"/>
+    </LinearLayout>
+</ScrollView>

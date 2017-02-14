@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/h"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/i"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/j"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/k"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/l"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/m"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/n"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/o"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/p"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/q"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/r"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/s"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/t"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/u"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/v"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/w"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/x"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/y"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/z"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a0"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a1"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a2"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a3"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a4"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a5"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a6"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a7"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a8"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a9"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/a_"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/aa"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/ab"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/ac"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/ad"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/ae"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/af"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/ag"
+            android:clipOrientation="horizontal"/>
+    </item>
+    <item android:duration="50">
+        <clip
+            android:gravity="left"
+            android:drawable="@drawable/ah"
+            android:clipOrientation="horizontal"/>
+    </item>
+</animation-list>

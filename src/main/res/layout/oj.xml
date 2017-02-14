@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/choose_diet_type"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/du"
+        android:gravity="left"
+        android:paddingLeft="@dimen/gt"
+        android:paddingTop="@dimen/gt"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a3a"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <com.boohee.widgets.tablayout.BooheeTabLayout
+        android:id="@id/diet_tab_layout"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"/>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

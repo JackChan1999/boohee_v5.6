@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:background="@color/d5"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gt"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:id="@id/rl_meal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:id="@id/tv_name"
+            android:paddingLeft="@dimen/el"
+            android:paddingTop="@dimen/gt"
+            android:paddingRight="@dimen/gt"
+            android:paddingBottom="@dimen/gt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@id/tv_suggest"
+            android:paddingLeft="@dimen/el"
+            android:paddingRight="@dimen/gt"
+            android:paddingBottom="@dimen/gt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:id="@id/tv_calory"
+            android:paddingRight="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="374 千卡"
+            android:drawablePadding="@dimen/gt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/j8"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

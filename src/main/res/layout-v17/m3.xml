@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:textAppearance="?android:textAppearanceMedium"
+                 android:textColor="?di"
+                 android:ellipsize="marquee"
+                 android:gravity="center_vertical"
+                 android:id="@android:id/text1"
+                 android:paddingLeft="@dimen/al"
+                 android:paddingRight="?c5"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:minHeight="?cu"
+                 android:drawableLeft="?android:listChoiceIndicatorMultiple"
+                 android:drawablePadding="20.0dip"
+                 android:drawableStart="?android:listChoiceIndicatorMultiple"
+                 android:paddingStart="@dimen/al"
+                 android:paddingEnd="?c5"
+                 xmlns:android="http://schemas.android.com/apk/res/android"/>

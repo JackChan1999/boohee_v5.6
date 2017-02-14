@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="n">100</integer>
+    <integer name="o">6</integer>
+</resources>

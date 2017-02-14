@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/view_content"
+             android:layout_width="fill_parent"
+             android:layout_height="172.0dip"
+             android:layout_marginLeft="@dimen/dh"
+             android:layout_marginTop="@dimen/dh"
+             android:layout_marginRight="@dimen/dh"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@id/iv_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/di"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dh"
+        android:paddingBottom="@dimen/di"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/dk"
+            android:textStyle="bold"
+            android:textColor="@color/ju"
+            android:id="@id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textStyle="bold"
+            android:textColor="@color/ju"
+            android:id="@id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dh"/>
+
+        <Button
+            android:textColor="@color/ju"
+            android:layout_gravity="center"
+            android:id="@id/bt_join"
+            android:background="@drawable/di"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:text="@string/abw"/>
+    </LinearLayout>
+</FrameLayout>

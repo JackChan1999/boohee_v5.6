@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+
+        <com.boohee.widgets.BooheeRippleLayout android:layout_width="0.0dip"
+                                               android:layout_height="wrap_content"
+                                               android:layout_weight="1.0"
+                                               style="@style/RippleLayout"
+                                               xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_my_page"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:text="我的动态"
+                android:drawableLeft="@drawable/a3s"
+                android:drawablePadding="@dimen/gt"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View
+            android:background="@color/j8"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/el"
+            android:layout_marginBottom="@dimen/el"/>
+
+        <com.boohee.widgets.BooheeRippleLayout android:layout_width="0.0dip"
+                                               android:layout_height="wrap_content"
+                                               android:layout_weight="1.0"
+                                               style="@style/RippleLayout"
+                                               xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/e4"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_find_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:text="找朋友"
+                android:drawableLeft="@drawable/a3d"
+                android:drawablePadding="@dimen/gt"/>
+        </com.boohee.widgets.BooheeRippleLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

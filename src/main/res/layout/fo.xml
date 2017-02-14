@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_pop_punch_top"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/d5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.0">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="@dimen/em"
+                    android:textColor="@color/e4"
+                    android:id="@id/txt_name"
+                    android:padding="@dimen/gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_name">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/he"
+                        android:id="@id/txt_calory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/e4"
+                        android:id="@id/txt_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 千卡/100克 "/>
+
+                    <TextView
+                        android:textSize="@dimen/ef"
+                        android:textColor="@color/du"
+                        android:id="@id/txt_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <include layout="@layout/view_choose_diet_type"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/he"
+                    android:gravity="center"
+                    android:id="@id/txt_delete"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gt"
+                    android:layout_marginBottom="@dimen/gt"
+                    android:text="删除这条记录"
+                    android:drawableLeft="@drawable/fa"
+                    android:drawablePadding="@dimen/hm"
+                    android:drawableStart="@drawable/fa"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0">
+
+            <include layout="@layout/view_divide_line"/>
+
+            <com.booheee.view.keyboard.DietKeyboard
+                android:id="@id/diet_keyboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

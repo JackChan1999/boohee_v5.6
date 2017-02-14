@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@color/ju"
+        android:paddingLeft="@dimen/el"
+        android:paddingTop="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/e4"
+            android:id="@id/tv_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a6y"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/du"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a6x"
+            android:layout_below="@id/tv_step"/>
+
+        <com.boohee.widgets.AnimCheckBox
+            android:id="@id/check_box_step"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:stroke_width="1.0dip"
+            app:stroke_color="@color/hb"
+            app:circle_color="@color/ju"/>
+    </RelativeLayout>
+
+    <View style="@style/HorizontalWholeDivider"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:paddingLeft="@dimen/el"
+            android:paddingTop="@dimen/el"
+            android:paddingRight="@dimen/el"
+            android:paddingBottom="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/e4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a71"
+                android:layout_centerVertical="true"/>
+
+            <com.boohee.widgets.AnimCheckBox
+                android:layout_gravity="center_vertical"
+                android:id="@id/check_box_notification"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:stroke_width="1.0dip"
+                app:stroke_color="@color/hb"
+                app:circle_color="@color/ju"/>
+        </RelativeLayout>
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <View
+            android:layout_marginTop="@dimen/el"
+            style="@style/HorizontalWholeDivider"/>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:id="@id/ll_notifi_permission"
+            android:background="@color/ju"
+            android:paddingLeft="@dimen/el"
+            android:paddingTop="@dimen/el"
+            android:paddingRight="@dimen/el"
+            android:paddingBottom="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/e4"
+                android:gravity="center_vertical"
+                android:id="@id/tv_permission"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a74"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a73"
+                android:layout_toLeftOf="@id/check_box_notification_permission"
+                android:layout_below="@id/tv_permission"
+                android:layout_alignParentLeft="true"/>
+
+            <com.boohee.widgets.AnimCheckBox
+                android:layout_gravity="center_vertical"
+                android:id="@id/check_box_notification_permission"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:stroke_width="1.0dip"
+                app:stroke_color="@color/hb"
+                app:circle_color="@color/ju"
+                app:anim_check_clickable="false"/>
+        </RelativeLayout>
+
+        <View style="@style/HorizontalWholeDivider"/>
+    </LinearLayout>
+</LinearLayout>

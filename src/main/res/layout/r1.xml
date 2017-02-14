@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right|center"
+              android:orientation="vertical"
+              android:visibility="visible"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_divide_line"/>
+
+    <RelativeLayout
+        android:paddingTop="@dimen/gt"
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/rl_diet_calory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/he"
+                android:gravity="right|center"
+                android:id="@id/tv_diet_calory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="2"/>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/e4"
+                android:gravity="bottom|center"
+                android:id="@id/tv_diet_unit"
+                android:paddingLeft="@dimen/hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="千卡"
+                android:layout_toRightOf="@id/tv_diet_calory"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/e4"
+            android:id="@id/tv_diet_title"
+            android:paddingBottom="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="饮食摄入："
+            android:layout_toLeftOf="@id/rl_diet_calory"
+            android:layout_alignBottom="@id/rl_diet_calory"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingRight="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/rl_sport_calory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/he"
+                android:gravity="right|center"
+                android:id="@id/tv_sport_calory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="2"/>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/e4"
+                android:gravity="bottom|center"
+                android:id="@id/tv_sport_unit"
+                android:paddingLeft="@dimen/hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="千卡"
+                android:layout_toRightOf="@id/tv_sport_calory"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/e4"
+            android:id="@id/tv_sport_title"
+            android:paddingBottom="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动消耗："
+            android:layout_toLeftOf="@id/rl_sport_calory"
+            android:layout_alignBottom="@id/rl_sport_calory"/>
+    </RelativeLayout>
+</LinearLayout>

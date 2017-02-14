@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.boohee.widgets.BooheeRippleLayout
+        android:id="@id/ripple"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleColor="@color/hm"
+        app:mrl_rippleOverlay="@bool/p"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleHover="@bool/o"
+        app:mrl_rippleDelayClick="@bool/n">
+
+        <ImageView
+            android:id="@id/iv_ad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aa3"
+            android:scaleType="fitXY"/>
+    </com.boohee.widgets.BooheeRippleLayout>
+
+    <View
+        android:id="@id/view_line"
+        android:background="@color/j8"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"/>
+</LinearLayout>

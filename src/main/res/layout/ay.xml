@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/d5"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <include
+                android:id="@id/ll_card_breakfast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_card_copy_reord"/>
+
+            <include
+                android:id="@id/ll_card_snacks_breakfast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_card_copy_reord"/>
+
+            <include
+                android:id="@id/ll_card_lunch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_card_copy_reord"/>
+
+            <include
+                android:id="@id/ll_card_snacks_lunch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_card_copy_reord"/>
+
+            <include
+                android:id="@id/ll_card_dinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_card_copy_reord"/>
+
+            <include
+                android:id="@id/ll_card_snacks_dinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_card_copy_reord"/>
+
+            <include
+                android:id="@id/ll_card_sport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_card_copy_reord"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hn">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@id/ll_check_all"
+            android:background="@drawable/d2"
+            android:paddingLeft="@dimen/el"
+            android:paddingRight="@dimen/el"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <ToggleButton
+                android:id="@id/tb_check_all"
+                android:background="@drawable/if"
+                android:clickable="false"
+                android:layout_width="23.0dip"
+                android:layout_height="23.0dip"
+                android:checked="true"
+                android:textOn=""
+                android:textOff=""/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/du"
+                android:padding="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/cw"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/gt"
+            android:layout_marginBottom="@dimen/gt"/>
+
+        <RelativeLayout
+            android:id="@id/rl_copy"
+            android:background="@drawable/d2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/he"
+                android:gravity="center"
+                android:id="@id/tv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="复制"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/he"
+                android:id="@id/tv_copy_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3.0dip"
+                android:layout_marginBottom="-8.0dip"
+                android:layout_toRightOf="@id/tv_copy"
+                android:layout_above="@id/tv_copy"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

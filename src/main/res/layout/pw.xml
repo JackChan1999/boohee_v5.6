@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@id/view_mine_header_peroid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_mine_head_view"/>
+
+    <com.boohee.widgets.TextProgressBar
+        android:id="@id/view_mine_header_peroid_textBar"
+        android:layout_width="fill_parent"
+        android:layout_height="24.0dip"
+        android:layout_marginTop="-12.0dip"
+        android:layout_below="@id/view_mine_header_peroid"/>
+
+    <ProgressBar
+        android:id="@id/view_mine_header_loading"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_centerInParent="true"
+        style="@style/GlobalProgressBar"/>
+</RelativeLayout>

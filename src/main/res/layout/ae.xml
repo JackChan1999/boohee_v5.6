@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.myview.CustomInsetLayout android:orientation="vertical"
+                                     android:fitsSystemWindows="true"
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="fill_parent"
+                                     xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TabLayout
+        android:id="@id/tableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/hb"
+        app:tabTextColor="@color/da"
+        app:tabSelectedTextColor="@color/hb"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</com.boohee.myview.CustomInsetLayout>

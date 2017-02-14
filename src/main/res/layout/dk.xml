@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical"
+            android:id="@id/sv_main"
+            android:background="@color/d5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_record"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:id="@id/tv_date"
+            android:paddingLeft="@dimen/el"
+            android:paddingTop="@dimen/gt"
+            android:paddingBottom="@dimen/gt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015年8月11日"/>
+
+        <include
+            android:id="@id/ll_card_breakfast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_card_summary"/>
+
+        <include
+            android:id="@id/ll_card_snacks_breakfast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_card_summary"/>
+
+        <include
+            android:id="@id/ll_card_lunch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_card_summary"/>
+
+        <include
+            android:id="@id/ll_card_snacks_lunch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_card_summary"/>
+
+        <include
+            android:id="@id/ll_card_dinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_card_summary"/>
+
+        <include
+            android:id="@id/ll_card_snacks_dinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_card_summary"/>
+
+        <include
+            android:id="@id/ll_card_sport"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_card_summary"/>
+
+        <include
+            android:id="@id/ll_summary_total"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_summary_total"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="f7" parent="@style/p">
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="f8" parent="@android:style/Widget">
+        <item name="android:layout_gravity">start|center</item>
+        <item name="android:paddingEnd">8.0dip</item>
+    </style>
+
+    <style name="f9" parent="@android:style/Widget">
+        <item name="android:layout_marginEnd">8.0dip</item>
+    </style>
+
+    <style name="f_" parent="@android:style/Widget">
+        <item name="android:paddingEnd">16.0dip</item>
+    </style>
+
+    <style name="fa" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">16.0dip</item>
+    </style>
+
+    <style name="fb" parent="@android:style/Widget">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="fc" parent="@android:style/Widget">
+        <item name="android:paddingStart">@dimen/a_</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
+
+    <style name="fd" parent="@android:style/Widget">
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="fe" parent="@android:style/Widget">
+        <item name="android:layout_toStartOf">@id/edit_query</item>
+    </style>
+
+    <style name="ff" parent="@android:style/Widget">
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="fg" parent="@style/c_">
+        <item name="android:layout_toStartOf">@android:id/icon2</item>
+        <item name="android:layout_toEndOf">@android:id/icon1</item>
+    </style>
+
+    <style name="fh" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">@dimen/a_</item>
+    </style>
+
+    <style name="fi" parent="@android:style/Widget">
+        <item name="android:paddingStart">12.0dip</item>
+        <item name="android:paddingEnd">12.0dip</item>
+    </style>
+
+    <style name="fj" parent="@style/br">
+        <item name="android:paddingStart">@dimen/g</item>
+        <item name="android:paddingEnd">@dimen/f</item>
+    </style>
+</resources>

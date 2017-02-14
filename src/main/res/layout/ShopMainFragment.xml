@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/listview"
+        style="@style/PullToRefreshListViewStyle"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/h5"
+        android:clipToPadding="true"
+        android:divider="@color/ju"
+        android:dividerHeight="1.0px"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true"
+        app:ptrAnimationStyle="flip"
+        app:ptrHeaderBackground="@color/d5"
+        app:ptrHeaderTextColor="@android:color/darker_gray"
+        app:ptrOverScroll="false"
+        app:ptrScrollingWhileRefreshingEnabled="true"
+        app:ptrShowIndicator="false"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@id/fab_button"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/el"
+        android:layout_marginRight="@dimen/el"
+        android:scaleType="center"
+        android:src="@drawable/a7f"
+        android:visibility="gone"
+        app:backgroundTint="@color/ju"
+        app:elevation="2.0dip"
+        app:fabSize="normal"
+        app:pressedTranslationZ="8.0dip"/>
+</RelativeLayout>

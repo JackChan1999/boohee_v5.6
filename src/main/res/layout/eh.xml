@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/ju"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/ll_top"
+        android:background="@drawable/e5"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.boohee.widgets.RoundedCornersImage
+            android:id="@id/iv_avatar"
+            android:layout_width="@dimen/ek"
+            android:layout_height="@dimen/ej"
+            android:layout_marginRight="10.0dip"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/h3"
+                android:textColor="@color/ij"
+                android:id="@id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:singleLine="true"/>
+
+            <TextView
+                android:textSize="@dimen/h2"
+                android:textColor="@color/ii"
+                android:gravity="right"
+                android:id="@id/tv_post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <ImageView
+            android:background="@drawable/b_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="10.0dip"
+        android:paddingRight="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.chaowen.commentlibrary.emoji.EmojiconTextView
+            android:textSize="@dimen/h3"
+            android:textColor="@color/c4"
+            android:id="@id/tv_body"
+            android:paddingTop="5.0dip"
+            android:paddingBottom="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            app:emojiconSize="20.0sp"/>
+
+        <com.boohee.myview.NineGridLayout
+            android:id="@id/iv_post_grid"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/attachment_layout"
+        android:background="@color/an"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/el">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/iv_attachment"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/du"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/el"/>
+    </LinearLayout>
+
+    <com.boohee.one.player.ExVideoView
+        android:id="@id/video"
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:layout_margin="@dimen/el"/>
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/ii"
+        android:orientation="vertical"
+        android:id="@id/tv_bottom"
+        android:paddingLeft="@dimen/el"
+        android:paddingBottom="@dimen/gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xn"/>
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hn">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@id/rl_praise"
+            android:background="@drawable/fq"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <CheckBox
+                android:textSize="@dimen/h2"
+                android:textColor="@color/du"
+                android:gravity="center"
+                android:id="@id/cb_praise"
+                android:background="@null"
+                android:paddingLeft="@dimen/hm"
+                android:paddingRight="@dimen/el"
+                android:visibility="visible"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:button="@drawable/ea"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/d6"
+                android:gravity="center"
+                android:id="@id/tv_praise_plus"
+                android:padding="@dimen/gt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zq"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/ll_comment"
+            android:background="@drawable/fq"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/h2"
+                android:textColor="@color/dv"
+                android:gravity="center"
+                android:id="@id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/f0"
+                android:drawablePadding="@dimen/hm"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/ll_menu"
+            android:background="@drawable/fq"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/dv"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/fy"
+                android:drawablePadding="5.0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

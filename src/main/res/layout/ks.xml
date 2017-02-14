@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/gf"
+              style="@style/MQMatchMatch.Vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/title_rl"
+        android:background="@color/gj"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/g9">
+
+        <ImageView
+            android:id="@id/back_iv"
+            android:paddingLeft="@dimen/g0"
+            android:paddingRight="@dimen/g0"
+            android:src="@drawable/abp"
+            style="@style/MQWrapMatch"/>
+
+        <LinearLayout
+            android:id="@id/folder_ll"
+            android:layout_toRightOf="@id/back_iv"
+            style="@style/MQWrapMatch.Horizontal">
+
+            <TextView
+                android:textSize="@dimen/ga"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:id="@id/title_tv"
+                android:layout_marginLeft="@dimen/g0"
+                android:layout_marginRight="@dimen/fx"
+                style="@style/MQWrapMatch"/>
+
+            <ImageView
+                android:id="@id/arrow_iv"
+                android:src="@drawable/ac2"
+                style="@style/MQWrapMatch"/>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/g_"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@id/submit_tv"
+            android:background="@drawable/g2"
+            android:paddingLeft="@dimen/fz"
+            android:paddingRight="@dimen/fz"
+            android:clickable="true"
+            android:layout_margin="@dimen/fz"
+            android:minWidth="80.0dip"
+            android:text="@string/ut"
+            android:singleLine="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/MQWrapMatch"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@id/content_gv"
+        android:padding="@dimen/fx"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="@dimen/fx"
+        android:verticalSpacing="@dimen/fx"
+        android:numColumns="3"
+        android:overScrollMode="never"
+        style="@style/MQMatchMatch"/>
+</LinearLayout>

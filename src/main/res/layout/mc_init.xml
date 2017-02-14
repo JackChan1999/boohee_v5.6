@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ViewFlipper
+        android:id="@id/view_flipper"
+        android:background="@color/d5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.boohee.user.view.UserMcDaysView
+            android:id="@id/mc_day_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <com.boohee.user.view.UserMcCircleView
+            android:id="@id/mc_circle_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <com.boohee.user.view.UserMcComeView
+            android:id="@id/mc_come_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <com.boohee.user.view.UserMcGoView
+            android:id="@id/mc_go_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </ViewFlipper>
+</FrameLayout>

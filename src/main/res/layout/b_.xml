@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:background="@color/ju"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/d5"
+            android:paddingBottom="@dimen/ed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/ju"
+                android:paddingLeft="@dimen/el"
+                android:paddingTop="@dimen/el"
+                android:paddingRight="@dimen/gt"
+                android:paddingBottom="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@id/iv_food_icon"
+                    android:clickable="true"
+                    android:layout_width="@dimen/e6"
+                    android:layout_height="@dimen/e6"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/el"
+                    android:layout_toRightOf="@id/iv_food_icon"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:textSize="@dimen/dm"
+                        android:textColor="@color/e4"
+                        android:id="@id/tv_food_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"/>
+
+                    <RelativeLayout
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:id="@id/rl_calory_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/dm"
+                            android:textColor="@color/he"
+                            android:id="@id/tv_calory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:textSize="@dimen/dn"
+                            android:textColor="@color/e4"
+                            android:id="@id/tv_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_calory"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:textSize="@dimen/dn"
+                            android:textColor="@color/du"
+                            android:ellipsize="middle"
+                            android:id="@id/tv_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ic"
+                            android:singleLine="true"
+                            android:layout_toLeftOf="@id/rg_unit"
+                            android:layout_toRightOf="@id/tv_weight"
+                            android:layout_centerVertical="true"/>
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:id="@id/rg_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true">
+
+                            <RadioButton
+                                android:textSize="@dimen/dn"
+                                android:textColor="@color/a6"
+                                android:id="@id/rb_calory"
+                                android:background="@drawable/cc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@null"
+                                android:text="@string/aak"/>
+
+                            <RadioButton
+                                android:textSize="@dimen/dn"
+                                android:textColor="@color/a6"
+                                android:id="@id/rb_kjoule"
+                                android:background="@drawable/cc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/gt"
+                                android:button="@null"
+                                android:text="@string/aao"/>
+                        </RadioGroup>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:gravity="bottom|left|center"
+                android:background="@color/d5"
+                android:paddingLeft="@dimen/el"
+                android:paddingBottom="@dimen/gt"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/e6"
+                android:text="@string/ib"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:background="@color/ju"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:gravity="center_horizontal"
+                    android:id="@id/iv_light"
+                    android:layout_width="@dimen/e6"
+                    android:layout_height="70.0dip"/>
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/e4"
+                    android:gravity="top|left|center"
+                    android:id="@id/tv_appraise"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/el"
+                    android:lineSpacingExtra="6.0dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_recipe"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/view_divide_line"/>
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/du"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e6"
+                    android:text="@string/ii"
+                    android:drawableLeft="@drawable/qz"
+                    android:drawablePadding="@dimen/gt"/>
+            </LinearLayout>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_compare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/e6">
+
+                    <TextView
+                        android:textSize="@dimen/dn"
+                        android:textColor="@color/du"
+                        android:gravity="bottom|left|center"
+                        android:background="@color/d5"
+                        android:paddingLeft="@dimen/el"
+                        android:paddingBottom="@dimen/gt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/e6"
+                        android:text="@string/id"/>
+
+                    <Space
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"/>
+
+                    <TextView
+                        android:textSize="@dimen/dn"
+                        android:textColor="@color/du"
+                        android:gravity="center"
+                        android:id="@id/tv_how_assessment"
+                        android:paddingRight="@dimen/el"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="如何估算食物重量"
+                        android:drawableLeft="@drawable/acy"
+                        android:drawablePadding="5.0dip"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/ll_compare_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/view_divide_line"/>
+
+                    <RelativeLayout
+                        android:id="@id/rl_compare"
+                        android:background="@color/ju"
+                        android:padding="@dimen/el"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@id/iv_compare"
+                            android:layout_width="@dimen/e6"
+                            android:layout_height="@dimen/e6"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/el"
+                            android:layout_toRightOf="@id/iv_compare"
+                            android:layout_centerVertical="true">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="@dimen/dk"
+                                    android:textColor="@color/du"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="4.0dip"
+                                    android:text="@string/ip"/>
+
+                                <TextView
+                                    android:textSize="@dimen/dk"
+                                    android:textColor="@color/he"
+                                    android:id="@id/tv_compare_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:textSize="@dimen/dn"
+                                android:textColor="@color/du"
+                                android:id="@id/tv_compare_info"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2.0dip"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/ll_units"
+                    android:background="@color/ju"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/ll_units_item"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/ll_units_checkbox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/view_divide_line"/>
+
+                        <CheckBox
+                            android:textSize="@dimen/dn"
+                            android:textColor="@color/du"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@id/cb_units"
+                            android:paddingLeft="90.0dip"
+                            android:paddingRight="90.0dip"
+                            android:layout_width="240.0dip"
+                            android:layout_height="@dimen/e6"
+                            android:button="@null"
+                            android:text="@string/il"
+                            android:drawableLeft="@drawable/ba"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_divide_line"/>
+            </LinearLayout>
+
+            <include layout="@layout/subview_ingredient_title"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <com.boohee.myview.WholeListView
+                android:id="@id/lv_main"
+                android:background="@color/ju"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/e6"
+                android:listSelector="@color/bx"
+                android:divider="@color/cw"
+                android:dividerHeight="@dimen/dj"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/du"
+                android:gravity="center"
+                android:id="@id/tv_see_more"
+                android:background="@color/ju"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ij"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <View
+                android:layout_marginTop="@dimen/el"
+                style="@style/HorizontalWholeDivider"/>
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/e4"
+                android:id="@id/tv_error"
+                android:background="@color/ju"
+                android:padding="@dimen/el"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="报告该食物问题"
+                android:textEditSuggestionItemLayout="@dimen/dm"/>
+
+            <include layout="@layout/view_divide_line"/>
+
+            <View
+                android:id="@id/v_bottom"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_uploader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/dn"
+                    android:textColor="@color/du"
+                    android:gravity="center"
+                    android:id="@id/tv_uploader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/e6"/>
+
+                <include layout="@layout/view_divide_line"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/iv_food_app"
+                android:background="@drawable/n2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:layout_marginBottom="50.0dip"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:id="@id/ll_food_record"
+        android:background="@color/ju"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/view_divide_line"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/hk"
+            android:gravity="center"
+            android:id="@id/bt_food_record"
+            android:padding="@dimen/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mm"
+            android:drawableLeft="@drawable/a1f"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

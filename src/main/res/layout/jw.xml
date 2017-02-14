@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:paddingBottom="32.0dip">
+
+    <ImageView
+        android:id="@id/iv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="12.0dip"
+        android:padding="4.0dip"
+        android:src="@drawable/hd"/>
+
+    <TextView
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16.0dip"
+        android:text="当前减肥指数"
+        android:textColor="#ff3b3b3b"/>
+
+    <TextView
+        android:id="@id/tv_radar_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text=" ? "
+        android:textColor="#ff3b3b3b"
+        android:textSize="60.0dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_radar_index"
+        android:layout_toRightOf="@id/tv_radar_index"
+        android:text="分"
+        android:textColor="#ff3d3333"/>
+
+    <TextView
+        android:id="@id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_radar_index"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="打败0%的用户 | 每周日更新分数"
+        android:textColor="#803b3b3b"/>
+
+    <com.boohee.one.radar.RadarLayout
+        android:id="@id/razor_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rank"/>
+
+    <TextView
+        android:id="@id/tv_index_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/razor_layout"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="24.0dip"
+        android:drawableLeft="@drawable/a_6"
+        android:drawablePadding="4.0dip"
+        android:text="以下为减肥指数解读"
+        android:textColor="#ff3b3b3b"/>
+
+    <TextView
+        android:id="@id/tv_report_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_index_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16.0dip"
+        android:textColor="#803b3b3b"/>
+</RelativeLayout>

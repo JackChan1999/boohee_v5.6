@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/el"
+              android:paddingTop="@dimen/gt"
+              android:paddingBottom="@dimen/gt"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/avatar_image"
+        android:layout_width="45.0dip"
+        android:layout_height="45.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:id="@id/view_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_weight="1.0"
+        android:layout_toLeftOf="@id/iv_light"
+        android:layout_toRightOf="@id/civ_icon"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/e4"
+            android:ellipsize="middle"
+            android:gravity="center_vertical"
+            android:id="@id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/du"
+            android:id="@id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+    <CheckBox
+        android:textColor="@color/l"
+        android:id="@id/checkbox"
+        android:background="@drawable/if"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginLeft="@dimen/gt"
+        android:layout_marginRight="@dimen/el"
+        android:checked="false"
+        android:button="@null"/>
+</LinearLayout>

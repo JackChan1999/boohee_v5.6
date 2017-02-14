@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <ScrollView
+        android:id="@id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_radar_summary"/>
+
+            <include layout="@layout/layout_radar_nutrition"/>
+
+            <include layout="@layout/layout_radar_spirit"/>
+
+            <include layout="@layout/layout_radar_heat"/>
+
+            <include layout="@layout/layout_radar_sport"/>
+
+            <include layout="@layout/layout_radar_social"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingBottom="32.0dip">
+
+                <com.boohee.one.radar.ConclusionLayout
+                    android:id="@id/summary_conclusion"
+                    android:layout_width="310.0dip"
+                    android:layout_height="72.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="48.0dip"/>
+
+                <com.boohee.one.radar.DashedCurveLine
+                    android:layout_width="310.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@id/tv_weight_trend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="你的体重呈保持状态"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="24.0dip"/>
+
+                <ImageView
+                    android:id="@id/iv_weight_trend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16.0dip"
+                    android:src="@drawable/a9w"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ViewStub
+        android:id="@id/newby"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout="@layout/qj"
+        android:visibility="gone"/>
+</FrameLayout>

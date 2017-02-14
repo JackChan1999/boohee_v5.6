@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/by"
+                android:padding="@dimen/dh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/avatar"
+        android:layout_width="@dimen/ek"
+        android:layout_height="@dimen/ej"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/di">
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textStyle="bold"
+                android:textColor="@color/c4"
+                android:id="@id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="@dimen/dn"
+                android:textColor="@color/dv"
+                android:id="@id/tv_create_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/di"/>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/c4"
+            android:autoLink="all"
+            android:id="@id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@id/mask"
+        android:background="#99000000"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@id/popLayout"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip">
+
+        <kankan.wheel.widget.WheelView
+            android:id="@id/wheel_unit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

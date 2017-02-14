@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/in"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:emojicon="http://schemas.android.com/apk/res-auto">
+
+    <com.chaowen.commentlibrary.emoji.EmojiconTextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/emojicon_icon"
+        android:layout_width="36.0dip"
+        android:layout_height="45.0dip"
+        emojicon:emojiconSize="30.0dip"/>
+</FrameLayout>

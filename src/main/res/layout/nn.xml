@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/iq"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:background="@drawable/w1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/ll_order_address_info"
+        android:background="@color/ju"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8.0dip"/>
+
+        <RelativeLayout
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/c4"
+                android:id="@id/tv_real_name"
+                android:padding="@dimen/hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="12"
+                android:singleLine="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/c4"
+                android:id="@id/tv_phone"
+                android:padding="@dimen/hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_real_name"
+                android:layout_alignBottom="@id/tv_real_name"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:textSize="@dimen/gy"
+                android:textColor="@color/c4"
+                android:id="@id/tv_address_details"
+                android:padding="@dimen/hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_real_name"
+                android:layout_alignLeft="@id/tv_real_name"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8.0dip"
+            android:src="@drawable/a2l"/>
+    </LinearLayout>
+
+    <View
+        android:background="@drawable/w1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="8.0dip"/>
+
+    <include layout="@layout/view_divide_line"/>
+</LinearLayout>

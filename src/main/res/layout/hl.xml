@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bm"
+                android:paddingLeft="@dimen/dv"
+                android:paddingTop="@dimen/dv"
+                android:paddingBottom="@dimen/dv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/ds"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/civ_icon"
+        android:layout_width="@dimen/dp"
+        android:layout_height="@dimen/do"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:id="@id/view_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dt"
+        android:layout_toLeftOf="@id/view_operate"
+        android:layout_toRightOf="@id/civ_icon"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/e4"
+            android:ellipsize="middle"
+            android:gravity="center_vertical"
+            android:id="@id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/hk"
+            android:id="@id/tv_calory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/e4"
+            android:id="@id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ma"
+            android:layout_toRightOf="@id/tv_calory"
+            android:layout_below="@id/tv_name"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/view_operate"
+        android:layout_width="@dimen/br"
+        android:layout_height="@dimen/br"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@id/iv_light"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@id/cb_select"
+            android:background="@drawable/bn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"/>
+    </LinearLayout>
+</RelativeLayout>

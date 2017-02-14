@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.widgets.BooheeRippleLayout android:layout_width="fill_parent"
+                                       android:layout_height="wrap_content"
+                                       style="@style/GlobalRippleLayout"
+                                       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/view_content"
+        android:padding="@dimen/dh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/di"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/hb"
+                android:id="@id/tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dh"
+                android:text="已完成"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/di"/>
+    </LinearLayout>
+</com.boohee.widgets.BooheeRippleLayout>

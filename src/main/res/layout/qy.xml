@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal"
+                android:background="@color/ju"
+                android:paddingTop="@dimen/h1"
+                android:paddingBottom="@dimen/h1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/rl_sport_search"
+        android:background="@drawable/io"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dt"
+        android:layout_marginRight="@dimen/dt"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/du"
+            android:gravity="center"
+            android:paddingTop="6.0dip"
+            android:paddingBottom="6.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a3g"
+            android:drawableLeft="@drawable/r2"
+            android:drawablePadding="5.0dip"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

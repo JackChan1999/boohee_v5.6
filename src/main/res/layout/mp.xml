@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/dm"
+        android:textColor="@color/da"
+        android:gravity="center"
+        android:background="@drawable/hp"
+        android:layout_width="fill_parent"
+        android:layout_height="172.0dip"
+        android:layout_marginLeft="@dimen/dh"
+        android:layout_marginTop="@dimen/dh"
+        android:layout_marginRight="@dimen/dh"
+        android:layout_marginBottom="@dimen/dg"
+        android:text="新课程即将就位\n敬请期待"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

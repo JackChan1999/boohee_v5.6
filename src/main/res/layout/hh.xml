@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:padding="@dimen/b_"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@id/tv_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:id="@id/view_content"
+        android:background="@drawable/ne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/b8">
+
+        <TextView
+            android:linksClickable="true"
+            android:layout_gravity="right"
+            android:id="@id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:id="@id/view_images"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/iv_3"
+                android:layout_width="@dimen/b9"
+                android:layout_height="@dimen/b9"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@id/iv_2"
+                android:layout_width="@dimen/b9"
+                android:layout_height="@dimen/b9"
+                android:layout_marginLeft="@dimen/bc"
+                android:layout_marginRight="@dimen/bc"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@id/iv_1"
+                android:layout_width="@dimen/b9"
+                android:layout_height="@dimen/b9"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

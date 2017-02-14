@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/gy"
+        android:textColor="@color/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/el"
+        android:layout_marginTop="@dimen/d4"
+        android:layout_marginBottom="@dimen/d4"
+        android:text="个人信息"/>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话:"
+            android:drawableLeft="@drawable/a5f"
+            android:drawablePadding="@dimen/d4"/>
+
+        <EditText
+            android:textSize="@dimen/gy"
+            android:id="@id/et_nice_phone"
+            android:background="@color/in"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d4"
+            android:hint="请输入电话，以便顾问联系你"
+            android:singleLine="true"
+            android:layout_weight="1.0"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的体重:"
+            android:drawableLeft="@drawable/a5j"
+            android:drawablePadding="@dimen/d4"/>
+
+        <EditText
+            android:textSize="@dimen/gy"
+            android:id="@id/et_nice_weight"
+            android:background="@color/in"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d4"
+            android:hint="kg"
+            android:singleLine="true"
+            android:layout_weight="1.0"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <View style="@style/SixteenHorizontalDivider"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/gy"
+            android:textColor="@color/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的身高:"
+            android:drawableLeft="@drawable/a5e"
+            android:drawablePadding="@dimen/d4"/>
+
+        <EditText
+            android:textSize="@dimen/gy"
+            android:id="@id/et_nice_height"
+            android:background="@color/in"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d4"
+            android:hint="cm"
+            android:singleLine="true"
+            android:layout_weight="1.0"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/d5"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/el"/>
+</LinearLayout>

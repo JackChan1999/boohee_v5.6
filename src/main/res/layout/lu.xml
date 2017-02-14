@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="100.0dip"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:textSize="@dimen/gp"
+        android:textColor="@color/ii"
+        android:gravity="left|center"
+        android:id="@id/praise_text"
+        android:background="@drawable/a0v"
+        android:paddingLeft="22.0dip"
+        android:layout_width="60.0dip"
+        android:layout_height="34.0dip"
+        android:text="0"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:textSize="@dimen/em"
+        android:textColor="@color/d6"
+        android:id="@id/praise_plus"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zq"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

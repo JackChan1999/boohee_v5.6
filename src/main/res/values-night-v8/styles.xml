@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="hi" parent="@style/hg"/>
+
+    <style name="hj" parent="@style/hg"/>
+
+    <style name="hk" parent="@style/hp"/>
+
+    <style name="hl" parent="@style/hq"/>
+
+    <style name="hm" parent="@style/hr"/>
+
+    <style name="hn" parent="@style/hs"/>
+
+    <style name="ho" parent="@style/i0"/>
+</resources>

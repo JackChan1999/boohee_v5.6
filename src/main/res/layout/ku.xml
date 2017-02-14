@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gf"
+                style="@style/MQMatchMatch"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.meiqia.meiqiasdk.widget.MQHackyViewPager
+        android:id="@id/content_hvp"
+        style="@style/MQMatchMatch"/>
+
+    <RelativeLayout
+        android:id="@id/title_rl"
+        android:background="@color/gj"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/g9"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@id/back_iv"
+            android:paddingLeft="@dimen/g0"
+            android:paddingRight="@dimen/g0"
+            android:src="@drawable/abp"
+            style="@style/MQWrapMatch"/>
+
+        <TextView
+            android:textSize="@dimen/ga"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:id="@id/title_tv"
+            android:layout_toRightOf="@id/back_iv"
+            style="@style/MQWrapMatch"/>
+
+        <ImageView
+            android:id="@id/download_iv"
+            android:paddingLeft="@dimen/g0"
+            android:paddingRight="@dimen/g0"
+            android:src="@drawable/abv"
+            android:layout_alignParentRight="true"
+            style="@style/MQWrapMatch"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/ll_content"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/rl_step"
+        android:background="@color/hb"
+        android:layout_width="fill_parent"
+        android:layout_height="360.0dip">
+
+        <TextView
+            android:textColor="@color/he"
+            android:gravity="center"
+            android:id="@id/tv_error"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            android:text="因手机硬件原因，计步器已停止计步，建议重启手机重试"/>
+
+        <ImageView
+            android:id="@id/iv_umcomplete"
+            android:background="@drawable/aaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@id/iv_pointer"
+            android:background="@drawable/aah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@id/iv_complete"
+            android:background="@drawable/aai"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:textSize="@dimen/dk"
+            android:textColor="@color/ju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115.0dip"
+            android:text="今日步数"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:textSize="50.0sp"
+            android:textColor="@color/ju"
+            android:id="@id/tv_current_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185.0dip"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/jw"
+            android:id="@id/tv_target_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            android:layout_below="@id/tv_current_step"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/el">
+
+        <ImageView
+            android:background="@drawable/a7k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gt"/>
+
+        <TextView
+            android:id="@id/tv_calory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

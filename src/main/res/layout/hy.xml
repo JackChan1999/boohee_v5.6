@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/view_divide_line"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/el"
+        android:paddingRight="@dimen/el"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45.0dip">
+
+        <TextView
+            android:textSize="@dimen/dm"
+            android:textColor="@color/e4"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@id/tv_unit"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="2.0"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/du"
+            android:gravity="right"
+            android:id="@id/tv_weight"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:textSize="@dimen/dn"
+            android:textColor="@color/du"
+            android:gravity="right"
+            android:id="@id/tv_calory"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+</LinearLayout>

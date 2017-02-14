@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boohee.myview.CustomInsetLayout android:orientation="vertical"
+                                     android:fitsSystemWindows="true"
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="fill_parent"
+                                     xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/view_top"
+        android:background="@color/gy"
+        android:padding="@dimen/dh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/avatar"
+            android:layout_width="@dimen/ek"
+            android:layout_height="@dimen/ej"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dh">
+
+            <TextView
+                android:id="@id/tv_adviser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@id/tv_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/di"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@id/view_refresh"
+        android:clipToPadding="true"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:drawSelectorOnTop="true"
+        android:scrollingCache="true"
+        android:divider="@color/ju"
+        android:dividerHeight="1.0px"
+        android:layout_weight="1.0"
+        android:layout_above="@id/view_bottom"
+        android:layout_below="@id/view_top"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        app:ptrShowIndicator="false"
+        app:ptrOverScroll="false"
+        app:ptrAnimationStyle="flip"
+        app:ptrScrollingWhileRefreshingEnabled="true"
+        style="@style/PullToRefreshListViewStyle"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/view_bottom"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+
+        <EditText
+            android:textSize="@dimen/gy"
+            android:textColor="@color/c4"
+            android:id="@id/et_input"
+            android:background="@drawable/ho"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="4.0dip"
+            android:hint="请输入你的问题"
+            android:layout_weight="1.0"
+            android:layout_toLeftOf="@id/bt_send"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textSize="@dimen/em"
+            android:textColor="@color/ij"
+            android:gravity="center"
+            android:id="@id/bt_send"
+            android:background="@null"
+            android:padding="@dimen/d4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/a43"/>
+    </LinearLayout>
+</com.boohee.myview.CustomInsetLayout>

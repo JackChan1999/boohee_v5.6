@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white"
+                android:padding="@dimen/d6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="@dimen/dd"
+        android:textColor="@color/bs"
+        android:gravity="center"
+        android:id="@id/txt_gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d4"
+        android:layout_marginTop="@dimen/d4"
+        android:text="100 g"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:textSize="36.0sp"
+            android:textColor="@color/bu"
+            android:id="@id/txt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"/>
+
+        <TextView
+            android:textSize="@dimen/dd"
+            android:textColor="@color/bt"
+            android:id="@id/txt_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d6"
+            android:text=" 克"
+            android:layout_toRightOf="@id/txt_value"
+            android:layout_alignTop="@id/txt_value"/>
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="@dimen/dd"
+        android:textColor="@color/bs"
+        android:id="@id/txt_calory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d4"
+        android:layout_marginRight="@dimen/d4"
+        android:text="100 千卡"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ff3c3c3c"
+              android:orientation="vertical">
+
+    <ListView
+        android:id="@id/__leak_canary_display_leak_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"/>
+
+    <TextView
+        android:id="@id/__leak_canary_display_leak_failure"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:textSize="12.0sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@id/__leak_canary_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView android:orientation="vertical"
+                                                            android:id="@id/scrollview"
+                                                            android:scrollbars="none"
+                                                            android:layout_width="fill_parent"
+                                                            android:layout_height="fill_parent"
+                                                            android:fastScrollEnabled="false"
+                                                            ptr:ptrHeaderBackground="@color/d5"
+                                                            ptr:ptrHeaderTextColor="@android:color/darker_gray"
+                                                            ptr:ptrOverScroll="false"
+                                                            ptr:ptrAnimationStyle="flip"
+                                                            ptr:ptrScrollingWhileRefreshingEnabled="true"
+                                                            xmlns:android="http://schemas.android.com/apk/res/android"
+                                                            xmlns:ptr="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@id/iv_bet_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/ll_bet_des"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/el">
+
+                    <View
+                        android:background="@color/e4"
+                        android:layout_width="20.0dip"
+                        android:layout_height="1.0px"/>
+
+                    <TextView
+                        android:textSize="@dimen/ef"
+                        android:textColor="@color/e4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gt"
+                        android:layout_marginRight="@dimen/gt"
+                        android:text="怎么玩"/>
+
+                    <View
+                        android:background="@color/e4"
+                        android:layout_width="20.0dip"
+                        android:layout_height="1.0px"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/iv_bet_des"
+                    android:background="@drawable/pc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45.0dip"
+                    android:layout_marginRight="45.0dip"/>
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/du"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/el"
+                    android:paddingBottom="@dimen/el"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="规则详情>>"/>
+            </LinearLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_bets"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el">
+
+                <View
+                    android:background="@color/e4"
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0px"/>
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/e4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gt"
+                    android:layout_marginRight="@dimen/gt"
+                    android:text="活动列表"/>
+
+                <View
+                    android:background="@color/e4"
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0px"/>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/e4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gt"
+                android:layout_marginTop="30.0dip"
+                android:layout_marginRight="@dimen/gt"
+                android:text="薄荷发起"/>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@id/ll_content"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/du"
+                    android:gravity="center"
+                    android:id="@id/btn_all_bet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:text="查看全部>>"/>
+            </com.boohee.widgets.BooheeRippleLayout>
+        </LinearLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="@dimen/el"
+            android:layout_marginRight="@dimen/el"
+            layout="@layout/view_divide_line"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_team"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/ef"
+                android:textColor="@color/e4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gt"
+                android:layout_marginTop="30.0dip"
+                android:layout_marginRight="@dimen/gt"
+                android:text="用户发起"/>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@id/team_content"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.boohee.widgets.BooheeRippleLayout
+                android:layout_marginLeft="@dimen/el"
+                android:layout_marginTop="@dimen/el"
+                android:layout_marginRight="@dimen/el"
+                style="@style/RippleLayout">
+
+                <RelativeLayout
+                    android:id="@id/view_become_leader"
+                    android:background="@drawable/c6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@id/iv_bet_team"
+                        android:background="@drawable/pe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/el"/>
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/e4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发起一期全新的赌瘦"
+                        android:layout_toRightOf="@id/iv_bet_team"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:textSize="@dimen/dn"
+                        android:textColor="@color/ju"
+                        android:gravity="center"
+                        android:background="@drawable/cx"
+                        android:layout_width="56.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_marginRight="@dimen/el"
+                        android:text="申请"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </com.boohee.widgets.BooheeRippleLayout>
+
+            <com.boohee.widgets.BooheeRippleLayout style="@style/RippleLayout">
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/du"
+                    android:gravity="center"
+                    android:id="@id/btn_all_team"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:text="查看全部>>"/>
+            </com.boohee.widgets.BooheeRippleLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ju"
+            android:paddingBottom="@dimen/el"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/el"
+            android:layout_marginBottom="@dimen/el">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/el"
+                android:layout_marginBottom="@dimen/el">
+
+                <View
+                    android:background="@color/e4"
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0px"/>
+
+                <TextView
+                    android:textSize="@dimen/ef"
+                    android:textColor="@color/e4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gt"
+                    android:layout_marginRight="@dimen/gt"
+                    android:text="趣味资讯"/>
+
+                <View
+                    android:background="@color/e4"
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0px"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@id/fl_tips"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@id/viewpager_tips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@id/tips_indicator"
+                    layout="@layout/view_line_indicator"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

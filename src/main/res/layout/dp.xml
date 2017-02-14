@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/ju"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip">
+
+        <View style="@style/HorizontalWholeDivider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_brand"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fq">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/c4"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ab4"/>
+
+            <EditText
+                android:textColorHint="@color/du"
+                android:gravity="right"
+                android:id="@id/et_food_brand"
+                android:background="@null"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/ab6"
+                android:singleLine="true"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <View style="@style/SixteenHorizontalDivider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_food_name"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fq">
+
+            <TextView
+                android:textSize="@dimen/em"
+                android:textColor="@color/c4"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ab5"/>
+
+            <EditText
+                android:gravity="right"
+                android:id="@id/et_food_name"
+                android:background="@null"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <View style="@style/SixteenHorizontalDivider"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/GlobalRippleLayout">
+
+            <RelativeLayout
+                android:id="@id/rl_food_code"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fq"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/c4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abi"/>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/dv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abj"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/iv_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/el"
+                    android:src="@drawable/a54"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:textSize="@dimen/gy"
+                    android:textColor="@color/dv"
+                    android:id="@id/tv_food_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_scan"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View style="@style/SixteenHorizontalDivider"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/GlobalRippleLayout">
+
+            <RelativeLayout
+                android:id="@id/rl_food_front"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fq"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/c4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aba"/>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/dv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abb"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/iv_front_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/el"
+                    android:src="@drawable/a44"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <RelativeLayout
+                    android:id="@id/rl_front"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dy"
+                    android:layout_height="@dimen/dx"
+                    android:layout_toLeftOf="@id/iv_front_camera"
+                    android:layout_centerVertical="true">
+
+                    <com.boohee.widgets.RoundedCornersImage
+                        android:id="@id/iv_front_img"
+                        android:layout_width="@dimen/ek"
+                        android:layout_height="@dimen/ej"
+                        android:src="@drawable/aa0"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@id/iv_front_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a6f"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View style="@style/SixteenHorizontalDivider"/>
+
+        <com.boohee.widgets.BooheeRippleLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/GlobalRippleLayout">
+
+            <RelativeLayout
+                android:id="@id/rl_food_back"
+                android:background="@color/ju"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fq"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:textSize="@dimen/em"
+                        android:textColor="@color/c4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aaw"/>
+
+                    <TextView
+                        android:textSize="@dimen/gy"
+                        android:textColor="@color/dv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aax"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/iv_back_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/el"
+                    android:src="@drawable/a44"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <RelativeLayout
+                    android:id="@id/rl_back"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dy"
+                    android:layout_height="@dimen/dx"
+                    android:layout_toLeftOf="@id/iv_back_camera"
+                    android:layout_centerVertical="true">
+
+                    <com.boohee.widgets.RoundedCornersImage
+                        android:id="@id/iv_back_img"
+                        android:layout_width="@dimen/ek"
+                        android:layout_height="@dimen/ej"
+                        android:src="@drawable/aa0"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@id/iv_back_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a6f"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.boohee.widgets.BooheeRippleLayout>
+
+        <View style="@style/HorizontalWholeDivider"/>
+    </LinearLayout>
+</ScrollView>

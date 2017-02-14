@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@id/view_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@id/srl_refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/view_bottom"
+            android:layout_alignParentTop="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rv_main"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:stackFromEnd="true"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view_bottom"
+            android:background="@color/ju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:textSize="@dimen/dm"
+                android:textColor="@color/he"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/view_ask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dv"
+                android:text="@string/bt"
+                android:drawableLeft="@drawable/a3l"
+                android:drawablePadding="@dimen/dw"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/subview_apn_edit"/>
+</FrameLayout>

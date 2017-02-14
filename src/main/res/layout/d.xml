@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="48.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.squareup.leakcanary.internal.DisplayLeakConnectorView
+        android:id="@id/__leak_canary_row_connector"
+        android:layout_width="16.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"/>
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/__leak_canary_row_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"/>
+
+    <com.squareup.leakcanary.internal.MoreDetailsView
+        android:layout_gravity="center_vertical"
+        android:id="@id/__leak_canary_row_more"
+        android:layout_width="12.0dip"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"/>
+</LinearLayout>
