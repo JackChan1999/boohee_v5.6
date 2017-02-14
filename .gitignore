@@ -7,6 +7,19 @@ ml
 /build
 /captures
 /src/main/java/android
+/src/main/java/butterknife
+/src/main/java/cn
+/src/main/java/de
+/src/main/java/kale
+/src/main/java/kankan
+/src/main/java/lecho
+/src/main/java/me
+/src/main/java/miui
+/src/main/java/okio
+/src/main/java/org
+/src/main/java/rx
+/src/main/java/u
+/src/main/java/uk
 
 # Built application files
 *.apk
